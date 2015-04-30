@@ -1,0 +1,16 @@
+﻿BEGIN:VCALENDAR
+PRODID:example@gmail.com
+VERSION:2.0
+BEGIN:VEVENT
+ORGANIZER:example@gmail.com
+SUMMARY:multiline with single space. vCalendar v2.0 instead of v1.0 (should have ics extension)
+DESCRIPTION:Symbols by order:\n.\,'?!"-()@/:_\\\;+&%*=<>==£€$¥¤[]{}\\\\~^
+ ¡¿§#| \nDouble carriage return:\n\nÀëíºôõøªáàâåæçñßüþ0=
+ =0D=0A -There shouldn't be carriage return because is not quoted-printable.
+LOCATION;ENCODING=QUOTED-PRINTABLE:Akh=20=5C=5Ct=20es=20=5C=5Cp=20=5C=5Cn=20ab
+DTSTART:20110607T100000
+DTEND:20110607T110000
+DTSTAMP:20110608T094436Z
+UID:1+example@gmail.com
+END:VEVENT
+END:VCALENDAR

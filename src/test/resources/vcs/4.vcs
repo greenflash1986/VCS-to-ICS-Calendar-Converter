@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:1.0
+BEGIN:VEVENT
+UID:4vf3
+SUMMARY:The stunning Beijing National Stadium, commonly known as the
+  Birds Nest became the centrepiece for one of the most spectacular
+  Olympic Games of all time in 2008
+DESCRIPTION:Twickenham Stadium, in a leafy London suburb with
+  riverside pathways and cosy pubs, is arguably the most famous rugby
+  venue on the planet. Twickers has recently been redeveloped and now
+  has a capacity of 82,000. The stadium tour and museum covers
+  everything from the global game, including interactive exhibits and
+  historic memorabilia. Keep an eyeout for tickets to upcoming
+  internationals, while the club game often uses the venue for crunch
+  matches.
+DTSTART:20110618T100000Z
+DTEND:20110618T100000Z
+X-EPOCAGENDAENTRYTYPE:APPOINTMENT
+CLASS:PRIVATE
+LOCATION:The New York Yankees moved to their new stadium in 2009
+  after leaving the historic venue of the same name just across the
+  street in New York Citys Bronx
+SEQUENCE:0
+X-METHOD:NONE
+LAST-MODIFIED:20110617T195820Z
+PRIORITY:2
+X-SYMBIAN-LUID:1274
+END:VEVENT
+END:VCALENDAR
