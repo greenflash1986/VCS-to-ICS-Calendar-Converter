@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:1.0
+BEGIN:VEVENT
+DTStart:20130223T000000
+DTEnd:20130224T000000
+Location;ENCODING=QUOTED-PRINTABLE:
+UID:20130223T00000020130224T000000
+DESCRIPTION;ENCODING=b:Queensland Canoeing Calendar: www.qld.canoe.org.au/e
+ vent.asp?ID\=15367 \nOrganising Body: Queensland Canoeing \nContact: Libby 
+ Anderson \nPhone: 07 3349 1933 \nEmail: qc.events@canoe.org.au \nWebsite: w
+ ww.qld.canoe.org.au
+SUMMARY;ENCODING=QUOTED-PRINTABLE:QLD Canoe Marathon Championships
+PRIORITY:3
+End:VEVENT
+End:VCALENDAR

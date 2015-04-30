@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 12.0 MIMEDIR//EN
+VERSION:1.0
+BEGIN:VEVENT
+DTSTART:20111026T180000Z
+DTEND:20111026T200000Z
+LOCATION:Ruth's Chris Steak House 2961 Michelson Drive, Ste A, Bldg 10, Irv
+	ine, CA 92612 - Wine Room
+UID:040000008200E00074C5B7101A82E0080000000030319E432C72CC01000000000000000
+	0100000007031826C4E0A484A94ABB31402755AB5
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:=
+Microsoft Office 365 Lunch and Learn=0D=0AWednesday, October 26, 2011 =0D=
+=0A=0D=0ARuth=92s Chris Steak House =0D=0AWine Room =0D=0A2961 Michelson =
+Drive, Ste A, Bldg 10 =0D=0AIrvine, CA 92612 =0D=0A=0D=0AMap and Directio=
+ns=0D=0Ahttp://www.bing.com/maps/?v=3D2&cp=3D33.67204708674532~-117.84660=
+9&lvl=3D16&dir=3D0&sty=3Dr&where1=3D2961%20Michelson%20Dr%2C%20Irvine%2C%=
+20CA%2092612-2628&form=3DLMLTCC=0D=0AFree self parking. =0D=0AAgenda=0D=
+=0A11:00 =96 11:30 a.m. 	Arrival and Welcome	=0D=0A11:30 =96 1:00 p.m.	Mi=
+crosoft Office 365 Presentation and Lunch=0D=0A=0D=0A*One Xbox 360 with K=
+inect, one copy of Microsoft Office 2010 and one $100 dining certificate =
+will be raffled. Must be present to win.=0D=0A=0D=0A=0D=0A
+SUMMARY:Microsoft Office 365 Lunch and Learn
+PRIORITY:3
+END:VEVENT
+END:VCALENDAR

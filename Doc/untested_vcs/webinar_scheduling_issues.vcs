@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 11.0 MIMEDIR//EN
+VERSION:1.0
+BEGIN:VEVENT
+DTSTART:20100204T170000Z
+DTEND:20100204T180000Z
+LOCATION;ENCODING=QUOTED-PRINTABLE:http://w.on24.com/r.htm?e=3D180184&s=3D1=
+&k=3DC02798D09A4D204B7733F6E3F3503B84=20
+UID:040000008200E00074C5B7101A82E00800000000A09E4DF88BD8C9010000000000000000100
+ 00000FC4FB59788B52341B1E2265E64AC659D
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Don't forget to attend this free webi=
+nar: Scheduling Issues?=0D=0ADate: Thursday, February 4, 2010=0D=0ATime: 12=
+:00 PM EST | 11:00 AM EST | 10:00 MST | 9:00 CST=0D=0ADuration: 1 Hour=0D=
+=0A=0D=0ATo access this Webinar, please click on the URL below 15 minutes b=
+efore time and login with your email address. =0D=0Ahttp://w.on24.com/r.htm=
+?e=3D180184&s=3D1&k=3DC02798D09A4D204B7733F6E3F3503B84 =0D=0A=0D=0AImportan=
+t: System Setup & Compatibility Check=0D=0A=0D=0A- Operating Systems: =0D=
+=0A	- Windows XP =0D=0A	- Windows Vista =0D=0A	- Mac OS X 10.4 =0D=0A- Brow=
+ser: =0D=0A	- Internet Explorer 6.0 & 7.0 - Windows Only =0D=0A	- Firefox 1=
+.5 & Firefox 2.0 - Windows, Mac Only =0D=0A	- Firefox 1.0.7 (*Linux Only) =
+=0D=0A- Media Player: =0D=0A	- Windows Media Player (WMP) 10 & 11 - Windows=
+ Only =0D=0A	- RealPlayer 10.X =96 Windows, Mac, & Linux =0D=0ATest your co=
+mputer here <http://event.on24.com/utils/test/testYourSystem.html?checkflas=
+h=3Dtrue&checkXMLParser=3Dtrue&checkBrowser=3Dtrue&checkOS=3Dtrue&checkBand=
+width=3Dtrue&checkCookie=3Dtrue&checkJava=3Dtrue&checkMP=3Dtrue>  for minim=
+um technical requirements. =0D=0A=0D=0AWe look forward to having you at thi=
+s Webinar. Please email webinars@bnpmedia.com with questions. Thank you! =
+=0D=0A=0D=0ABNP Media Events =0D=0AFor upcoming events, go to www.bnpevents=
+.com <http://www.bnpevents.com/> . =0D=0AFAQ's <http://www.bnpevents.com/We=
+binar-FAQ.htm> =0D=0AHelp <http://webcast.on24.com/view/help/ehelp.html> =
+=0D=0A=0D=0A
+SUMMARY;ENCODING=QUOTED-PRINTABLE:Webinar: Scheduling Issues?
+PRIORITY:3
+END:VEVENT
+END:VCALENDAR

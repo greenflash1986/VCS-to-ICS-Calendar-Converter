@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 11.0 MIMEDIR//EN
+VERSION:1.0
+BEGIN:VEVENT
+DTSTART:20090512T220000Z
+DTEND:20090513T000000Z
+LOCATION;ENCODING=QUOTED-PRINTABLE:Atlanta Fish Market, Atlanta, GA
+UID:040000008200E00074C5B7101A82E008000000001042DFD1C9B2C9010000000000000000100
+ 000007DBCFD9BFD131049BC5E80AAB969D6A7
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Continuing Lecture Series=0D=0ADr. Je=
+ffrey Weber received his PhD from Rockefeller University in 1979, then comp=
+leted his MD from New York University Medical Center in 1980. He joined Uni=
+versity of South Florida Health Department in 2007 from University of South=
+ern California as a Professor of Interdisciplinary oncology. =0D=0A=0D=0ADr=
+. Weber is a internationally-renowned melanoma medical oncologist, tumor im=
+munologist and clinical and translational reseacher. =0D=0A=0D=0AGASCO Web =
+Site Meeting Link:=0D=0A	http://www.gasco.us/meeting_20090512.shtml=0D=0A
+SUMMARY;ENCODING=QUOTED-PRINTABLE:GASCO Meeting: Enhancing the Anti-Melanom=
+a Activity of T Cells by Targeting CTLA-4
+PRIORITY:3
+END:VEVENT
+END:VCALENDAR

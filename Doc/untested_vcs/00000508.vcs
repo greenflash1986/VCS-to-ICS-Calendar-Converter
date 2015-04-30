@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR 
+VERSION:1.0 
+PRODID:-//IATAC//IA/IO SCHEDULER//EN
+BEGIN:VEVENT
+SUMMARY: 2008 Information Assurance Workshop IAWS
+DESCRIPTION: hosted jointly by the National Security Agency NSA, the Defense Information Systems Agency DISA, Joint Staff, United States Strategic Command STRATCOM, and the Office of the Secretary for Defense, is an opportunity for attendees to discuss critical IA issues facing the nation today. This years theme, Operationalizing an Assured Global Information Grid GIG Enterprise, will continue the focus on support to the Warfighter. Key leaders from across the Information Assurance IA community will address challenges that confront todays IA professionals as well as encourage cross-community collaboration to respond to those challenges. As we return to a workshop oriented atmosphere again this year, the tracks will include the IA Capability Areas with a focus on mission assurance in the face of a maturing and adapting threat. As a result of the overwhelming response to last years Warfighter track, we will again host a track to work real-world issues facing the Warfighter, with renewed emphasis on operational requirements that are critical to Joint, Coalition, and interagency Operations.For more information visit: http://www.nsa.gov/ia/events/conferences/index.cfm?ConferenceID=51 DISCLAIMER - Event times are not accurate.  Please visit conference website to find accurate event times.
+LOCATION: Philadelphia, PA 
+DTSTART;TZID=US-Eastern: 20080128T120000Z
+DTEND;TZID=US-Eastern: 20080201T210000Z
+END:VEVENT 
+END:VCALENDAR

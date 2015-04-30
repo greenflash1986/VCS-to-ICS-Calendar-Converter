@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 10.0 MIMEDIR//EN
+VERSION:1.0
+BEGIN:VEVENT
+DTSTART:20121205T130000Z
+DTEND:20121205T220000Z
+LOCATION;ENCODING=QUOTED-PRINTABLE:Hyatt Regency Washington on Capitol Hill ,
+                            400 New Jersey Avenue, NW Washington 
+                                , DC Orlando World Center Marriott Resort and Convention Center,
+                            FL Anaheim 
+                                , CA Seattle 
+                                , WA Baltimore 
+                                , MD Chicago 
+                                , IL Orlando 
+                                , FL Nashville 
+                                , TN Dallas 
+                                , TX Boston 
+                                , MA New Orleans 
+                                , LA 
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:NCQA 7th Annual National Policy Conference =0A=0D400 New Jersey Avenue, NW =0D =0DWashington  DC =0A=0D =0A=0D
+SUMMARY;ENCODING=QUOTED-PRINTABLE:NCQA 7th Annual National Policy Conference
+PRIORITY:3
+END:VEVENT
+END:VCALENDAR

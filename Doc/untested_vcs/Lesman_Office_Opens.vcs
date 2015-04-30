@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 9.0 MIMEDIR//EN
+VERSION:1.0
+BEGIN:VEVENT
+DTSTART:20040524T050000Z
+DTEND:20040525T050000Z
+LOCATION;ENCODING=QUOTED-PRINTABLE:135 Bernice Dr, Bensenville IL 60106
+TRANSP:1
+UID:CD0000008B9511D182D800C04FB1625DEC4231DB0239944F99CC6E537BE4E9BF
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Lesman's Chicagoland office will open=
+ at 7:30am on Monday, May 24, 2004, at it's new location in Bensenville IL.=
+=0D=0A=0D=0ADownload the new Sales and Warehouse information at:  http://ww=
+w.lesman.com/downloads/Lesman_Corp.vcf=0D=0ADownload the new Accounts Recei=
+vable information at:  http://www.lesman.com/downloads/Lesman_Accounts.vcf=
+=0D=0ADownload the new Purchasing information at:  http://www.lesman.com/do=
+wnloads/Lesman_Purch.vcf=0D=0A=0D=0AIf you do business with our Greater Mil=
+waukee Area office, you can download that information at:=0D=0Ahttp://www.l=
+esman.com/downloads/Lesman_Butler.vcf=0D=0A=0D=0AOur toll-free number stays=
+ the same:  800-953-7626. Call us anytime!=0D=0A
+SUMMARY;ENCODING=QUOTED-PRINTABLE:Lesman Office Moves to Bensenville IL
+PRIORITY:3
+END:VEVENT
+END:VCALENDAR

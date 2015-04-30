@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 11.0 MIMEDIR//EN
+VERSION:1.0
+BEGIN:VEVENT
+DTSTART:20081105T070000Z
+DTEND:20081114T070000Z
+LOCATION:Israel
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Together with James MacDonald, experience the Holy Land for the first time.&nbsp; For more information click <a href=''http://www.walkintheword.com/IsraelTrip/default.aspx''>here</a> .<br>
+SUMMARY;ENCODING=QUOTED-PRINTABLE:Holy Land Tour with Walk in the Word
+PRIORITY:2
+END:VEVENT
+END:VCALENDAR
+

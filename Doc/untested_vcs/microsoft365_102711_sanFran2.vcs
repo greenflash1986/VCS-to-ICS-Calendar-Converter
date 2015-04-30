@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 12.0 MIMEDIR//EN
+VERSION:1.0
+BEGIN:VEVENT
+DTSTART:20111027T180000Z
+DTEND:20111027T200000Z
+LOCATION:Ruth's Chris Steak House 1601 Van Ness Avenue, San Francisco, CA 9
+	4109 - Sacramento Dining Room 
+UID:040000008200E00074C5B7101A82E00800000000003D90552E72CC01000000000000000
+	010000000D28F294752B38A4C921DD8E6C41F6FAC
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:=
+Microsoft Office 365 Lunch and Learn=0D=0AThursday, October 27, 2011 =0D=
+=0A=0D=0ARuth=92s Chris Steak House =0D=0ASacramento Dining Room =0D=0A16=
+01 Van Ness Avenue =0D=0ASan Francisco, CA 94109 =0D=0A=0D=0AMap and Dire=
+ctions=0D=0Ahttp://www.bing.com/maps/?v=3D2&cp=3D37.79046810096395~-122.4=
+2260599999999&lvl=3D16&dir=3D0&sty=3Dr&where1=3D1601%20Van%20Ness%20Ave%2=
+C%20San%20Francisco%2C%20CA%2094109-3608&form=3DLMLTCC=0D=0AFree parking =
+in public garage. =0D=0AAgenda=0D=0A11:00 =96 11:30 a.m. 	Arrival and Wel=
+come	=0D=0A11:30 =96 1:00 p.m.	Microsoft Office 365 Presentation and Lunc=
+h	=0D=0A =0D=0A*One Xbox 360 with Kinect, one copy of Microsoft Office 20=
+10 and one $100 dining certificate will be raffled. Must be present to wi=
+n.=0D=0A=0D=0A=0D=0A
+SUMMARY:Microsoft Office 365 Lunch and Learn
+PRIORITY:3
+END:VEVENT
+END:VCALENDAR

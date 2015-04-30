@@ -1,0 +1,12 @@
+http://library.developer.nokia.com/index.jsp?topic=/GUID-E35887BB-7E58-438C-AA27-97B2CDE7E069/GUID-7811C33D-96D3-5001-B4D3-92BF44F39B2C.html
+A calendar entry has a number of properties. Firstly, it has a type, which is one of the following:
+
+    an appointment
+
+    a to-do item
+
+    a reminder
+
+    an event
+
+    an anniversary

@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 14.0 MIMEDIR//EN
+VERSION:1.0
+BEGIN:VEVENT
+DTSTART:20121025T150000Z
+DTEND:20121025T161500Z
+LOCATION:See details below
+UID:040000008200E00074C5B7101A82E00800000000407D1A16EE9FCD01000000000000000
+	010000000ADDD294ED28E384A86B0769F4BB060AD
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:=
+Webcast=0D=0AClick on the URL below to view the webcast:=0D=0Ahttp://even=
+t.on24.com/r.htm?e=3D390838&s=3D1&k=3DD2879EBF431D53385FB166BA29D088AC =
+=0D=0A=0D=0ADial-in Details:=0D=0AUS/toll Free: +1 866 814 1919=0D=0AInte=
+rnational (toll): +1 703 639 1363=0D=0AConference ID: 1563388=0D=0A=0D=0A=
+Questions:=0D=0APlease direct questions to Blackstone Events at:=0D=0AUS =
+Phone: +1 212 583 5261=0D=0AUK Phone: +44 (0)20 7451 4443=0D=0AHong Kong =
+Phone: +852 3651 7680=0D=0AEmail: Blackstone.registration@blackstone.com =
+ =0D=0A
+SUMMARY:Blackstone Webcast: Will the Year End With a Bang or a Whimper? fea
+	turing Byron Wien
+PRIORITY:3
+END:VEVENT
+END:VCALENDAR

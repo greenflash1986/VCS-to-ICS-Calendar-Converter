@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 11.0 MIMEDIR//EN
+VERSION:1.0
+BEGIN:VEVENT
+DTSTART:20120203T061500Z
+DTEND:20120203T120000Z
+LOCATION;ENCODING=QUOTED-PRINTABLE:Scandic Plaza, Yliopistonkatu 29, Turku
+UID:040000008200E00074C5B7101A82E0080000000030910E831AB0CC010000000000000000100
+ 00000FB7120FB8E8193469A9D6A8DB07C94DC
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Tervetuloa Siemensin Drive Tour 2012 =
+-tapahtumaamme, jossa esittelemme s=E4hk=F6k=E4ytt=F6jen ja mekaanikan sove=
+ltamiseen k=E4yt=E4nn=F6n esimerkkej=E4 ja ratkaisuja.=0D=0A=0D=0AMaksuton =
+tapahtuma alkaa klo 8.15 aamukahvilla p=E4=E4ttyen lounaaseen ja laite-esit=
+telyyn.=0D=0A=0D=0AOhjelma: www.siemens.fi/drivetour2012 =0D=0A=0D=0ASijain=
+ti: http://maps.google.fi/maps?q=3DScandic+Hotel+Plaza+Turku,+Yliopistonkat=
+u,+Turku&hl=3Dfi&ll=3D60.453536,22.262077&spn=3D0.00874,0.019913&sll=3D60.4=
+49478,22.243797&sspn=3D0.021631,0.076818&vpsrc=3D0&hq=3DScandic+Hotel+Plaza=
++Turku,+Yliopistonkatu,+Turku&t=3Dm&z=3D15&iwloc=3DA=0D=0A=0D=0ATervetuloa!=
+=0D=0A=0D=0ASiemens Osakeyhti=F6=0D=0AIndustry Sector=0D=0ADrive Technologi=
+es=0D=0A=0D=0A
+SUMMARY;ENCODING=QUOTED-PRINTABLE:Siemensin Drive Tour 2012: What keeps mov=
+ing 24/7
+PRIORITY:3
+END:VEVENT
+END:VCALENDAR

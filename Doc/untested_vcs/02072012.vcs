@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:1.0
+BEGIN:VEVENT
+CREATED:20120621T140213Z
+DESCRIPTION:Dr. Norbert Franken: Antike Bronzen in Berlin und Moskau - Zur
+ Wiedergewinnung der Berliner Sammlungsgeschichte
+DTEND:20120702T220000
+DTSTAMP:20120621T140335Z
+DTSTART:20120702T190000
+DURATION_SECONDS:10800
+LOCATION:Unter den Linden 6\, 10117 Berlin\, Raum 2014a
+SEQUENCE:2
+SUMMARY:Vortrag der Deutsch-Griechischen Gesellschaft Berlin e.V.
+TRANSP:OPAQUE
+UID:57E1E2A8-B1E9-4C48-A5C1-5BB585AD600A
+URL:http://www.dggb.de/Aktivitaeten/Vortraege.htm
+END:VEVENT
+END:VCALENDAR

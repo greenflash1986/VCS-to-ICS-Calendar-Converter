@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 12.0 MIMEDIR//EN
+VERSION:1.0
+BEGIN:VEVENT
+DTSTART:20111012T150000Z
+DTEND:20111012T170000Z
+LOCATION:Ruth's Chris Steak House 148 West 51st Street, New York, NY 10019 
+	- Library Room 
+UID:040000008200E00074C5B7101A82E00800000000D02D409E2E72CC01000000000000000
+	0100000004DA3604C8A87FE47B657829A30227698
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:=
+Microsoft Office 365 Lunch and Learn=0D=0AWednesday, October 12, 2011 =0D=
+=0A=0D=0ARuth=92s Chris Steak House =0D=0ALibrary Room =0D=0A148 West 51s=
+t Street =0D=0ANew York, NY 10019 =0D=0A=0D=0AMap and Directions=0D=0A ht=
+tp://www.bing.com/maps/?v=3D2&cp=3D40.76138311223835~-73.982408&lvl=3D16&=
+dir=3D0&sty=3Dr&where1=3D148%20W%2051st%20St%2C%20New%20York%2C%20NY%2010=
+019-6813&form=3DLMLTCC=0D=0AFree self parking at 48th Street between 6th =
+and 7th Avenues=0D=0AAgenda=0D=0A11:00 =96 11:30 a.m. 	Arrival and Welcom=
+e	=0D=0A11:30 =96 1:00 p.m.	Microsoft Office 365 Presentation and Lunch	=
+=0D=0A =0D=0A*One Xbox 360 with Kinect, one copy of Microsoft Office 2010=
+ and one $100 dining certificate will be raffled. Must be present to win.=
+=0D=0A=0D=0A=0D=0A
+SUMMARY:Microsoft Office 365 Lunch and Learn
+PRIORITY:3
+END:VEVENT
+END:VCALENDAR

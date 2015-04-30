@@ -1,0 +1,6 @@
+RRULE:D1 #0
+RRULE:MD1 5+ 20110705T160000
+RRULE:YM1 6 #0
+RRULE:W2 TU TH			// Every other week, on Tuesday and Thursday
+RRULE:D1 #10				// Daily for 10 occurrences
+RRULE:YM1 6 7 #8			// Yearly in June and July for 8 occurrences

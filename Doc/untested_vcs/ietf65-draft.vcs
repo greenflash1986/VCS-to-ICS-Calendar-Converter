@@ -1,0 +1,1368 @@
+BEGIN:VCALENDAR
+CALSCALE:GREGORIAN
+PRODID: ics2vcs 0.2 Joe Touch from -//Eliot Lear//gen-ietf-ical 2.1//EN
+VERSION:1.0
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:US/Central
+LAST-MODIFIED:20060222T102150Z
+BEGIN:DAYLIGHT
+DTSTART:20060402T020000
+TZOFFSETTO:-0500
+TZOFFSETFROM:-0600
+TZNAME:CDT
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20051030T020000
+TZOFFSETTO:-0600
+TZOFFSETFROM:-0500
+TZNAME:CST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART:20060319T100000
+DTEND:20060319T123000
+LOCATION:Metropolitan
+UID:2BC990EF-009B-4E15-88F1-B149767C014C@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:IEPG Meeting
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060319T130000
+DTEND:20060319T150000
+LOCATION:Metropolitan
+UID:D9117C05-69F5-4DFA-9F29-15D283B0D092@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:1
+SUMMARY;ENCODING=QUOTED-PRINTABLE:Newcomers' Training
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060319T130000
+DTEND:20060319T150000
+LOCATION:Monet
+UID:B18341CA-479E-40D3-B3BE-70D0E67284C4@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:1
+SUMMARY;ENCODING=QUOTED-PRINTABLE:Editing an RFC Tutorial
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060319T130000
+DTEND:20060319T150000
+LOCATION:Cortez AB
+UID:1D95FBED-15FA-4DA5-A35C-FAA1F77E5478@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:Security Tutorial
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060319T150000
+DTEND:20060319T170000
+LOCATION:Cortez CD
+UID:CD791CE7-5FFC-449D-B22A-259890BAE81A@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:Introduction to WG Leadership: Chairs & Editors
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060319T150000
+DTEND:20060319T170000
+LOCATION:Coronado A
+UID:BA2EDC9F-B891-4835-939E-2EF92C695D10@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:Introduction to xml2rfc
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060319T150000
+DTEND:20060319T170000
+LOCATION:Coronado BCD
+UID:5DD85AE0-E732-458B-97D3-F0C1F20ECD67@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:Routing, Bridging and Switching Tutorial
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060319T170000
+DTEND:20060319T190000
+LOCATION:Chantilly Foyer
+UID:DBC62629-6647-4CC6-9C17-21B738C85831@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:Welcome Reception
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T090000
+DTEND:20060320T113000
+LOCATION:Cortez AB
+UID:7AB086E4-0760-4AC8-848B-F1F91A35C459@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:APP - apparea - Applications Area Open Meeting
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Applications Area Open Meeting=0D=0AIETF-65 Applications Open Area (APPAREA) Meeting=0D=0AMonday 20 March 2006=0D=0A0900 - 1130=0D=0AJabber Room: apparea@ietf.xmpp.org=0D=0A=0D=0AArea Directors: Ted Hardie & Scott Hollenbeck=0D=0A=0D=0AAGENDA=0D=0A=0D=0AWelcome and Introductions (1m)=0D=0A  Meet the new AD!=0D=0A  Scribe selection=0D=0A  =0D=0AAgenda Bashing (1m)=0D=0A=0D=0AWorking Group Status (10m)=0D=0A=0D=0ANew Working Groups, BOFs, and Documents of Interest (15m)=0D=0A=0D=0AFTP Internationalization (John Klensin, 10m)=0D=0A=0D=0ACRISP Internet Routing Registry (IRR) Proposal (45m)=0D=0A=0D=0ADistributed Multimodal Synchronization Protocol (DMSP)  (Chris Cross, 45m)=0D=0A=0D=0AOpen Microphone (To close)
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T090000
+DTEND:20060320T113000
+LOCATION:Cortez CD
+UID:3E1ED821-043D-463D-A27E-A8B676FD8B21@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - dna - Detecting Network Attachment WG
+URL:http://www.ietf.org/html.charters/dna-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T090000
+DTEND:20060320T113000
+LOCATION:Monet
+UID:8931798C-27C5-4207-B615-6C1E8B8CD3A3@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:OPS - netconf - Network Configuration WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Network Configuration WG=0D=0ANetwork Configuration WG (netconf)=0D=0AIETF #65=0D=0AMarch 20, 2006 : 0900 - 1130=0D=0A-------------------------------=0D=0A=0D=0AChairs:  =0D=0A=0D=0ASimon Leinen <simon@switch.ch>=0D=0AAndy Bierman <ietf@andybierman.com>=0D=0A=0D=0AAgenda:=0D=0A=0D=0A  - Status of Completed WG Documents  (10 min)=0D=0A    - NETCONF Configuration Protocol=0D=0A    - Using the NETCONF Protocol over BEEP=0D=0A    - Using the NETCONF Protocol over SOAP=0D=0A    - Using the NETCONF Protocol over SSH=0D=0A=0D=0A  - NETCONF Experimental Namespace and Extension Registry (15 min)=0D=0A    - Discuss need/interest in an experimental "branch" for NETCONF=0D=0A      protocol extensions.=0D=0A =0D=0A  - NETCONF Implementation Guide (15 min)=0D=0A    - Discuss need/interest in an Informational RFC to help=0D=0A      NETCONF protocol developers produce interoperable implementations=0D=0A  =0D=0A  - NETCONF Event Notifications (90 min)=0D=0A    - Discuss current Notifications draft=0D=0A    - Identify areas of WG consensus (or lack thereof)=0D=0A    - Identify all open issues=0D=0A  =0D=0A  - Open Discussion / Unchartered Items (20 min)=0D=0A    - NETCONF Data Modeling=0D=0A    - Access Control Model=0D=0A    - ???=0D=0A=0D=0AInternet Drafts:=0D=0A=0D=0ANETCONF Configuration Protocol=0D=0Ahttp://www.ietf.org/internet-drafts/draft-ietf-netconf-prot-11.txt=0D=0A=0D=0AUsing the NETCONF Protocol over Blocks Extensible Exchange Protocol (BEEP)=0D=0Ahttp://www.ietf.org/internet-drafts/draft-ietf-netconf-beep-08.txt=0D=0A=0D=0AUsing the Network Configuration Protocol (NETCONF) Over the Simple=0D=0AObject Access Protocol (SOAP)=0D=0Ahttp://www.ietf.org/internet-drafts/draft-ietf-netconf-soap-07.txt=0D=0A=0D=0AUsing the NETCONF Configuration Protocol over Secure Shell (SSH)=0D=0Ahttp://www.ietf.org/internet-drafts/draft-ietf-netconf-ssh-05.txt=0D=0A=0D=0ANETCONF Event Notifications=0D=0Ahttp://www.ietf.org/internet-drafts/draft-ietf-netconf-notification-00.txt=0D=0A=0D=0A=0D=0A
+URL:http://www.ietf.org/html.charters/netconf-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T090000
+DTEND:20060320T113000
+LOCATION:Coronado BCD
+UID:0D7CDD71-F978-4B0A-8E91-D27E82C3AED0@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RAI - enum - Telephone Number Mapping WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Telephone Number Mapping WG=0D=0A=0D=0AIETF 65 Dallas Telephone Number Mapping (ENUM) WG Agenda FINAL=0D=0A=0D=0AChair(s):=0D=0APatrik Faltstrom <paf@cisco.com> =0D=0ARichard Shockey <rich.shockey@neustar.biz>=0D=0A=0D=0A=0D=0AWG Secretary:=0D=0AAlex Mayrhofer <axelm@nic.at>=0D=0A=0D=0A=0D=0AReal Time Applications Infrastructure Area Director(s):=0D=0ACullen Jennings <fluffy@cisco.com>=0D=0AJon Peterson <jon.peterson@neustar.biz>=0D=0A=0D=0AReal Time Applications Infrastructure Area Advisor:=0D=0ACullen Jennings fluffy@cisco.com ?????=0D=0A=0D=0AMONDAY, March 20, 2006=0D=0A0800-1800 IETF Registration - =0D=0A0800-0900 Continental Breakfast - =0D=0A0900-1130 Morning Session I=0D=0AAPP=0D=0Aapparea=0D=0AApplications Area Open Meeting=0D=0AINT=0D=0Adna=0D=0ADetecting Network Attachment WG=0D=0AOPS=0D=0Anetconf=0D=0ANetwork Configuration WG=0D=0ARAI=0D=0Aenum=0D=0ATelephone Number Mapping WG=0D=0ARAI=0D=0Ammusic=0D=0AMultiparty Multimedia Session Control WG=0D=0ARTG=0D=0Ampls=0D=0AMultiprotocol Label Switching WG=0D=0ASEC=0D=0Akrb-wg=0D=0AKerberos WG=0D=0A=0D=0A=0D=0AAGENDA BASHING (5 min) NOTE ALL TIMES ARE APPROXIMATE =0D=0A=0D=0A=0D=0AENUM Implementers Draft: (Final Version) 5 MIN =0D=0A=0D=0ATitle=0D=0A=0D=0A: ENUM Implementation Issues and Experiences=0D=0A=0D=0AAuthor(s)=0D=0A: L. Conroy, K. Fujiwara=0D=0A=0D=0AFilename=0D=0A: draft-ietf-enum-experiences-04.txt=0D=0A=0D=0APages=0D=0A=0D=0A: 37=0D=0A=0D=0ADate=0D=0A=0D=0A: 2006-3-9=0D=0A=0D=0A=0D=0AThis document captures experience in implementing systems based on=0D=0Athe ENUM protocol, and experience of ENUM data that have been created=0D=0Aby others.  As such, it is advisory, and produced as a help to others=0D=0Ain reporting what is "out there" and the potential pitfalls in=0D=0Ainterpreting the set of documents that specify the protocol.=0D=0A=0D=0AA URL for this Internet-Draft is:=0D=0Ahttp://www.ietf.org/internet-drafts/draft-ietf-enum-experiences-04.txt=0D=0A=0D=0A=0D=0ATitle=0D=0A=0D=0A : ENUM Requirement for EDNS0 Support  ( ??? )=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0ATitle=0D=0A=0D=0A: Guide and Template for IANA Registrations of Enumervices   =0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A[ 15 M ] =0D=0A=0D=0AAuthor(s)=0D=0A: J. Livingood, B. Hoeneisen=0D=0A=0D=0AFilename=0D=0A: draft-ietf-enum-enumservices-guide-00.txt=0D=0A=0D=0APages=0D=0A=0D=0A: 12=0D=0A=0D=0ADate=0D=0A=0D=0A: 2006-2-27=0D=0A=0D=0A=0D=0A   This document provides a guide to and template for the creation of=0D=0A   new IANA registration of ENUM services.  It is also to be used for=0D=0A   updates of existing IANA registrations.=0D=0A=0D=0A=0D=0AA URL for this Internet-Draft is:=0D=0Ahttp://www.ietf.org/internet-drafts/draft-ietf-enum-enumservices-guide-00.txt=0D=0A=0D=0A=0D=0A =0D=0ATitle        : IANA Registration for an Enumservice and "tel"   [ 15 Min ]=0D=0A    Parameter for Calling Name  Delivery(CNAM) Information =0D=0A    Author(s)    : R. Shockey, J. Livingood =0D=0A    Filename    : draft-shockey-enum-cnam-00.txt =0D=0A    Pages        : 10 =0D=0A    Date        : 2006-1-13 =0D=0A     =0D=0A   This document registers the Enumservice "cnam" and subtype "tel" =0D=0A   using the URI scheme 'tel:', as per the IANA registration process =0D=0A   defined in the ENUM specification, RFC 3761. =0D=0A=0D=0A   In addition this document registers the parameter "cnam" in the IANA =0D=0A   "tel" Parameter Registry defined in RFCXXX.  This data is used to =0D=0A   facilitate the transfer of Calling Name Delivery (CNAM) data for =0D=0A   calls that originate on the PSTN that may be displayed on VoIP or =0D=0A   other Real-time Client User Agents (CUA). =0D=0A=0D=0AA URL for this Internet-Draft is: =0D=0Ahttp://www.ietf.org/internet-drafts/draft-shockey-enum-cnam-00.txt =0D=0A=0D=0A=0D=0ATitle=0D=0A=0D=0A: IANA Registration for IAX Enumservice            [ 15 M ] =0D=0A=0D=0AAuthor(s)=0D=0A: E. Guy=0D=0A=0D=0AFilename=0D=0A: draft-ietf-enum-iax-00.txt=0D=0A=0D=0APages=0D=0A=0D=0A: 13=0D=0A=0D=0ADate=0D=0A=0D=0A: 2006-2-22=0D=0A=0D=0A=0D=0AThis document registers the IAX2 (Inter-Asterisk eXchange Version 2)=0D=0AEnumservice using the URI scheme 'iax2:' as per the IANA registration=0D=0Aprocess defined in the ENUM specification RFC3761.=0D=0A=0D=0A=0D=0AA URL for this Internet-Draft is:=0D=0Ahttp://www.ietf.org/internet-drafts/draft-ietf-enum-iax-00.txt=0D=0A=0D=0AKnown issue: URI scheme?=0D=0A=0D=0A=0D=0A=0D=0ATitle=0D=0A=0D=0A: Telephone Number Mapping and Domain Keys  as a Distributed  Identity Infrastructure                                        [ 15 M ] =0D=0A=0D=0A=0D=0AAuthor(s)=0D=0A: A. Mayrhofer=0D=0A=0D=0AFilename=0D=0A: draft-mayrhofer-enum-domainkeys-00.txt=0D=0A=0D=0APages=0D=0A=0D=0A: 10=0D=0A=0D=0ADate=0D=0A=0D=0A: 2006-2-23=0D=0A=0D=0A=0D=0A   This document creates a decentralized indentity infrastructure by=0D=0A   combining technology from E.164 Number Mapping (ENUM) and DomainKeys=0D=0A   Identified Mail (DKIM).  This infrastructure uses E.164 numbers as=0D=0A   identities, ENUM DNS for key distribution, and leverages the trust=0D=0A   relations from ENUM validation to actual messages signed by the=0D=0A   number holder.=0D=0A=0D=0A=0D=0AA URL for this Internet-Draft is:=0D=0Ahttp://www.ietf.org/internet-drafts/draft-mayrhofer-enum-domainkeys-00.txt=0D=0A=0D=0A=0D=0A Title        : IANA Registration for Enumservice foaf   [ 15 Min ]=0D=0A=0D=0A    Author(s)    : K. Reichinger =0D=0A    Filename    : draft-reichinger-enum-foaf-00.txt =0D=0A    Pages        : 9 =0D=0A    Date        : 2006-2-15 =0D=0A     =0D=0AThis memo registers the Enumservice "foaf" using the URI schemes =0D=0A"http" and "https" according to the IANA Enumservice registration =0D=0Aprocess defined in RFC3671.  The Enumservice "foaf" is to be used to =0D=0Arefer from an ENUM domain name to the location of a FOAF RDF file =0D=0Ausing the corresponding E.164 telephone number. =0D=0A=0D=0AClients may use data retrieved from a FOAF RDF file to provide caller =0D=0Aor callee with information available within the Friend-Of-A-Friend =0D=0A(FOAF) Semantic Web application.  For example, the caller might be =0D=0Apresented with personal information on the callee (e.g. name, gender =0D=0Aand various online attributes) as well as information on the callee's =0D=0Asocial context (e.g. relations to friends or colleagues). =0D=0A=0D=0AA URL for this Internet-Draft is: =0D=0Ahttp://www.ietf.org/internet-drafts/draft-reichinger-enum-foaf-00.txt =0D=0A=0D=0A=0D=0A=0D=0ATitle=0D=0A=0D=0A: A Telephone Number Mapping (ENUM) Service Registration for Instant Messaging (IM) Services                                 =0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A[ 15 M ] =0D=0A=0D=0AAuthor(s)=0D=0A: R. Mahy=0D=0A=0D=0AFilename=0D=0A: draft-mahy-enum-im-service-00.txt=0D=0A=0D=0APages=0D=0A=0D=0A: 5=0D=0A=0D=0ADate=0D=0A=0D=0A: 2006-2-22=0D=0A=0D=0A=0D=0AThis document registers a Telephone Number Mapping (ENUM) service for=0D=0AInstant Messaging (IM).  Specifically, this document focuses on=0D=0Aprovisioning im: URIs in ENUM.=0D=0A=0D=0A=0D=0A=0D=0ATitle=0D=0A=0D=0A: A Telephone Number Mapping (ENUM) Service Registration for Internet Calendaring Services    =0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A [ 15 M ] =0D=0A=0D=0A=0D=0AAuthor(s)=0D=0A: R. Mahy=0D=0A=0D=0AFilename=0D=0A: draft-mahy-enum-calendar-service-00.txt=0D=0A=0D=0APages=0D=0A=0D=0A: 5=0D=0A=0D=0ADate=0D=0A=0D=0A: 2006-2-23=0D=0A=0D=0A=0D=0AThis document registers a Telephone Number Mapping (ENUM) service for=0D=0AInternet Calendaring Services.  Specifically, this document focuses=0D=0Aon provisioning mailto: (iMIP) and http: (CalDAV) URIs in ENUM.=0D=0A=0D=0A=0D=0AA URL for this Internet-Draft is:=0D=0Ahttp://www.ietf.org/internet-drafts/draft-mahy-enum-calendar-service-00.txt=0D=0A=0D=0ATitle=0D=0A=0D=0A: Infrastrucure ENUM Requirements                 =0D=0A=0D=0AAuthor(s)=0D=0A: S. Lind, P. Pfautz                       [ 20 M ]=0D=0A=0D=0AFilename=0D=0A: draft-ietf-enum-infrastructure-enum-reqs-00.txt=0D=0A=0D=0APages=0D=0A=0D=0A: 7=0D=0A=0D=0ADate=0D=0A=0D=0A: 2006-3-6=0D=0A=0D=0A=0D=0AThis document provides requirements for "infrastructure" or "carrier"=0D=0AENUM, defined as the use of RFC 3761 technology to facilitate=0D=0Ainterconnection of networks for E.164 number addressed services, in=0D=0Aparticular but not restricted to VoIP.=0D=0A=0D=0A=0D=0AA URL for this Internet-Draft is:=0D=0Ahttp://www.ietf.org/internet-drafts/draft-ietf-enum-infrastructure-enum-reqs-00.txt=0D=0A=0D=0A=0D=0A"Combined User and Carrier ENUM in the e164.arpa tree" -=0D=0Adraft-haberler-carrier-enum-02.txt .=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A[20 M]=0D=0AAbstract:=0D=0A=0D=0AENUM as defined now in RFC3761 is not well suited for the purpose of=0D=0Ainterconnection by carriers, as can be seen by the use of various=0D=0Aprivate tree arrangements based on ENUM mechanisms. A combined=0D=0Aend-user and carrier ENUM tree solution would leverage the ENUM=0D=0Ainfrastructure in e164.arpa, increase resolution rates, and decrease=0D=0Athe cost per registered telephone number. This document describes a=0D=0Aminimally invasive scheme to provide both end-user and carrier data in ENUM.=0D=0A =0D=0Auntil it comes out of the queue, the I-D is available at:=0D=0A=0D=0Ahttp://mah.priv.at/i-d/draft-haberler-carrier-enum-02.txt=0D=0Ahttp://mah.priv.at/i-d/draft-haberler-carrier-enum-02.html=0D=0A=0D=0A =0D=0A
+URL:http://www.ietf.org/html.charters/enum-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T090000
+DTEND:20060320T113000
+LOCATION:Coronado A
+UID:72F692BD-D0CD-4B66-868A-78FF3F5090A5@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RAI - mmusic - Multiparty Multimedia Session Control WG
+URL:http://www.ietf.org/html.charters/mmusic-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T090000
+DTEND:20060320T113000
+LOCATION:Chantilly W
+UID:20267E57-B8F1-4146-83AA-B3E1A78722B6@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RTG - mpls - Multiprotocol Label Switching WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Multiprotocol Label Switching WG=0D=0AMPLS WG Agenda for the Dallas Meeting=0D=0A---------------------------------------=0D=0AMonday, March 20, 2006, 9.00 - 11.30 AM=0D=0A=0D=0ADisclaimer: The agenda is still preliminary.=0D=0A=0D=0A1. Agenda bashing=0D=0A-----------------=0D=0ADisclaimer: This agenda is (still) very preliminary.=0D=0AThe order between slots and the allocation of time=0D=0Amight be changed.=0D=0A=0D=0A2. Working group status=0D=0A-----------------------=0D=0A=0D=0AMPLS status page=0D=0Ahttp://www1.tools.ietf.org/wg/mpls/=0D=0A=0D=0A- new RFCs=0D=0A=0D=0A    RFC 4379 (LSP ping)=0D=0A    RFC 4378 (OAM Framwork)=0D=0A    RFC 4377 (OAM Requirements)=0D=0A    RFC 4220 (TE Link MIB)=0D=0A    RFC 4221 (Management Overview)=0D=0A=0D=0A    non working group RFC:=0D=0A    RFC 4381 (Informational)=0D=0A    Title: Analysis of the Security of =0D=0A           BGP/MPLS IP Virtual Private Networks (VPNs)=0D=0A    M. Behringer=0D=0A=0D=0A- in RFC-ed Queue=0D=0A=0D=0A   -- draft-ietf-mpls-bgp-mpls-restart-05 =0D=0A      draft-ietf-mpls-p2mp-sig-requirement-04=0D=0A=0D=0A- in IESG review=0D=0A   -- Alex and/or Bill status report=0D=0A      draft-ietf-mpls-ldp-experience-00.txt=0D=0A      draft-ietf-mpls-ldp-survey2002-oo.txt=0D=0A      draft-ietf-mpls-rfc3036bis-03.txt=0D=0A=0D=0A      draft-ietf-mpls-ecmp-bcp-02          "IESG Evaluation::Revised ID Needed"=0D=0A      draft-ietf-mpls-nodeid-subobject-07  "Approved-announcement to be sent"=0D=0A  - =0D=0A=0D=0A- wg drafts=0D=0A   -- =0D=0A=0D=0A      draft-ietf-mpls-explicit-resource-control-bundle-01=0D=0A      (on the agenda)=0D=0A      draft-ietf-mpls-icmp-04=0D=0A      draft-ietf-mpls-ldp-p2mp-00=0D=0A      draft-ietf-mpls-lsr-self-test-06=0D=0A      draft-ietf-mpls-multicast-encaps-00=0D=0A      draft-ietf-mpls-over-l2tpv3-01=0D=0A      draft-ietf-mpls-p2mp-lsp-ping-00=0D=0A      draft-ietf-mpls-p2mp-oam-reqs-01=0D=0A      draft-ietf-mpls-rsvp-te-p2mp-03=0D=0A      draft-ietf-mpls-soft-preemption-07=0D=0A=0D=0A=0D=0A- Drafts accepted as ww drafts=0D=0A  (not yet republished)=0D=0A  --=0D=0A    draft-raggarwa-mpls-upstream-label-01.txt=0D=0A    draft-raggarwa-mpls-ldp-upstream-00.txt=0D=0A=0D=0ADrafts reququested to become wg=0D=0A   -- =0D=0A=0D=0A     WG chairs=0D=0A     20 min=0D=0A=0D=0A3. MPLS traffic engineering=0D=0A---------------------------=0D=0Adraft-vasseur-mpls-nb-te-lsp-00=0D=0AJP =0D=0A5 min=0D=0A=0D=0Adraft-ietf-mpls-explicit-resource-control-bundle-01=0D=0AZafar=0D=0A5 min=0D=0A=0D=0Adraft-shiomoto-ccamp-mpls-gmpls-interwork-fmwk-01.txt=0D=0Atbd=0D=0A10 min=0D=0A=0D=0A4. MPLS p2MP=0D=0A------------=0D=0A=0D=0AP2MP LDP requirements=0D=0Adraft-leroux-mpls-mp-ldp-reqs-03.txt=0D=0AJean-Louis=0D=0A10 min=0D=0A=0D=0Adraft-ietf-mpls-ldp-p2mp-00.txt=0D=0AIce=0D=0A10 min=0D=0A=0D=0Adraft-liu-mpls-ldp-p2mp-reroute-00.txt=0D=0AReroute Extensions to LDP for P2MP LSP=0D=0AShuying Liu=0D=0A15 min=0D=0A=0D=0A=0D=0A=0D=0A5. MPLS Multicast=0D=0A-----------------=0D=0A=0D=0A=0D=0A6. LDP fast =0D=0A----------------------=0D=0A=0D=0A=0D=0A7. RSVP-TE extensions=0D=0A---------------------=0D=0Adraft-xu-l3vpn-rsvp-te-bidirection-01.txt=0D=0A(aka draft-xu-mpls-rsvp-te-bidirection-00.txt)=0D=0AXiaohu Xu=0D=0A10 min=0D=0A=0D=0A=0D=0A8. End of meeting=0D=0A=0D=0A=0D=0A
+URL:http://www.ietf.org/html.charters/mpls-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T090000
+DTEND:20060320T113000
+LOCATION:Miro
+UID:808F6CA0-81E2-4D1B-8658-38B9D4EC1B48@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:SEC - krb-wg - Kerberos WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Kerberos WG=0D=0AKerberos WG (krb-wg)=0D=0A=0D=0AMON, March 20 at 0900-1130=0D=0A------------------------------------=0D=0A=0D=0AChair(s):=0D=0AJeffrey Hutzelman <jhutz@cmu.edu>=0D=0A=0D=0AAGENDA:=0D=0A=0D=0APreliminaries - Jeffrey Hutzelman (5 min)=0D=0A  - Introduction=0D=0A  - Blue Sheets=0D=0A  - Scribe, Jabber=0D=0A  - Agenda Bashing=0D=0A=0D=0ADocument Status - Jeffrey Hutzelman (5 min)=0D=0A  - Enctype Negotiation (draft-zhu-kerb-enctype-nego-04.txt)=0D=0A  - PKINIT (draft-ietf-cat-kerberos-pk-init-34.txt)=0D=0A  - PKINIT OCSP (draft-ietf-krb-wg-ocsp-for-pkinit-06.txt)=0D=0A  - PKINIT ECC (draft-zhu-pkinit-ecc-01.txt)=0D=0A  - Others?=0D=0A=0D=0ATechnical Discussion (120 min)=0D=0A  - Kerberos Extensions=0D=0A      draft-ietf-krb-wg-rfc1510ter-02.txt=0D=0A=0D=0A  - Referrals=0D=0A      draft-ietf-krb-wg-kerberos-referrals-07.txt=0D=0A=0D=0A  - Anonymity=0D=0A      draft-zhu-kerb-anon-01.txt=0D=0A=0D=0A  - Set/Change Password=0D=0A      draft-ietf-krb-wg-kerberos-set-passwd-04.txt=0D=0A=0D=0AUpdate Milestones - Chair and Participants (10 min)
+URL:http://www.ietf.org/html.charters/krb-wg-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T090000
+DTEND:20060320T113000
+LOCATION:Metropolitan
+UID:D3F605EA-11DF-4A24-AEA7-18D07ABF6231@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:3
+SUMMARY;ENCODING=QUOTED-PRINTABLE:SEC - ltans - Long-Term Archive and Notary Services WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Long-Term Archive and Notary Services WG=0D=0ALong-term Archive and Notary Services (LTANS) Working Group=0D=0A-----------------------------------------------------------=0D=0A=0D=0AMonday, March 20, 2006 - 17:40-18:40 Afternoon Session III=0D=0A=0D=0AAgenda:=0D=0A=0D=0AIntroduction/Preliminary stuff =0D=0A=0D=0A- 5 minutes=0D=0AMilestone Review =0D=0A=0D=0A=0D=0A- 5 minutes =0D=0AERS comments from list  =0D=0A=0D=0A- 15 minutes=0D=0ALTAP I-D (Blazic) =0D=0A=0D=0A=0D=0A- 20 minutes=0D=0ARetention I-D (Wallace) =0D=0A=0D=0A- 10 minutes =0D=0AFuture/Wrap-up =0D=0A=0D=0A=0D=0A=0D=0A- 5 minutes 
+URL:http://www.ietf.org/html.charters/ltans-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T130000
+DTEND:20060320T150000
+LOCATION:Coronado A
+UID:67659BAB-15CC-45F2-8D5B-3B622FACA69F@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:3
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - mip6 - Mobility for IPv6 WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Mobility for IPv6 WG=0D=0A=0D=0AAgenda of MIP6 WG meeting @ IETF65=0D=0AMonday, March 20 2006, 1300-1500 Afternoon Session I=0D=0A=0D=0A------------------------------------------------------=0D=0A=0D=0A1. Agenda, Bluesheets, Note-takers and Jabber scribes=0D=0A5 Mins=0D=0A=0D=0A2. WG documents status update=0D=0A=0D=0AChairs=0D=0A=0D=0A10 Mins=0D=0A=0D=0ACurrent WG tasks:=0D=0A=0D=0A3. I-D: draft-ietf-mip6-v4traversal-01.txt=0D=0A=0D=0A15 Mins=0D=0A  Presenter: Hesham Soliman=0D=0A=0D=0A4. I-D: draft-ietf-mip6-ikev2-ipsec=0D=0A         =0D=0A 10 Mins=0D=0A   Presenter: Vijay Devarapalli=0D=0A=0D=0A4a. Report on MIP6 operation with IKEv1=0D=0A=0D=0A=0D=0A5 Mins=0D=0A    Presenter: Shinta Sugimoto=0D=0A=0D=0A5. I-D: draft-ietf-mip6-aaa-ha-goals-01=0D=0A=0D=0A=0D=0A10 Mins=0D=0A  Presenter: Giaretta Gerardo=0D=0A=0D=0ARelevant to MIP6 protocol and for consideration by MIP6 WG:=0D=0A=0D=0A6. I-D: draft-sugimoto-mip6-homelan-access-00.txt=0D=0A5 Mins=0D=0A  Presenter: Shinta Sugimoto=0D=0A=0D=0ABootstrapping work related I-Ds: =0D=0A=0D=0A7. I-D: draft-dupont-ikev2-haassign-01.txt=0D=0A=0D=0A5 Mins=0D=0A  Presenter: Francis Dupont=0D=0A=0D=0A8. I-D: draft-devarapalli-mip6-authprotocol-bootstrap=0D=0A10 Mins=0D=0A   Presenter: Vijay Devarapalli=0D=0A=0D=0A9. I-D: draft-chowdhury-mip6-radius-00.txt=0D=0A=0D=0A5 Mins=0D=0A  Presenter: Kuntal Chowdhury=0D=0A=0D=0A10. I-D: draft-chowdhury-mip6-homeinfo-ra-00.txt=0D=0A5 Mins=0D=0A  Presenter: Kuntal Chowdhury  =0D=0A=0D=0ATentative:=0D=0A=0D=0A11. We may have a discussion on I-D: draft-chowdhury-netmip6-00.txt 
+URL:http://www.ietf.org/html.charters/mip6-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T130000
+DTEND:20060320T150000
+LOCATION:Miro
+UID:FBCAAF1F-9E7D-4853-ABFC-4237F74FAA33@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - ntp - Network Time Protocol WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Network Time Protocol WG=0D=0ANetwork Time Protocol (ntp) WG=0D=0A=0D=0AMonday, March 20, 1300 - 1500=0D=0A=0D=0A-----------------------------=0D=0A=0D=0ACHAIRS: Brian Haberman, brian@innovationslab.net=0D=0A=0D=0AKaren O’Donoghue, karen.odonoghue@navy.mil=0D=0A=0D=0APreliminary Draft Agenda:=0D=0A=0D=0Ao Administrivia (Chairs) =0D=0A=0D=0A=0D=0Ao NTPv4 document structure and options =0D=0Ao NTPv4 Protocol Specification=0D=0A(Burbank, Martin) =0D=0Ao NTPv4 Algorithms draft (Kasch) =0D=0Ao NTPv4 MIB =0D=0Ao Wrap-up (Chairs) 
+URL:http://www.ietf.org/html.charters/ntp-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T130000
+DTEND:20060320T150000
+LOCATION:Monet
+UID:1D77E478-FD36-45D0-B82B-7658EBD5AAF9@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:OPS - grow - Global Routing Operations WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Global Routing Operations WG=0D=0AGlobal Routing Operations (grow) Working Group=0D=0A=0D=0AMONDAY, March 20, 2006 1300-1500 (Afternoon Session I)=0D=0A------------------------------------------------------=0D=0A=0D=0ACHAIR: Geoff Huston <gih@apnic.net>=0D=0A=0D=0AAGENDA=0D=0A=0D=0A o Administriva=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A  5 minutes=0D=0A=0D=0A   - Mailing list: majordomo@lists.uoregon.edu=0D=0A     subscribe grow=0D=0A=0D=0A   - Scribe (text and jabber)?=0D=0A   =0D=0A   - Blue Sheets=0D=0A=0D=0A o Agenda Bashing                                         5 minutes=0D=0A   Huston                                           =0D=0A=0D=0A o Review and status of work items                      =0D=0A=0D=0A   Active Drafts=0D=0A   -------------=0D=0A    draft-ietf-grow-rfc1519bis-02.txt=0D=0A=0D=0A=0D=0A  5 minutes=0D=0A      Fuller/all=0D=0A    draft-ietf-grow-anycast-03.txt                        5 minutes=0D=0A     Abley/Lindqvist                                    =0D=0A    draft-ietf-grow-mrt-01.txt                            5 minutes=0D=0A     Blunk=0D=0A=0D=0A=0D=0A o WG Adoption of draft-scudder-bmp-00.txt               10 minutes=0D=0A     John Scudder=0D=0A=0D=0A o Routing Scaling Scenarios - some open questions=0D=0A     Vince Fuller                                        20 minutes=0D=0A     =0D=0A o IPv6 Potential Routing Table Size=0D=0A     Jason Schiller=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A 20 minutes=0D=0A     =0D=0A o A look at BGP across 2005=0D=0A     Geoff Huston                                        20 minutes
+URL:http://www.ietf.org/html.charters/grow-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T130000
+DTEND:20060320T150000
+LOCATION:Chantilly W
+UID:84427DBE-C20D-4846-B2A1-06D18AC47AAD@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RAI - sip - Session Initiation Protocol WG
+URL:http://www.ietf.org/html.charters/sip-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T130000
+DTEND:20060320T150000
+LOCATION:Cortez AB
+UID:7995E6BA-A7A0-4598-930D-D2523E7B3D84@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RTG - rtgwg - Routing Area WG
+URL:http://www.ietf.org/html.charters/rtgwg-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T130000
+DTEND:20060320T150000
+LOCATION:Cortez CD
+UID:09629A78-EDE9-4A53-96B6-34E7DFCFF627@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:SEC - dkim - Domain Keys Identified Mail WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Domain Keys Identified Mail WG=0D=0A=0D=0AIETF 65 DKIM WG DRAFT agenda (20060309)=0D=0A=0D=0ADKIM will meet twice=0D=0A=0D=0A=0D=0AMonday, 1300-1500=0D=0A=0D=0AWednesday, 1510-1610=0D=0A=0D=0ABoth sessions are in the Cortez, CD room.=0D=0A=0D=0AOutline agenda=0D=0A--------------=0D=0A=0D=0AMonday:=0D=0A=0D=0A1. Agenda bashing (5, chairs)=0D=0A=0D=0A2. Threats issues (30, Fenton)=0D=0A=0D=0A3. Base document (90, Allman)=0D=0AWednesday:=0D=0A=0D=0A4. Update at start of Wednesday session (5, chairs)=0D=0A=0D=0A5. SSP issues (20, A.N.Other)=0D=0A=0D=0A6. Overview document introduction (10, A.N.Other)=0D=0A=0D=0A7. Proposal Clarifcations (20, Otis)=0D=0A=0D=0A5. Open Mike (5, all)=0D=0A=0D=0AMeeting goals=0D=0A-------------=0D=0A=0D=0AAll discussion of SSP and other issues is to follow consideration of the OPEN=0D=0Aissues [1] on the threats and base documents. =0D=0A=0D=0AThis  agenda will be updated to reflect "New Issues" created before the meeting=0D=0Adate. See [2] for a mail describing how we'd like to handle such issues.=0D=0A=0D=0AThe goal for the first slot (and our main goal for IETF-65) is to resolve all=0D=0Athreats WG last call issues and as many of the known base issues as we can. If=0D=0Awe don't get through all of that in the first slot then the chairs may continue=0D=0Athose agenda items into the second slot.  This means that the timings are =0D=0Aapproximate given that new issues can be raised on the list in the meantime.=0D=0A=0D=0AThe goals for the second slot are:-=0D=0A=0D=0A- Have some discussion of known SSP issues=0D=0A- Introduce the overview document=0D=0A- Allow Doug to clarify some of the proposals he's made on the list that =0D=0A  weren't well understood=0D=0A- Provide an open mike slot=0D=0A=0D=0AWe're currertly waiting on an "ok" from presenters of the SSP and=0D=0AOverview slots.=0D=0A=0D=0ADetails=0D=0A-------=0D=0A=0D=0A1. Agenda bashing (5, chairs)=0D=0A=0D=0A2. Threats issues (30, Fenton)=0D=0A=0D=0A=0D=0A1171=0D=0Adraft-ietf-dkim-threats-00 Clarification of the DKIM mechanism=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Adotis@mail-abuse.org=0D=0A6 weeks ago=0D=0A=0D=0A6 weeks ago=0D=0A0=0D=0A=0D=0AI think the title above doesn't match the thread which was "Misstatement of the..." ?=0D=0A=0D=0AOPEN got some support, no list opposition, but not included in threats-01=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/001907.html=0D=0A=0D=0A=0D=0A1172=0D=0Adisagreement on impact and probability of Attacks Against Message Signatures=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Adotis@mail-abuse.org=0D=0A6 weeks ago=0D=0A=0D=0A6 weeks ago=0D=0A0=0D=0A=0D=0AOPEN some discussion, no clear consensus to change or not=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/001910.html=0D=0A=0D=0A=0D=0ANNNN=0D=0AA bunch of nits on threats-01 document=0D=0A=0D=0AStephen Farell=0D=0A=0D=0AOPEN - no discussion (hopefully stays that way!)=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002485.html=0D=0A=0D=0A=0D=0ANNNN=0D=0Athreats-01 over prescriptive about key delegation=0D=0A=0D=0AStephen Farell=0D=0A=0D=0AOPEN - a little discussion, perhaps hinting at an ACCEPT?=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002486.html=0D=0A=0D=0A=0D=0ANNNN=0D=0AInclude new "known message replay" threat?=0D=0A=0D=0AStephen Farell=0D=0A=0D=0AOPEN - no discussion=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002486.html=0D=0A=0D=0A3. Base document (90, Allman)=0D=0A=0D=0A=0D=0A1183=0D=0Acarryover: draft-allman-dkim-base-01.txt - Should we have an r- tag in either the signature or key record=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Alear@ofcourseimright.com=0D=0A5 weeks ago=0D=0A=0D=0A5 weeks ago=0D=0A0=0D=0A=0D=0AOPEN=0D=0A=0D=0Ano thread?=0D=0A=0D=0A=0D=0A1184=0D=0Acarryover: Develop plan for transition of multiple crypto algs (a-)=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Alear@ofcourseimright.com=0D=0A5 weeks ago=0D=0A=0D=0A5 weeks ago=0D=0A0=0D=0A=0D=0AOPEN - not much discussion of how to transition, though not much disagreement either=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002414.html=0D=0A=0D=0A=0D=0A1185=0D=0Acarryover: draft-allman-dkim-base-01.txt Transition sha-1 to sha-256=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Alear@ofcourseimright.com=0D=0A5 weeks ago=0D=0A=0D=0A5 weeks ago=0D=0A0=0D=0A=0D=0AOPEN - not quite closed on the actual exact wording=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002414.html=0D=0A=0D=0A=0D=0A1193=0D=0Abase spec: instead of signing the message, sign the hash=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Alear@ofcourseimright.com=0D=0A3 weeks ago=0D=0A=0D=0A3 weeks ago=0D=0A0=0D=0A=0D=0AOPEN =0D=0A=0D=0Ano (recent) thread=0D=0A=0D=0A=0D=0A1194=0D=0Abase spec: whitespace in signature?=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Aeric@sendmail.com=0D=0A3 weeks ago=0D=0A=0D=0A3 weeks ago=0D=0A0=0D=0A=0D=0AOPEN - not sure if this is the right thread=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002464.html=0D=0A=0D=0A=0D=0A=0D=0A1195=0D=0Adraft-ietf-dkim-base-00 - 3.4.6 Example (Canonicalization)=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Ahsantos@santronics.com=0D=0A2 weeks ago=0D=0A=0D=0A2 weeks ago=0D=0A0=0D=0A=0D=0AOPEN - no discussion=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002148.html=0D=0A=0D=0A=0D=0A1196=0D=0ABase: Upgrade indication and protection against downgrade attacks=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0AMarkD+dkim@yahoo-inc.com=0D=0A2 weeks ago=0D=0A=0D=0A2 weeks ago=0D=0A0=0D=0A=0D=0AOPEN - lots of discussion, no clear closure=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002163.html=0D=0A=0D=0A=0D=0A1200=0D=0AMUST vs SHOULD in Verifier Actions section (-base)=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Aeric@sendmail.com=0D=0A2 weeks ago=0D=0A=0D=0A2 weeks ago=0D=0A0=0D=0A=0D=0AOPEN=0D=0A=0D=0Anot sure which thread=0D=0A=0D=0A=0D=0A1204=0D=0Aissue with DKIM simple header algorithm and milter-based implementations=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Atony@att.com=0D=0A2 weeks ago=0D=0A=0D=0A2 weeks ago=0D=0A0=0D=0A=0D=0AOPEN - seemed like consensus but no clear change=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002273.html=0D=0A=0D=0A=0D=0ANNNN=0D=0Aclarifications on use of l- tag=0D=0A=0D=0AEric Allman=0D=0A=0D=0AOPEN - no discussion=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002185.html=0D=0A=0D=0A=0D=0ANNNN=0D=0Asignature h- and z- tags=0D=0A=0D=0AHector Santos=0D=0A=0D=0AOPEN - little discussion=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002375.html=0D=0A=0D=0A4. Update at start of Wednesday session (5, chairs)=0D=0A=0D=0A5. SSP issues (20, A.N.Other)=0D=0A=0D=0A=0D=0A1201=0D=0Achange the syntax from SPF compat to human compat=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0AMarkD+dkim@yahoo-inc.com=0D=0A2 weeks ago=0D=0A=0D=0A2 weeks ago=0D=0A0=0D=0A=0D=0AOPEN=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002219.html=0D=0A=0D=0A=0D=0ANNNN=0D=0Ashould r- be localpart only?=0D=0A=0D=0AMark Delany=0D=0A=0D=0AOPEN=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002220.html=0D=0A=0D=0A6. Overview document introduction (10, A.N.Other)=0D=0A7. Clarifcations (20, Otis)=0D=0A5. Open Mike (5, all)=0D=0A=0D=0A[1] http://mipassoc.org/pipermail/ietf-dkim/2006q1/002483.html =0D=0A[2] http://mipassoc.org/pipermail/ietf-dkim/2006q1/001880.html=0D=0A
+URL:http://www.ietf.org/html.charters/dkim-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T130000
+DTEND:20060320T150000
+LOCATION:Metropolitan
+UID:622DCDE9-1240-40CA-90AC-7AD65FB5D94C@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:TSV - ips - IP Storage WG 
+URL:http://www.ietf.org/html.charters/ips-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T152000
+DTEND:20060320T172000
+LOCATION:Miro
+UID:DE7DC53A-A80F-4FBC-A086-0AD7542E8A5E@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:APP - lemonade - Enhancements to Internet email to Support Diverse Service Environments WG
+URL:http://www.ietf.org/html.charters/lemonade-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T152000
+DTEND:20060320T172000
+LOCATION:Coronado BCD
+UID:A9318D52-AF7F-40BD-9E90-F6BA7FF8831C@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - intarea - Internet Area Open Meeting
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T152000
+DTEND:20060320T172000
+LOCATION:Metropolitan
+UID:9843A677-3FC1-4E13-819C-62EC19C703FC@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:OPS - capwap - Control and Provisioning of Wireless Access Points WG
+URL:http://www.ietf.org/html.charters/capwap-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T152000
+DTEND:20060320T172000
+LOCATION:Chantilly W
+UID:7C3EA5C7-E704-456A-BD6F-6EE8D6B6BFA2@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RAI - speermint - Session Peering for Multimedia Interconnect WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Session Peering for Multimedia Interconnect WG=0D=0ASession PEERing for Multimedia INTerconnect (speermint)=0D=0A=0D=0AMONDAY, March 20, 2006 15:20-17:20 (Afternoon Session II) =0D=0A--------------------------------------------------------------------=0D=0A=0D=0ACHAIRS:=0D=0A    David Meyer      =0D=0A<dmm@1-4-5.net>=0D=0A=0D=0A    Jason Livingood  =0D=0A<jason_livingood@cable.comcast.com>=0D=0A=0D=0ASECRETARY:  Alexander Mayrhofer <alexander.mayrhofer@nic.at>=0D=0A=0D=0AAGENDA=0D=0A=0D=0A o Welcome & Introduction to speermint / Administrivia=0D=0A  =0D=0A5 minutes=0D=0A     Dave Meyer=0D=0A=0D=0A   - Mailing list: speermint-request@ietf.org=0D=0A     subscribe=0D=0A=0D=0A   - Scribe (jabber)=0D=0A   =0D=0A   - Blue Sheets=0D=0A=0D=0A o Agenda Bashing                                         =0D=0A5 minutes=0D=0A     Dave Meyer=0D=0A=0D=0A o Review of Milestones                                   =0D=0A5 minutes=0D=0A     Jason Livingood=0D=0A=0D=0A o Review and Status of Open Work Items                      =0D=0A=0D=0A   New Drafts=0D=0A   -------------=0D=0A    1 - speermint Terminology Draft=0D=0A=0D=0A=0D=0A=0D=0A15 minutes=0D=0A=0D=0A  Dave Meyer=0D=0A=0D=0A    2 - SIP Peering Policy Management=0D=0A    =0D=0Adraft-lendl-sip-peering-policy-00=0D=0A=0D=0A=0D=0A20 minutes=0D=0A    =0D=0Adraft-lendl-domain-policy-ddds-00=0D=0A=0D=0A  Otmar Lendl=0D=0A=0D=0A  Axel Mayrhofer=0D=0A=0D=0A    3 - Media Session Authorization    =0D=0A=0D=0A=0D=0A=0D=0A15 minutes=0D=0A    =0D=0Adraft-wing-session-auth-00=0D=0A=0D=0A  Dan Wing=0D=0A=0D=0A    4 - Routing Architectures, Policy, and Message Flows=0D=0A15 minutes=0D=0A=0D=0Adraft-bhatia-sip-peering-00=0D=0A=0D=0A  Medhavi Bhatia=0D=0A=0D=0A    5 - I-D on the minimum set of requirements for =0D=0A=0D=0A15 minutes=0D=0A    =0D=0ASIP-based VoIP interconnection (BCP)    =0D=0A=0D=0Adraft-natale-sip-voip-requirements-00       =0D=0A     =0D=0A  Bob Natale=0D=0A=0D=0A    6 - IP Service (Voice and Multimedia) Peering Architecture  15 minutes=0D=0A=0D=0Adraft-khan-ip-serv-peer-arch-00=0D=0A=0D=0A  Sohel Khan=0D=0A=0D=0A o Open Discussion                                       =0D=0A10 minutes=0D=0A   =0D=0A
+URL:http://www.ietf.org/html.charters/speermint-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T152000
+DTEND:20060320T172000
+LOCATION:Coronado A
+UID:4962B64A-A9AC-41AC-A1C4-D0C8BDEDC54D@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RTG - pce - Path Computation Element WG 
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Path Computation Element WG =0D=0ADraft Agenda - PCE Working Group Meeting - IETF-65 - Dallas - March 2006=0D=0A=0D=0A1) Agenda/admin (Chairs-5mn) [5]=0D=0A=0D=0A2) Working Group progress (Chairs-10mn) [15]=0D=0A =0D=0A2a) Manageability Considerations (Adrian - 10mn) [25]=0D=0A=0D=0A3) Inter-area PCECP requirement draft - draft-ietf-pce-pcecp-multiarea-reqs-01.txt =0D=0A(Jean-Louis Le Roux - 5mn) [30]=0D=0A=0D=0A4) Discussion on the PCE Discovery protocol - draft-ietf-pce-disco-proto-igp-01.txt =0D=0A(Jean-Louis Le Roux - 5mn) [35]=0D=0A=0D=0A5) Discussion on the need for Inter-AS PCE discovery=0D=0A(All - 10mn) [45]=0D=0A=0D=0A6) Inter-AS Requirements for the Path Computation Element Communication Protocol (PCECP) =0D=0A- draft-bitar-zhang-InterAS-PCECP-reqs-00.txt =0D=0A(Nabil Bitar / Raymond Zhang - 10mn) [55]=0D=0A=0D=0A7) Inter-Layer Traffic Engineering=0D=0A- Applicablity draft-oki-pce-inter-layer-app-00.txt=0D=0A- PCECP Requirements draft-ietf-pce-inter-layer-req-01.txt=0D=0A(Eiji Oki - 10mn) [65]=0D=0A=0D=0A8) Path Computation Element (PCE) communication Protocol (PCEP) -  =0D=0Adraft-ietf-pce-pcep-01.txt (JP Vasseur - 15mn) [80]=0D=0A=0D=0A9) Protocol Extensions for Signaling Confidential Path Segments in  =0D=0AMultiprotocol Label Switching Traffic Engineering - draft-rbradfor- =0D=0Accamp-confidential-segment-00.txt - (Rich Bradford - 10mn) [90]=0D=0A=0D=0A10) Policy-Enabled Path Computation Framework - draft-bryskin-pce- =0D=0Apolicy-enabled-path-comp - (Igor Bryskin - 10mn) [100]=0D=0A=0D=0A11) PCC-PCE Communication Requirements for Point to Multipoint  =0D=0ATraffic Engineering - draft-yasukawa-pce-p2mp-req-00.txt - (Seiho  =0D=0AYasukawa - 10mn) [110]=0D=0A=0D=0A12) Next Steps (Chairs - 10mn) [120]
+URL:http://www.ietf.org/html.charters/pce-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T152000
+DTEND:20060320T172000
+LOCATION:Monet
+UID:5FA7021A-4ADE-496D-A0E7-F0AABFEBEB33@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:SEC - btns - Better-Than-Nothing Security WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Better-Than-Nothing Security WG=0D=0ABetter-Than-Nothing Security (btns)=0D=0A          =0D=0AAgenda at IETF-65=0D=0A------------------------------------=0D=0A=0D=0AChair(s):=0D=0APekka Nikander <Pekka.Nikander@nomadiclab.com>=0D=0ALove Hornquist Astrand <lha@it.su.se>=0D=0A          =0D=0AAGENDA:=0D=0A=0D=0APreliminaries - Chairs (5 min)=0D=0A  - Introduction=0D=0A  - Blue Sheets=0D=0A  - Scribe, Jabber=0D=0A  - Agenda Bashing=0D=0A=0D=0ADocument Status - Chairs (5 min)=0D=0A  - Problem statement and applicablity statement (-02)=0D=0A  - Unauthenticated mode of IPsec=0D=0A=0D=0ATechnical Discussion (N min)=0D=0A=0D=0A   Any issues of problem statement and applicablity statement=0D=0A       draft-ietf-btns-prob-and-applic-02.txt=0D=0A=0D=0A   Unauthenticated mode of IPsec=0D=0A       draft-ietf-btns-core-00.txt=0D=0A=0D=0A   Discuss other outstanding issues=0D=0A=0D=0AUpdate Milestones - Chairs and Participants (10 min)=0D=0A=0D=0A
+URL:http://www.ietf.org/html.charters/btns-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T152000
+DTEND:20060320T172000
+LOCATION:Cortez AB
+UID:6995849F-AC70-4462-A7BE-E844FCE2722A@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:TSV - rmt - Reliable Multicast Transport WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Reliable Multicast Transport WG=0D=0AIETF 65th - Reliable Multicast Transport WG=0D=0AAgenda (as of 20060307)=0D=0A=0D=0A- Agenda Bashing                                     Chairs=0D=0A=0D=0A- WG Status Update                                   Chairs=0D=0A=0D=0A- IPR change in Raptor, discussion                   Chairs=0D=0A=0D=0A- LDPC and Reed-Solomon FEC IDs                      Vincent Roca=0D=0A=0D=0A    draft-ietf-rmt-bb-fec-ldpc-01.txt=0D=0A    draft-ietf-rmt-bb-fec-rs-00.txt=0D=0A=0D=0A- TESLA for NORM                                     Vincent Roca=0D=0A=0D=0A    draft-faurite-rmt-tesla-for-alc-norm-01.txt=0D=0A=0D=0A- Norm BB an PI revised for Standard Track           Brian Adamson=0D=0A=0D=0A    draft-ietf-rmt-pi-norm-revised-01=0D=0A    draft-ietf-rmt-bb-norm-revised-01=0D=0A=0D=0A- FEC BB + Basic Schemes revised for Standard Track  Mark Watson=0D=0A=0D=0A    draft-ietf-rmt-fec-bb-revised-02=0D=0A    draft-ietf-rmt-bb-fec-basic-schemes-revised-01=0D=0A=0D=0A- ALC/LCT revised for Standard Track                 Mark Watson=0D=0A=0D=0A    draft-ietf-rmt-pi-alc-revised-02=0D=0A    draft-ietf-rmt-bb-lct-revised-02
+URL:http://www.ietf.org/html.charters/rmt-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T152000
+DTEND:20060320T172000
+LOCATION:Cortez CD
+UID:3CD811E9-BE5E-47E6-A83D-A73591979064@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:TSV - tcpm - TCP Maintenance and Minor Extensions WG 
+URL:http://www.ietf.org/html.charters/tcpm-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T174000
+DTEND:20060320T184000
+LOCATION:Chantilly W
+UID:55722F3F-01A8-4A7D-A4AF-C8DA6B4FE8BD@ietf.org
+DTSTAMP:20060312T032016Z
+SEQUENCE:4
+SUMMARY;ENCODING=QUOTED-PRINTABLE:APP - eai - Email Address Internationalization BOF
+URL:http://www.ietf.org/html.charters/eai-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T174000
+DTEND:20060320T184000
+LOCATION:Metropolitan
+UID:E584A3F1-27BE-4CC2-A04F-178D09CD0A55@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - pana - Protocol for Carrying Authentication for Network Access WG
+URL:http://www.ietf.org/html.charters/pana-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T174000
+DTEND:20060320T184000
+LOCATION:Coronado BCD
+UID:7CC13571-FA66-4DB0-A73A-2F01EBAD117E@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - shim6 - Site Multihoming by IPv6 Intermediation WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Site Multihoming by IPv6 Intermediation WG=0D=0ASite Multihoming by IPv6 Intermediation WG (SHIM6)=0D=0A=0D=0AMonday, March 20, 2006=0D=0A1740-1840 Afternoon Session III=0D=0A1850-1950 Afternoon Session IV=0D=0A-------------------------------=0D=0A=0D=0ACHAIRS: Geoff Huston <gih@apnic.net>=0D=0A        Kurtis Lindqvist <kurtis@kurtis.pp.se>=0D=0A=0D=0AAGENDA=0D=0A=0D=0A1. Agenda Bashing, Victimization of scribe=0D=0A                                    [5 minutes]=0D=0A=0D=0A    The agenda is broken into 2 sections. Agenda items 2 - 6 address=0D=0A    topics related to the current set of drafts and necessary steps to=0D=0A    progress these documents through the WG.  Agenda items 7 - 9 are a=0D=0A    followup to the current consideration of (loosely phrased) "TE"=0D=0A    considerations for possible extensions to Shim6 framework, and the=0D=0A    related aspect of re-chartering this WG to study this topic.=0D=0A=0D=0A    =0D=0A2. Review of Document Status and WG Roadmap=0D=0A   Chairs=0D=0A=0D=0A      The question to the working group is whether to adopt=0D=0A      draft-huitema-shim6-ingress-filtering-00 as a WG document=0D=0A=0D=0A                                    [5 minutes]=0D=0A=0D=0A3. Review of Shim6 Protocol Specification=0D=0A   draft-ietf-shim6-proto-03.txt  (-04 to be submitted)=0D=0A   Erik Nordmark=0D=0A   =0D=0A     The question to the working group following a review of the=0D=0A     document updates is whether the WG is ready for a WG Last Call on=0D=0A     this document.  [15 minutes]=0D=0A                                    =0D=0A4. Review of Shim6 Failure Detection Specification=0D=0A   draft-ietf-shim6-failure-detection-03.txt=0D=0A   Jari Arkko=0D=0A   Illitsch vav Beijnum=0D=0A=0D=0A     The question to the working group following a review of the=0D=0A     document updates is whether the WG is ready for a WG Last Call on=0D=0A     this document.  [10 minutes]=0D=0A       =0D=0A5. Privacy Analysis for the SHIM6 protocol=0D=0A   draft-bagnulo-shim6-privacy-00=0D=0A   Marcelo Bagnulo=0D=0A   =0D=0A     Do the privacy issues identified in the draft need to be=0D=0A     addressed? i.e. do we need to define some extensions to address=0D=0A     the privacy concerns identified in the draft?  [15 minutes]=0D=0A     =0D=0A=0D=0A6. Default Address Selection in RFC3484=0D=0A   draft-arifumi-ipv6-policy-dist-00.txt=0D=0A   draft-fujisaki-dhc-addr-select-opt-01.txt=0D=0A   Arifumi Matsumoto=0D=0A=0D=0A     This draft raises some issues about default address selection of=0D=0A     RFC 3484 and proposes some solutions towards them. (This is an=0D=0A     informational briefing to the WG.)  [10 minutes]=0D=0A=0D=0A7. Report on IAB BOFs on multi-homing=0D=0A   Dave Meyer=0D=0A                                    [10 minutes]=0D=0A                                    =0D=0A8. Extended Shim6 Design for ID/loc split and =0D=0A   Traffic Engineering=0D=0A   draft-nordmark-shim6-esd-00.txt=0D=0A   Erik Nordmark=0D=0A                                    [35 minutes]=0D=0A                                    =0D=0A9. WG Discussion on Re-Chartering=0D=0A   Chairs=0D=0A   =0D=0A                                    [15 minutes]=0D=0A   =0D=0A=0D=0ARecommended Reading:=0D=0A  a) active wg documents to be discussed at the meeting=0D=0A      draft-ietf-shim6-proto-03=0D=0A      draft-ietf-shim6-failure-detection-03=0D=0A  b) other documents whose status will be considered=0D=0A      draft-huitema-shim6-ingress-filtering-00.txt=0D=0A      draft-bagnulo-shim6-privacy-00=0D=0A      draft-arifumi-ipv6-policy-dist-00.txt=0D=0A      draft-fujisaki-dhc-addr-select-opt-01.txt=0D=0A      draft-nordmark-shim6-esd-00a.txt=0D=0A  c) other shim6 documents that may be referred to=0D=0A      draft-ietf-shim6-arch-00.txt=0D=0A      draft-iietf-shim6-applicability-00.txt=0D=0A      draft-ietf-shim6-applicability-00.txt
+URL:http://www.ietf.org/html.charters/shim6-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T174000
+DTEND:20060320T184000
+LOCATION:Cortez CD
+UID:80D562C1-9E4E-4FCD-B826-9792AFE495C8@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RAI - xcon - Centralized Conferencing WG
+URL:http://www.ietf.org/html.charters/xcon-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T174000
+DTEND:20060320T184000
+LOCATION:Coronado A
+UID:5C01A9C3-21A8-438A-90D9-668A4C6E1132@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RTG - rtgarea - Routing Area Open Meeting
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T174000
+DTEND:20060320T184000
+LOCATION:Monet
+UID:E7582D77-56D1-42FF-9B34-CBCAB8E42486@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:3
+SUMMARY;ENCODING=QUOTED-PRINTABLE:SEC - smime - S/MIME Mail Security WG
+URL:http://www.ietf.org/html.charters/smime-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T174000
+DTEND:20060320T184000
+LOCATION:Cortez AB
+UID:51221643-5BBC-4B40-8EAE-E3562633C44C@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:TSV - pmtud - Path MTU Discovery WG
+URL:http://www.ietf.org/html.charters/pmtud-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T185000
+DTEND:20060320T195000
+LOCATION:Chantilly W
+UID:80FE454E-E6B6-47E0-A8E7-4DFD72147DF7@ietf.org
+DTSTAMP:20060312T032016Z
+SEQUENCE:1
+SUMMARY;ENCODING=QUOTED-PRINTABLE:APP - eai - Email Address Internationalization BOF
+URL:http://www.ietf.org/html.charters/eai-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T185000
+DTEND:20060320T195000
+LOCATION:Coronado BCD
+UID:38045432-12A8-4BF2-95EF-D5016B821C1E@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - shim6 - Site Multihoming by IPv6 Intermediation WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Site Multihoming by IPv6 Intermediation WG=0D=0ASite Multihoming by IPv6 Intermediation WG (SHIM6)=0D=0A=0D=0AMonday, March 20, 2006=0D=0A1740-1840 Afternoon Session III=0D=0A1850-1950 Afternoon Session IV=0D=0A-------------------------------=0D=0A=0D=0ACHAIRS: Geoff Huston <gih@apnic.net>=0D=0A        Kurtis Lindqvist <kurtis@kurtis.pp.se>=0D=0A=0D=0AAGENDA=0D=0A=0D=0A1. Agenda Bashing, Victimization of scribe=0D=0A                                    [5 minutes]=0D=0A=0D=0A    The agenda is broken into 2 sections. Agenda items 2 - 6 address=0D=0A    topics related to the current set of drafts and necessary steps to=0D=0A    progress these documents through the WG.  Agenda items 7 - 9 are a=0D=0A    followup to the current consideration of (loosely phrased) "TE"=0D=0A    considerations for possible extensions to Shim6 framework, and the=0D=0A    related aspect of re-chartering this WG to study this topic.=0D=0A=0D=0A    =0D=0A2. Review of Document Status and WG Roadmap=0D=0A   Chairs=0D=0A=0D=0A      The question to the working group is whether to adopt=0D=0A      draft-huitema-shim6-ingress-filtering-00 as a WG document=0D=0A=0D=0A                                    [5 minutes]=0D=0A=0D=0A3. Review of Shim6 Protocol Specification=0D=0A   draft-ietf-shim6-proto-03.txt  (-04 to be submitted)=0D=0A   Erik Nordmark=0D=0A   =0D=0A     The question to the working group following a review of the=0D=0A     document updates is whether the WG is ready for a WG Last Call on=0D=0A     this document.  [15 minutes]=0D=0A                                    =0D=0A4. Review of Shim6 Failure Detection Specification=0D=0A   draft-ietf-shim6-failure-detection-03.txt=0D=0A   Jari Arkko=0D=0A   Illitsch vav Beijnum=0D=0A=0D=0A     The question to the working group following a review of the=0D=0A     document updates is whether the WG is ready for a WG Last Call on=0D=0A     this document.  [10 minutes]=0D=0A       =0D=0A5. Privacy Analysis for the SHIM6 protocol=0D=0A   draft-bagnulo-shim6-privacy-00=0D=0A   Marcelo Bagnulo=0D=0A   =0D=0A     Do the privacy issues identified in the draft need to be=0D=0A     addressed? i.e. do we need to define some extensions to address=0D=0A     the privacy concerns identified in the draft?  [15 minutes]=0D=0A     =0D=0A=0D=0A6. Default Address Selection in RFC3484=0D=0A   draft-arifumi-ipv6-policy-dist-00.txt=0D=0A   draft-fujisaki-dhc-addr-select-opt-01.txt=0D=0A   Arifumi Matsumoto=0D=0A=0D=0A     This draft raises some issues about default address selection of=0D=0A     RFC 3484 and proposes some solutions towards them. (This is an=0D=0A     informational briefing to the WG.)  [10 minutes]=0D=0A=0D=0A7. Report on IAB BOFs on multi-homing=0D=0A   Dave Meyer=0D=0A                                    [10 minutes]=0D=0A                                    =0D=0A8. Extended Shim6 Design for ID/loc split and =0D=0A   Traffic Engineering=0D=0A   draft-nordmark-shim6-esd-00.txt=0D=0A   Erik Nordmark=0D=0A                                    [35 minutes]=0D=0A                                    =0D=0A9. WG Discussion on Re-Chartering=0D=0A   Chairs=0D=0A   =0D=0A                                    [15 minutes]=0D=0A   =0D=0A=0D=0ARecommended Reading:=0D=0A  a) active wg documents to be discussed at the meeting=0D=0A      draft-ietf-shim6-proto-03=0D=0A      draft-ietf-shim6-failure-detection-03=0D=0A  b) other documents whose status will be considered=0D=0A      draft-huitema-shim6-ingress-filtering-00.txt=0D=0A      draft-bagnulo-shim6-privacy-00=0D=0A      draft-arifumi-ipv6-policy-dist-00.txt=0D=0A      draft-fujisaki-dhc-addr-select-opt-01.txt=0D=0A      draft-nordmark-shim6-esd-00a.txt=0D=0A  c) other shim6 documents that may be referred to=0D=0A      draft-ietf-shim6-arch-00.txt=0D=0A      draft-iietf-shim6-applicability-00.txt=0D=0A      draft-ietf-shim6-applicability-00.txt
+URL:http://www.ietf.org/html.charters/shim6-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T185000
+DTEND:20060320T195000
+LOCATION:Miro
+UID:1E89ACA5-836D-4892-898D-38E0E3F0FB4D@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:IRTF - asrg - Anti-Spam Research Group
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T185000
+DTEND:20060320T195000
+LOCATION:Cortez CD
+UID:A0FA8E6C-A39E-4914-85BC-D5BD91042EA7@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RAI - xcon - Centralized Conferencing WG
+URL:http://www.ietf.org/html.charters/xcon-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T185000
+DTEND:20060320T195000
+LOCATION:Coronado A
+UID:C253033E-4C88-4FA1-BD68-6118CFBA5EE3@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RTG - rtgarea - Routing Area Open Meeting
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060320T185000
+DTEND:20060320T195000
+LOCATION:Metropolitan
+UID:1EE569DD-6ED9-4FD3-9466-8826C91B75B5@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:SEC - pkix - Public-Key Infrastructure (X.509) WG
+URL:http://www.ietf.org/html.charters/pkix-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T090000
+DTEND:20060321T113000
+LOCATION:Chantilly W
+UID:0F29E86E-F150-4DE8-B8DC-2D273DC6009A@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:3
+SUMMARY;ENCODING=QUOTED-PRINTABLE:APP - dix - Digital Identity Exchange Protocol BOF
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T090000
+DTEND:20060321T113000
+LOCATION:Coronado BCD
+UID:FBD23AAF-926F-4D22-A85C-1B8B5EF98C15@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - netlmm - Network-based Localized Mobility Management WG
+URL:http://www.ietf.org/html.charters/netlmm-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T090000
+DTEND:20060321T113000
+LOCATION:Cortez AB
+UID:0A0DC84C-1471-4744-B645-89D3B699F184@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - trill - Transparent Interconnection of Lots of Links WG
+URL:http://www.ietf.org/html.charters/trill-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T090000
+DTEND:20060321T113000
+LOCATION:Miro
+UID:5B3C9700-5356-412A-9ED8-A4E0B5BE6922@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:OPS - radext - RADIUS Extensions WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:RADIUS Extensions WG=0D=0A=0D=0AAgenda for the RADEXT WG Meeting at IETF 65=0D=0ATUESDAY, March 21, 2006=0D=0A0900-1130 Morning Session I=0D=0A=0D=0AA. Preliminaries, Note Takers, Jabber Scribes, Blue Sheets (5 minutes)=0D=0A=0D=0AB. Agenda Bashing=0D=0A=0D=0AC. Milestone Revisions (5 minutes)=0D=0A=0D=0AD. Document Status=0D=0A=0D=0AD.1 Documents in IESG review (20 minutes):=0D=0A=0D=0AD.1.1  RADIUS Digest Authentication: 10 minutes for discussion of IESG=0D=0Areview.=0D=0A =0D=0AD.1.2  RFC 3576 MIBs: 5 minutes for discussion of IESG review.=0D=0A =0D=0AD.1.2  RFC 2618bis-2621bis: 5 minutes for discussion of IESG review.=0D=0A =0D=0AD.2  Documents in WGLC issue resolution (30 minutes):=0D=0A=0D=0AD.2.1  VLAN/Priority: 30 minutes for discussion of WGLC issues.=0D=0A =0D=0AD.3  Documents in Pre-WG review (60 minutes):=0D=0A=0D=0AD.3.1  WLAN Attributes: 10 minutes for discussion of current status.=0D=0A =0D=0AD.3.2  Design Guidelines:  30 minutes to discuss the open issues,=0D=0Aincluding any "capabilities" discussion. It this document ready for=0D=0Aformal acceptance=0D=0Aas a WG work item?=0D=0A =0D=0AD.3.3  Issues & Fixes:  10 minutes discussion.  It this document ready=0D=0Afor=0D=0Aformal acceptance as a WG work item?=0D=0A=0D=0AD.3.4  Prepaid Extensions:  10 minutes for discussion of revised (-10)=0D=0Adraft.=0D=0A=0D=0AD.4  Documents requiring cross-WG review (25 minutes):=0D=0A=0D=0AD.4.1  GEOPRIV-RADIUS:  20 minutes to discuss the status of the solution=0D=0Abeing crafted by Emile & Hannes.=0D=0A =0D=0AD.4.2  RADIUS Prefix Delegation: 5 Minutes to discuss the review was=0D=0Aposted to the mailing list.=0D=0A=0D=0AE. Wrap-Up (5 minutes)=0D=0A=0D=0A
+URL:http://www.ietf.org/html.charters/radext-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T090000
+DTEND:20060321T113000
+LOCATION:Coronado A
+UID:C51DBBB0-E414-4A69-B6C0-C04F4A1305D2@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RAI - avt - Audio/Video Transport WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Audio/Video Transport WG=0D=0AAudio/Video Transport Working Group=0D=0A =0D=0A CHAIRS: Colin Perkins     <csp@csperkins.org>=0D=0A         Magnus Westerlund <magnus.westerlund@ericsson.com>=0D=0A =0D=0A Tuesday, 21 March 2006, 09:00-11:30=0D=0A -----------------------------------=0D=0A =0D=0A 09:00 Introduction and Status and Charter Update                    (Chairs)=0D=0A =0D=0A 09:15 RTP MIB and RTCP XR MIB                            (Clark & Pendleton)=0D=0A       draft-ietf-avt-mib-rtp-bis-00.txt=0D=0A       draft-ietf-avt-rtcp-xr-mib-04.txt=0D=0A=0D=0A 09:30 RTCP XR Video Metrics                              (Clark & Pendleton)=0D=0A       draft-clark-avt-rtcpxr-video-01.txt=0D=0A=0D=0A 09:40 RTCP XR High Resolution VoIP Metrics Report Blocks     (Clark & Kumar)=0D=0A       draft-clark-avt-rtcphr-01.txt=0D=0A=0D=0A 09:55 SVC Payload Format                                            (Wenger)=0D=0A       draft-wenger-avt-rtp-svc-01.txt=0D=0A=0D=0A 10:05 Codec Control Messages using AVPF                             (Wenger)=0D=0A       draft-wenger-avt-avpf-ccm-03.txt=0D=0A=0D=0A 10:20 RTCP feedback messages for packet delay adjustments        (Mahendran)=0D=0A       draft-hdesineni-avt-avpf-ccm-pd-extn-00.txt=0D=0A=0D=0A 10:35 RTCP Extensions for SSM Sessions with Unicast Feedback           (Ott)=0D=0A       draft-ietf-avt-rtcpssm-11.txt=0D=0A=0D=0A 10:50 ZRTP                                                      (Zimmermann)=0D=0A       draft-zimmermann-avt-zrtp-00.txt=0D=0A       =0D=0A 11:00 Encrypted Key Transport for SRTP                              (McGrew)=0D=0A       draft-mcgrew-srtp-ekt-00.txt=0D=0A  =0D=0A 11:10 RTP over Datagram Transport Layer Security (DTLS)           (Rescorla)=0D=0A       draft-tschofenig-avt-rtp-dtls-00.txt=0D=0A       =0D=0A 11:20 Security for RTP Discussion                                   (Chairs)=0D=0A       draft-lehtovirta-srtp-rcc-01=0D=0A      =0D=0A Please note that the RAI Open Area Meeting (after lunch) will continue the=0D=0A discussion on security for real-time media applications. =0D=0A =0D=0A                                      - + -
+URL:http://www.ietf.org/html.charters/avt-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T090000
+DTEND:20060321T113000
+LOCATION:Cortez CD
+UID:51DCF977-4648-4EB4-A650-7FBF76549906@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RAI - ecrit - Emergency Context Resolution with Internet Technologies WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Emergency Context Resolution with Internet Technologies WG=0D=0AEmergency Context Resolution with Internet Technologies WG=0D=0A=0D=0ATUESDAY, March 21, 2006=0D=0A=0D=0A0900-1130 Morning Session I=0D=0A=0D=0A-----------------------------------------------------=0D=0A=0D=0ACHAIRS: =0D=0A=0D=0A   Hannes Tschofenig <Hannes.Tschofenig@siemens.com>=0D=0A   Marc Linsner <Marc.Linsner@cisco.com>=0D=0A=0D=0AAGENDA=0D=0A=0D=0A=0D=0A o Agenda Bashing / Current Status (Chairs, 15 min)=0D=0A=0D=0A=0D=0A o Requirements (Roger Marshall, 15 min)=0D=0A   http://www.ietf.org/internet-drafts/draft-ietf-ecrit-requirements-06.txt=0D=0A=0D=0A   Issues raised during WGLC=0D=0A=0D=0A=0D=0A o Security Threats Document (Tom Taylor, 15 min)=0D=0A=0D=0A   Discussion of open issues=0D=0A=0D=0A=0D=0A o A Uniform Resource Name for Services (Henning Schulzrinne, 15 min)=0D=0A   http://www.ietf.org/internet-drafts/draft-ietf-ecrit-service-urn-01.txt=0D=0A=0D=0A   Discussion of open issues=0D=0A=0D=0A    =0D=0A o LoST: A Location-to-Service Translation Protocol =0D=0A   (T. Hardie/A. Newton/H. Schulzrinne, 30 min)=0D=0A   http://www.ietf-ecrit.org/cache/draft-hardie-ecrit-lost-00.txt=0D=0A=0D=0A   Current status, open issues and next steps=0D=0A=0D=0A=0D=0A o Discussion about future work (All, 75 min)=0D=0A=0D=0A   Emergency Context Routing of Internet Technologies=0D=0A   Architecture Considerations=0D=0A   http://www.ietf.org/internet-drafts/draft-polk-newton-ecrit-arch-considerations-02.txt=0D=0A=0D=0A   Best Current Practice for Communications Services in support of=0D=0A   Emergency Calling=0D=0A   http://www.ietf.org/internet-drafts/draft-rosen-ecrit-phonebcp-00.txt   =0D=0A=0D=0A   Analyzing ECRIT Mapping of a Location to an =0D=0A   Emergency URI for Emergency Calling=0D=0A   http://www.ietf.org/internet-drafts/draft-polk-ecrit-mapping-events-00.txt=0D=0A=0D=0A   ECRIT Mapping During Session Initiation Protocol Registration=0D=0A   http://www.ietf.org/internet-drafts/draft-polk-ecrit-mapping-during-registration-00.txt=0D=0A=0D=0A   Using the Session Initiation Protocol REGISTER Method=0D=0A   To Obtain an Emergency Dialstring=0D=0A   http://www.ietf.org/internet-drafts/draft-polk-ecrit-emergency-dialstring-00.txt=0D=0A=0D=0A   A Dynamic Host Configuration Protocol Option for=0D=0A   Requesting and Receiving Uniform Resource Identifiers=0D=0A   http://www.ietf.org/internet-drafts/draft-polk-dhc-uri-03.txt=0D=0A=0D=0A=0D=0A   Location-to-URL Mapping Architecture and Framework=0D=0A   http://www.ietf.org/internet-drafts/draft-schulzrinne-ecrit-mapping-arch-00.txt=0D=0A
+URL:http://www.ietf.org/html.charters/ecrit-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T090000
+DTEND:20060321T113000
+LOCATION:Metropolitan
+UID:724DBACF-5DD5-49E6-BD33-418859654F3D@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RTG - forces - Forwarding and Control Element Separation WG
+URL:http://www.ietf.org/html.charters/forces-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T090000
+DTEND:20060321T113000
+LOCATION:Monet
+UID:75082C43-54B1-4588-8DB6-A4A4C608EBA7@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:SEC - pki4ipsec - Profiling Use of PKI in IPSEC WG
+URL:http://www.ietf.org/html.charters/pki4ipsec-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T130000
+DTEND:20060321T150000
+LOCATION:Coronado A
+UID:80E37381-9DAC-4E8B-8FAE-75B4F9F953E4@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:GEN - ipr - Intellectual Property Rights WG
+URL:http://www.ietf.org/html.charters/ipr-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T130000
+DTEND:20060321T150000
+LOCATION:Cortez AB
+UID:0DBFDD5A-FB51-4B74-8D0A-FFA043EF0C07@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - dnsext - DNS Extensions WG
+URL:http://www.ietf.org/html.charters/dnsext-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T130000
+DTEND:20060321T150000
+LOCATION:Coronado BCD
+UID:F3710AC5-175C-4686-BB4F-C90853501D57@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:1
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - pwe - Pseudo Wire Emulation Edge to Edge WG
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T130000
+DTEND:20060321T150000
+LOCATION:Metropolitan
+UID:3F6CB944-ED4A-484F-8F86-E549BAFA0AC3@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:IRTF - mobopts - IP Mobility Optimizations RG
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T130000
+DTEND:20060321T150000
+LOCATION:Miro
+UID:C387C8E3-0B32-4360-83B4-6C26E3C0B3B0@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:OPS - bmwg - Benchmarking Methodology WG 
+URL:http://www.ietf.org/html.charters/bmwg-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T130000
+DTEND:20060321T150000
+LOCATION:Chantilly W
+UID:46500299-5462-4054-900D-228CD58A72EB@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RAI - sip - Session Initiation Protocol WG
+URL:http://www.ietf.org/html.charters/sip-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T130000
+DTEND:20060321T150000
+LOCATION:Cortez CD
+UID:3866857A-6B37-404C-8964-703B4BB59A54@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RTG - manet - Mobile Ad-hoc Networks WG
+URL:http://www.ietf.org/html.charters/manet-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T130000
+DTEND:20060321T150000
+LOCATION:Monet
+UID:CADF25AF-4934-426A-98A0-A794C70BE4CD@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RTG - pim - Protocol Independent Multicast WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Protocol Independent Multicast WG=0D=0Adraft-ietf-pim-sm-v2-new-11 =0D=0A             Bill=0D=0Adraft-ietf-pim-proposed-req-02               Mike=0D=0Adraft-ietf-pim-join-attributes-01    =0D=0A    Arjen  =0D=0Adraft-ietf-pim-rpf-vector-01         =0D=0A      Ice  =0D=0Adraft-ietf-pim-mib-v2-05             =0D=0A    David =0D=0Adraft-ietf-pim-sm-bsr-07             =0D=0A     Stig 
+URL:http://www.ietf.org/html.charters/pim-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T152000
+DTEND:20060321T172000
+LOCATION:Miro
+UID:7EEA631E-E5F2-4205-94C1-3AD7CEB681CE@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:APP - sieve - Sieve Mail Filtering Language WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Sieve Mail Filtering Language WG=0D=0AAgenda for SIEVE WG meeting in Dallas, TUESDAY, March 21, 2006, 13:00-15:00=0D=0A=0D=0A- Introduction (blue sheets, scribe etc) (1 min)=0D=0A- Agenda Bashing (2 mins)=0D=0A- Report on completed work (2 mins)=0D=0A- Spamtest draft status (10 mins)=0D=0A- Date draft status (5 mins)=0D=0A- Subaddress draft status (5 mins)=0D=0A- Regex draft status (5 mins)=0D=0A- Reject/refuse draft (10 mins)=0D=0A- MIME loops draft (20 mins)=0D=0A- Notification draft (20 mins)=0D=0A- Base spec status, in particular review of=0D=0A comparators (draft-newman-i18n-comparator-07.txt) and Sieve (10 mins)=0D=0A- Other topics:=0D=0A Manage Sieve protocol (5 mins)=0D=0A Include draft (15 mins)=0D=0A Proposals for adding exception handling/optional require to Sieve (10 mins)=0D=0A=0D=0ATotal: 120 minutes
+URL:http://www.ietf.org/html.charters/sieve-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T152000
+DTEND:20060321T172000
+LOCATION:Cortez CD
+UID:9F27BA3D-14B1-443F-B50C-A559EACF79A4@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - mipshop - MIPv6 Signaling and Handoff Optimization WG
+URL:http://www.ietf.org/html.charters/mipshop-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T152000
+DTEND:20060321T172000
+LOCATION:Monet
+UID:62547EB5-43CA-40AD-BFF7-14F18FE078DC@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:3
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - nea - Network Endpoint Assessment BOF
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Network Endpoint Assessment BOF=0D=0ANetwork Endpoint Assessment (NEA) BOF Draft Agenda=0D=0A =0D=0AAgenda Bashing (5 minutes)=0D=0ANEA Problem Statement (45 minutes)=0D=0AProposed NEA Charter (45 minutes)=0D=0AConsensus Check and Volunteering (25 minutes)=0D=0A =0D=0AThe goal of the NEA BOF is to confirm rough consensus on the NEA=0D=0Aproblem statement, on the importance of forming an IETF Working Group=0D=0Ato address the problems described in that document, and on the=0D=0Aproposed charter for such a Working Group. Further, the NEA BOF will=0D=0Averify that there are enough participants to make the NEA effort a=0D=0Asuccess.=0D=0A =0D=0ANEA BOF participants are expected to have read the documents listed=0D=0Abelow before the BOF meeting. Discussion of these documents before the=0D=0ABOF meeting is strongly encouraged. It will take place on the=0D=0Anea@ietf.org mailing list.=0D=0A =0D=0AProposed NEA WG Charter=0D=0A<See below>=0D=0A =0D=0ANetwork Endpoint Assessment (NEA) Problem Statement =0D=0Adraft-thomson-nea-problem-statement-01.txt=0D=0A =0D=0AMailing List=0D=0Anea@ietf.org=0D=0Ahttps://www1.ietf.org/mailman/listinfo/nea=0D=0A=0D=0A--------=0D=0A=0D=0AProposed NEA WG Charter=0D=0A=0D=0AArchitectures have been implemented in the industry to assess the=0D=0Asoftware or hardware configuration of endpoint devices for the=0D=0Apurposes of monitoring or enforcing compliance of endpoints to an=0D=0Aorganization's policy for access to the network. These architectures=0D=0Aare not fully interoperable since some of the protocols used to=0D=0Aimplement the architecture are not standards.=0D=0A=0D=0AThe first purpose of the proposed working group is to define=0D=0Arequirements for the protocols needed to ensure interoperability in an=0D=0ANEA system. The second purpose of the working group is to ensure=0D=0Astandardization of protocols that meet these requirements. In some=0D=0Acases, these protocols may best be standardized in another working=0D=0Agroup. Therefore, the proposed working group will work with the area=0D=0Adirectors to determine the best way to complete this standardization=0D=0Aeffort (in the proposed working group or in another one).=0D=0A=0D=0AThe initial scope of the WG targets an EAP/RADIUS instantiation of a=0D=0ANEA architecture. Other instantiations of NEA architectures may be=0D=0Astandardized in the future, but are not part of the initial charter.=0D=0A=0D=0AThe initial charter includes the following protocols (as described in=0D=0Adraft-thomson-nea-problem-statement-01.txt):=0D=0A=0D=0A1. Posture Broker protocol (IF-PB)=0D=0A=0D=0A2. Posture Transport Tunnel protocol (IF-PTT)=0D=0A=0D=0A   i.e. EAP tunneling method suitable for carrying posture information=0D=0A   as well as supporting authentication=0D=0A=0D=0A3. Posture Transport Carrier protocol (IF-PTC)=0D=0A=0D=0A   i.e. EAP over IP carrier protocol=0D=0A=0D=0A4. RADIUS attributes for network access enforcement (IF-NAE)=0D=0A=0D=0AOther protocols that may be included in the charter at a later date=0D=0Ainclude:=0D=0A=0D=0A* Posture Attribute protocol (IF-PA)=0D=0A=0D=0A* Posture Validation Protocol (IF-PV)=0D=0A=0D=0AWork will be carried out in two phases. In the first phase, the WG=0D=0Awill define requirements for each of the protocols identified in 1) -=0D=0A4) above. When the requirements have been defined, this WG will work=0D=0Awith the responsible Area Directors to identify the appropriate WG for=0D=0Ameeting these requirements.=0D=0A=0D=0AMilestones:=0D=0A=0D=0AJune 2006:=0D=0A=0D=0A* Submit requirements I-D to IETF including =0D=0A=0D=0A--- requirements for IF-PTT (EAP tunneling method) =0D=0A--- requirements for IF-NAE =0D=0A=0D=0ASeptember 2006:=0D=0A=0D=0A* Submit revised requirements I-D to IETF that includes above plus:=0D=0A=0D=0A--- requirements for IF-PB=0D=0A--- requirements for IF-PTC (EAP over IP carrier protocol e.g. EAP=0D=0A    over UDP, EAP over TLS)=0D=0A=0D=0ADecember 2006: =0D=0A=0D=0A* Review ongoing work in IETF (e.g. EMU WG, Radext WG, PANA WG, NEA=0D=0A  WG) and work with ADs to identify the WG responsible for=0D=0A  accommodating protocol requirements that are not currently being=0D=0A  met.=0D=0A=0D=0AFeb 2007:=0D=0A=0D=0A* Submit requirements I-D to IESG for publication as Info RFC=0D=0A=0D=0A* Revise WG charter to accommodate definition of protocols not covered=0D=0A  in other WGs e.g. IF-PB=0D=0A=0D=0A* Submit I-D on protocols to be defined in this WG e.g. IF-PB specification
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T152000
+DTEND:20060321T172000
+LOCATION:Coronado A
+UID:5DE19F3D-CDCF-4400-BCB9-931E731122C8@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:3
+SUMMARY;ENCODING=QUOTED-PRINTABLE:OPS - dnsop - Domain Name System Operations WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Domain Name System Operations WG=0D=0A-----------------------------------------------------------------------------=0D=0AWG:        DNS Operations (dnsop)=0D=0AMeeting:   IETF 65, Dallas=0D=0ALocation:  Hilton Anatole Hotel, Room "Coronado A"=0D=0ADate:      Tuesday, 21 March 2006=0D=0ATime:      15:20 - 17:20=0D=0A(// sieve, mipshop, nea, raiarea, rpsec, msec)=0D=0AChairs:=0D=0A   Rob Austein <sra@hactrn.net>  <sra@isc.org>=0D=0A=0D=0A   Peter Koch  <pk@isoc.de>      <pk@denic.de>=0D=0AJabber:    TBD=0D=0AWG URL:    http://www.dnsop.org=0D=0AVersion:   $Revision: 1.3 $=0D=0A-----------------------------------------------------------------------------=0D=0A=0D=0A1) Administrivia=0D=0A   [chairs][ 5 min][15:20]=0D=0A=0D=0A   - minutes scribe=0D=0A{volunteers welcome in advance!}=0D=0A   - jabber scribe=0D=0A{volunteers welcome in advance!}=0D=0A   - blue sheets=0D=0A   - agenda bashing=0D=0A=0D=0A2) Status Update=0D=0A   [chairs][ 5 min][15:25]=0D=0A=0D=0A   - RFCs published=0D=0A=0D=0ARFC 4339 "IPv6 Host Configuration of DNS Server Information Approaches"=0D=0A=0D=0A   - I-Ds in RFC Editor Queue=0D=0A=0D=0Adraft-ietf-dnsop-ipv6-dns-issues-12.txt=0D=0A=0D=0A   - Internet-Drafts in IESG review=0D=0A=0D=0Adraft-ietf-dnsop-dnssec-operational-practices-08.txt=0D=0A=0D=0A   - I-Ds in or past WGLCs=0D=0A=0D=0Adraft-ietf-dnsop-bad-dns-res-05.txt=0D=0A=0D=0Adraft-ietf-dnsop-serverid-06.txt=0D=0A=0D=0Adraft-huston-6to4-reverse-dns-04.txt=0D=0A=0D=0A3) Lingering Drafts & Review Process=0D=0A   [chairs][20 min][15:30]=0D=0A=0D=0A   {The goal is to identify open issues and assign action items to individuals}=0D=0A=0D=0A   3.1) draft-ietf-dnsop-inaddr-required=0D=0A=0D=0A   3.2) draft-ietf-dnsop-respsize=0D=0A=0D=0ADraft is expired, revised I-D needed=0D=0A=0D=0A4) WG Charter=0D=0A   [chairs][30 min][15:50]=0D=0A   {draft to be circulated, work in progress}=0D=0A=0D=0A5) Other Internet-Drafts [20 min][16:20]=0D=0A=0D=0A   5.1) draft-krishnaswamy-dnsop-dnssec-split-view-02.txt=0D=0A=0D=0A[Suresh Krishnaswamy][5 min][16:20]=0D=0A=0D=0A=0D=0AGoal is to demonstrate the need for this WG to deal with the subject.=0D=0A=0D=0A   5.2) draft-andrews-full-service-resolvers-02.txt=0D=0A=0D=0A[Mark Andrews][15 min][16:25]=0D=0A=0D=0A=0D=0ADiscuss issue of initializing and maintaining the "blacklist",=0D=0A=0D=0Ae.g. IANA-registry and update policy for that registry, if any;=0D=0A=0D=0Aexplore chances of ever removing a zone from the list=0D=0A=0D=0A6) Current & New Topics [25 min][16:40]=0D=0A=0D=0A   6.1) Measurements on DNSSEC Validation Performance=0D=0A=0D=0A[Jakob Schlyter][10 min][16:40]=0D=0A=0D=0A   6.2) "Open Resolvers"=0D=0A=0D=0A[chairs or volunteer][15 min][16:50]=0D=0A=0D=0A=0D=0ADiscuss operational impact of "Open Resolvers" as mentioned e.g.=0D=0A=0D=0Ain the thread starting=0D=0A=0D=0A<http://www.merit.edu/mail.archives/nanog/msg16000.html>=0D=0A=0D=0AExplore chances to work towards a BCP on resolver configuration=0D=0A=0D=0Aand/or operational impact of potential counter measures.=0D=0A=0D=0AY) I/O with other WGs=0D=0A   [][][]=0D=0A=0D=0AZ) A.O.B.=0D=0A   [][ 5 min][]=0D=0A   {please identify issues in advance}=0D=0A=0D=0A-----------------------------------------------------------------------------
+URL:http://www.ietf.org/html.charters/dnsop-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T152000
+DTEND:20060321T172000
+LOCATION:Chantilly W
+UID:70793909-59C2-4BA4-BEF9-98E737ADD333@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RAI - raiarea - Real-time Applications and Infrastructure Area Open Meeting
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T152000
+DTEND:20060321T172000
+LOCATION:Cortez AB
+UID:DB52FFF2-2782-4050-9265-C3BCAB44F1F4@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RTG - rpsec - Routing Protocol Security Requirements WG
+URL:http://www.ietf.org/html.charters/rpsec-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T152000
+DTEND:20060321T172000
+LOCATION:Metropolitan
+UID:FC08D3E2-A8F0-4E19-93A5-FC50106CB1BE@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:SEC - msec - Multicast Security WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Multicast Security WG=0D=0ATUESDAY, March 21, 2006=0D=0A=0D=0A1500-1520 Afternoon Refreshment Break - Chantilly Foyer=0D=0A1520-1720 Afternoon Session II=0D=0AMiro          APP    sieve     Sieve Mail Filtering Language WG=0D=0ACortez CD     INT    mipshop   MIPv6 Signaling and Handoff Optimization WG=0D=0AMonet         INT    nea       Network Endpoint Assessment BOF=0D=0ACoronado A    OPS    dnsop     Domain Name System Operations WG=0D=0AChantilly W   RAI    raiarea   Real-time Applications and Infrastructure Area Open Meeting=0D=0ACortez AB     RTG    rpsec     Routing Protocol Security Requirements WG=0D=0A=0D=0AMetropolitan  SEC    MSEC      Multicast Security WG=0D=0A=0D=0A=0D=0A=0D=0A* MSEC status summary                                                10=0D=0A  Ran & Lakshminath=0D=0A=0D=0A* AD advise on the quality of MSEC specifications                    15=0D=0A  Sam=0D=0A=0D=0A* Update on Russ's action item on hash function agility              15=0D=0A  Lakshminath & Ran=0D=0A=0D=0A* GDOI Update                                                        10=0D=0A  Brian & Sheela=0D=0A        =0D=0A       draft-weis-gdoi-update=0D=0A=0D=0A* GKDP                                                               10=0D=0A  Sheela, Lakshminath, & Jing=0D=0A=0D=0A       draft-ietf-msec-gkdp-01=0D=0A=0D=0A* MSEC IPsec extensions                                              15=0D=0A  Brian, Dragan, & George=0D=0A=0D=0A       draft-ietf-msec-ipsec-extensions-01=0D=0A=0D=0A* MIKEY-Applicability discussion                                     15=0D=0A  Steffen & Dragan=0D=0A=0D=0A       draft-fries-msec-mikey-applicability-00=0D=0A=0D=0A* MIKEY Updates                                                      10=0D=0A  Bob M, & others=0D=0A=0D=0A=0D=0A* ALC/NORM TESLA                                                     10=0D=0A   Vincent=0D=0A=0D=0A      draft-faurite-rmt-tesla-for-alc-norm-01=0D=0A=0D=0A* SRTP-EKT                                                           10=0D=0A   David, Flemming, & Lakshminath=0D=0A=0D=0A      draft-mcgrew-srtp-ekt 
+URL:http://www.ietf.org/html.charters/msec-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T174000
+DTEND:20060321T184000
+LOCATION:Coronado A
+UID:B3FF63D6-4D8C-472D-94AC-084FA86A5BA1@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - l3vpn - Layer 3 Virtual Private Networks WG
+URL:http://www.ietf.org/html.charters/l3vpn-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T174000
+DTEND:20060321T184000
+LOCATION:Cortez AB
+UID:0E8D2313-F1FE-4719-95C0-9CA96C108D57@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:OPS - dime - Diameter Maintenance and Extensions WG
+URL:http://www.ietf.org/html.charters/dime-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T174000
+DTEND:20060321T184000
+LOCATION:Cortez CD
+UID:3F186F7E-DAEB-4991-8990-A6EF17EB526C@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RAI - simple - SIP for Instant Messaging & Presence Leveraging Extensions WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:SIP for Instant Messaging & Presence Leveraging Extensions WG=0D=0ATuesday Afternoon III and IV =0D=0A=0D=0A15m =0D=0AChair update (will include status on msrp, common-policy, presence-rules, xcap-base)=0D=0A5m=0D=0AStatus on xml-patch and the drafts that depend on it=0D=0A30m =0D=0AIMDN Open issues=0D=0A5m=0D=0APIDF-conn Open issues=0D=0A30m =0D=0Aniemi-simple-chat=0D=0A15m=0D=0Axcap-profile=0D=0A20m =0D=0ARoadmap for next round of work=0D=0A=0D=0A(see http://www1.ietf.org/mail-archive/web/simple/current/msg06272.html)=0D=0A
+URL:http://www.ietf.org/html.charters/simple-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T174000
+DTEND:20060321T184000
+LOCATION:Monet
+UID:391689DD-AF1C-4AA6-9CA7-0DE09FB4DC23@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:SEC - mobike - IKEv2 Mobility and Multihoming WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:IKEv2 Mobility and Multihoming WG=0D=0AStatus of MOBIKE protocol and design documents - 5 minutes=0D=0APresentation on draft-nikander-esp-beet-mode - 20 minutes=0D=0ADiscussion of what to do with the WG - 20 minutes or less
+URL:http://www.ietf.org/html.charters/mobike-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T174000
+DTEND:20060321T184000
+LOCATION:Miro
+UID:9E96AD62-0C1C-4AA9-AAC3-3ADAB44DCA1E@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:TSV - dccp - Datagram Congestion Control Protocol WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Datagram Congestion Control Protocol WG=0D=0A- State of the WG=0D=0A    - Progress of draft-ietf-dccp-tfrc-media (Tom, 10min)=0D=0A    - Progress of draft-ietf-dccp-user-guide (Tom, 10min)=0D=0A=0D=0A- Rechartering Discussion (Chairs, 60min)=0D=0A          =0D=0A- Potential New WG Items=0D=0A    - draft-perkins-dccp-rtp (Colin, 15min)=0D=0A    - draft-kohler-dccp-mobility (Eddie? Pasi?, 15 minutes)=0D=0A=0D=0A- Other Items=0D=0A    - Results of DCCP VoIP Quality Experiments (Lars, 15min, tentative)
+URL:http://www.ietf.org/html.charters/dccp-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T174000
+DTEND:20060321T184000
+LOCATION:Metropolitan
+UID:FA0648BF-E5A4-4C4B-9ACE-347732013A18@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:TSV - ippm - IP Performance Metrics WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:IP Performance Metrics WG=0D=0AIPPM group,=0D=0A=0D=0A=0D=0AWe'll meet in Dallas, agenda items so far are:=0D=0A=0D=0A=0D=0A1. Administrativia=0D=0A2. Status of drafts and milestones=0D=0A3. Composition Framework Draft (Steven and Al)=0D=0A4. Spatial Composition Draft (Al)=0D=0A5. Jitter Metric Comparison (Roman and Al)=0D=0A6. TWAMP (Kaynam)=0D=0A7. Packet Burst Metric (Roman)=0D=0A=0D=0A=0D=0AIf there is anything to be added, let me know,=0D=0A=0D=0A=0D=0AHenk
+URL:http://www.ietf.org/html.charters/ippm-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T185000
+DTEND:20060321T195000
+LOCATION:Cortez AB
+UID:3C2E2624-2ED7-4058-9F5B-8C20C1E49078@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:APP - calsify - Calendaring and Scheduling Standards Simplification WG
+URL:http://www.ietf.org/html.charters/calsify-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T185000
+DTEND:20060321T195000
+LOCATION:Coronado A
+UID:920170CA-FCC4-4B5F-91B2-245A8FBF63E6@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - l3vpn - Layer 3 Virtual Private Networks WG
+URL:http://www.ietf.org/html.charters/l3vpn-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T185000
+DTEND:20060321T195000
+LOCATION:Coronado BCD
+UID:446EEAD7-571E-48CA-87D8-994091C2F68E@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:3
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - monami6 - Mobile Nodes and Multiple Interfaces in IPv6 WG
+URL:http://www.ietf.org/html.charters/monami6-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T185000
+DTEND:20060321T195000
+LOCATION:Cortez CD
+UID:1F527B90-1519-449B-A408-9A3432B0AA6A@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RAI - simple - SIP for Instant Messaging & Presence Leveraging Extensions WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:SIP for Instant Messaging & Presence Leveraging Extensions WG=0D=0ATuesday Afternoon III and IV =0D=0A=0D=0A15m =0D=0AChair update (will include status on msrp, common-policy, presence-rules, xcap-base)=0D=0A5m=0D=0AStatus on xml-patch and the drafts that depend on it=0D=0A30m =0D=0AIMDN Open issues=0D=0A5m=0D=0APIDF-conn Open issues=0D=0A30m =0D=0Aniemi-simple-chat=0D=0A15m=0D=0Axcap-profile=0D=0A20m =0D=0ARoadmap for next round of work=0D=0A=0D=0A(see http://www1.ietf.org/mail-archive/web/simple/current/msg06272.html)=0D=0A
+URL:http://www.ietf.org/html.charters/simple-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T185000
+DTEND:20060321T195000
+LOCATION:Monet
+UID:D1EDC8BB-77BD-47DF-A38D-D19CF1EECF3A@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:SEC - emu - EAP Method Update WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:EAP Method Update WG=0D=0AEAP Method Update WG (emu)=0D=0A=0D=0ATUESDAY, March 21, 2006=0D=0A1850-1950 Afternoon Session IV=0D=0ARoom Monet=0D=0AWGs meeting at the same time: calsify, l3vpn, monami6, simple, dccp, ippm=0D=0A=0D=0A1. Administrative (Chairs)=0D=0A   - Notes takers=0D=0A   - Agenda bashing=0D=0A   - Document status=0D=0A=0D=0A2. EAP-TLS "bis" work (Bernard Aboba)=0D=0A=0D=0A   http://www.ietf.org/internet-drafts/internet-drafts/draft-simon-emu-rfc2716bis-01.txt=0D=0A   http://tools.ietf.org/tools/rfcdiff/rfcdiff.pyht?url1-http://www.ietf.org/rfc/rfc2716.txt&url2-http://www.ietf.org/internet-drafts/draft-simon-emu-rfc2716bis-01.txt=0D=0A=0D=0A   Bernard Aboba has submitted a "bis" document for EAP-TLS, RF 2716.=0D=0A   This fits EMU charter item 1. Discussion to focus on gathering=0D=0A   implementation experience, clarifications, and security considerations.=0D=0A=0D=0A3. Strong shared secret method work (TBD)=0D=0A=0D=0A   No draft. Design team working on this, see:=0D=0A   http://www1.ietf.org/mail-archive/web/emu/current/msg00026.html=0D=0A   This fits EMU charter item 3.=0D=0A=0D=0A   By Dallas, the design team has met twice. Based on the first=0D=0A   meeting, the team has identified a number of questions relating=0D=0A   to the method's design and has made some progress towards having=0D=0A   common answers to those questions. The purpose of the discussion=0D=0A   in Dallas is to present some of the design questions and tentative=0D=0A   answers, and to allow early feedback.=0D=0A=0D=0A   Initial draft to be submitted from the DT by IETF-66.=0D=0A=0D=0A4. AOB
+URL:http://www.ietf.org/html.charters/emu-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T185000
+DTEND:20060321T195000
+LOCATION:Miro
+UID:E836E8E9-0FB1-4C72-87EB-16A0E89300D8@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:TSV - dccp - Datagram Congestion Control Protocol WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Datagram Congestion Control Protocol WG=0D=0A- State of the WG=0D=0A    - Progress of draft-ietf-dccp-tfrc-media (Tom, 10min)=0D=0A    - Progress of draft-ietf-dccp-user-guide (Tom, 10min)=0D=0A=0D=0A- Rechartering Discussion (Chairs, 60min)=0D=0A          =0D=0A- Potential New WG Items=0D=0A    - draft-perkins-dccp-rtp (Colin, 15min)=0D=0A    - draft-kohler-dccp-mobility (Eddie? Pasi?, 15 minutes)=0D=0A=0D=0A- Other Items=0D=0A    - Results of DCCP VoIP Quality Experiments (Lars, 15min, tentative)
+URL:http://www.ietf.org/html.charters/dccp-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060321T185000
+DTEND:20060321T195000
+LOCATION:Metropolitan
+UID:D969D2F6-573E-4939-8AEF-660CFF9E546E@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:TSV - ippm - IP Performance Metrics WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:IP Performance Metrics WG=0D=0AIPPM group,=0D=0A=0D=0A=0D=0AWe'll meet in Dallas, agenda items so far are:=0D=0A=0D=0A=0D=0A1. Administrativia=0D=0A2. Status of drafts and milestones=0D=0A3. Composition Framework Draft (Steven and Al)=0D=0A4. Spatial Composition Draft (Al)=0D=0A5. Jitter Metric Comparison (Roman and Al)=0D=0A6. TWAMP (Kaynam)=0D=0A7. Packet Burst Metric (Roman)=0D=0A=0D=0A=0D=0AIf there is anything to be added, let me know,=0D=0A=0D=0A=0D=0AHenk
+URL:http://www.ietf.org/html.charters/ippm-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T090000
+DTEND:20060322T113000
+LOCATION:Miro
+UID:5327D427-3E43-4A1E-B16C-27035B8EE973@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:APP - lemonade - Enhancements to Internet email to Support Diverse Service Environments WG
+URL:http://www.ietf.org/html.charters/lemonade-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T090000
+DTEND:20060322T113000
+LOCATION:Cortez AB
+UID:36B08A6B-6B0C-41F3-AFB3-C9E074F813B7@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:3
+SUMMARY;ENCODING=QUOTED-PRINTABLE:GEN - genarea - General Area Open Meeting
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:General Area Open Meeting=0D=0AGeneral Area open meeting (AD and session chair: Brian Carpenter)=0D=0A=0D=0AWednesday morning=0D=0A=0D=0A09:00 Welcome, and introduction (Brian Carpenter)=0D=0A09:10 RFC 2434bis (Thomas Narten)=0D=0A      draft-narten-iana-considerations-rfc2434bis-04.txt (coming soon)=0D=0A09:25 PESCI wrap-up (Scott Brim)=0D=0A      draft-davies-pesci-initial-considerations-01.txt=0D=0A      draft-davies-pesci-next-steps-00.txt=0D=0A09:40 Process issues in general (Brian Carpenter)=0D=0A      draft-carpenter-procdoc-roadmap-04.txt=0D=0A      draft-carpenter-rfc2026-critique-00.txt=0D=0A09:55 Newtrk - where next? (Scott Bradner, newtrk chair)=0D=0A10:10 RFC Editor charter and RFP (Leslie Daigle, IAB Chair)=0D=0A      draft-irtf-rfcs-00.txt=0D=0A10:25 Independent submissions track (Stewart Bryant)=0D=0A10:40 Long Term Suspensions from Mailing Lists (Sam Hartman)=0D=0A      draft-hartman-mailinglist-experiment-01.txt =0D=0A11:00 Any other business, quick mentions      =0D=0A      draft-alvestrand-ipod-00.txt=0D=0A      draft-meyer-agendas-and-minutes-00.txt=0D=0A      draft-ietf-proto-wgchair-doc-shepherding-06.txt=0D=0A      draft-narten-successful-bof-01.txt=0D=0A      draft-palet-ietf-meeting-network-requirements-00.txt=0D=0A      draft-palet-ietf-meeting-venue-selection-criteria-03.txt=0D=0A11:30 end=0D=0A=0D=0ANote- discussion of this agenda can take place on ietf@ietf.org list.=0D=0AThe specific topics can be discussed on the pesci-discuss@ietf.org,=0D=0Anewtrk@lists.uoregon.edu, or ietf@ietf.org lists as appropriate.
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T090000
+DTEND:20060322T113000
+LOCATION:Coronado BCD
+UID:A90657F4-103A-4677-A294-CC32F68E715E@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:3
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - l2cp - Layer 2 Control Protocol BOF
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Layer 2 Control Protocol BOF=0D=0ALayer 2 Control Protocol BoF.  =0D=0A-----------------------------=0D=0A=0D=0A09:00 - 11:30, Wednesday 23rd March. (Subject to change)=0D=0A--------------------------------------------------------=0D=0A=0D=0ADESCRIPTION=0D=0A=0D=0AThere is significant interest in the use of an IP based Layer 2 device=0D=0AControl Protocol to manage and configure service provider access network=0D=0Aequipment. This BOF will present a summary of the problem areas and=0D=0Arequirements as identified by discussions in the DSL Forum. A set of=0D=0Aprotocol solution proposals based on modifications and extensions to the=0D=0AGSMPv3 protocol and items for future work will also be presented. Based=0D=0Aon the discussion, we will determine whether we should form an IETF WG=0D=0Acovering this topic.=0D=0A=0D=0AAGENDA=0D=0A=0D=0A1. Introduction/agenda tweaking (Chair - 5 min) 2. Problem description=0D=0A(T. Haag, DT - 15 min)=0D=0A - Topology discovery=0D=0A - Line configuration=0D=0A - OAM=0D=0A - Multicast=0D=0A - History=0D=0A=0D=0A3. Overview of proposed protocol solution (Sanjay Wadhwa, Juniper - 15 min)=0D=0A - Currently proposed GSMP protocol extensions=0D=0A - Current status of implementation=0D=0A - Issues=0D=0A=0D=0A4. Proposed work items (Chair - 5 min)=0D=0A - Framework and requirements document=0D=0A - Solution document (extensions)=0D=0A - MIBs=0D=0A=0D=0A5. Discussion and Focus (20 min)=0D=0A - Interest in WG Formation =0D=0A=0D=0A=0D=0AREADING LIST and BACKGROUND REFERENCES=0D=0A=0D=0ARelated Internet-Drafts:=0D=0A=0D=0AGSMP extensions for layer2 control            =0D=0Ahttp://www.ietf.org/internet-drafts/draft-wadhwa-gsmp-l2control-configur=0D=0Aation-00.txt=0D=0A=0D=0AFramework and Requirements for a Layer 2 Control Protocol (L2CP) in =0D=0ABroadband Multi-Service Networks=0D=0Ahttp://www.ietf.org/internet-drafts/draft-ooghe-l2cp-framework-00.txt=0D=0A=0D=0A=0D=0AGeneral Switch Management Protocol documents:=0D=0A=0D=0AGeneral Switch Management Protocol v3 - RFC3292=0D=0Ahttp://www.ietf.org/rfc/rfc3292.txt?number-3292=0D=0A=0D=0ADraft GSMPv3 Base Specification=0D=0Ahttp://www.ietf.org/internet-drafts/draft-ietf-gsmp-v3-base-spec-07.txt=0D=0A=0D=0AOther document listed under the GSMP work group charter=0D=0Ahttp://www.ietf.org/html.charters/OLD/gsmp-charter.html=0D=0A=0D=0ADSL Forum documents:=0D=0A=0D=0ALayer 2 Control Protocol use-cases (DSL Forum work in progress)=0D=0APD21 - Liaised to the IETF by the DSL Forum on December 8th, 2005.=0D=0Adsl2005.052.doc.
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T090000
+DTEND:20060322T113000
+LOCATION:Cortez CD
+UID:5858AA4B-CBA2-4303-ADE9-8198F237FD29@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - mipshop - MIPv6 Signaling and Handoff Optimization WG
+URL:http://www.ietf.org/html.charters/mipshop-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T090000
+DTEND:20060322T113000
+LOCATION:Chantilly W
+UID:812F49A0-923A-40B9-B115-03BF061C355A@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:3
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RAI - p2p-sip - Peer to Peer Support for Session Initiation Protocol BOF
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T090000
+DTEND:20060322T113000
+LOCATION:Metropolitan
+UID:85475A7D-F0D6-44C4-A025-389D9293E153@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RTG - idr - Inter-Domain Routing WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Inter-Domain Routing WG=0D=0A1. IDR Document status update (5 mins)=0D=0A2. draft-levy-idr-6pe-survey-00.txt (10 mins)=0D=0A3. draft-bhatia-bgp-multiple-next-hops-00.txt (10 mins)=0D=0A4. draft-bhatia-ecmp-routes-in-bgp-02.txt (10 mins)=0D=0A5. draft-zhang-idr-bgp-entire-routes-reflect-02 (15 mins)=0D=0A6. draft-hares-bose-dynamic_as-02.txt (10 mins)
+URL:http://www.ietf.org/html.charters/idr-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T090000
+DTEND:20060322T113000
+LOCATION:Monet
+UID:3C968CB7-2C06-45FD-8966-23FE3EBEB6E6@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:SEC - isms - Integrated Security Model for SNMP WG
+URL:http://www.ietf.org/html.charters/isms-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T090000
+DTEND:20060322T113000
+LOCATION:Coronado A
+UID:5DF52F1F-043A-4D2B-A3FD-59FF2C6C8C92@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:TSV - tsvwg - Transport Area Working Group
+URL:http://www.ietf.org/html.charters/tsvwg-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T130000
+DTEND:20060322T150000
+LOCATION:Metropolitan
+UID:602D8EFF-41A2-4CBF-8C8F-F76BB608FAF3@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:APP - imapext - Internet Message Access Protocol Extension WG
+URL:http://www.ietf.org/html.charters/imapext-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T130000
+DTEND:20060322T150000
+LOCATION:Coronado A
+UID:A6A3D4AC-E6D3-4074-8279-C047D6BAB363@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - 16ng - IPv6 over IEEE 802.16(e) Networks BOF
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:IPv6 over IEEE 802.16(e) Networks BOF=0D=0AIP over IEEE 802.16(e) Networks (16ng)=0D=0A=0D=0A =0D=0ALast Modified: 2006-02-28=0D=0A=0D=0AChair(s):=0D=0A=0D=0ASoohong Daniel Park <soohong.park@samsung.com>=0D=0AGabriel Montenegro <gabriel_montenegro_2000@yahoo.com>=0D=0A=0D=0A=0D=0AInternet Area Director(s):=0D=0A=0D=0AMark Townsley <townsley@cisco.com>=0D=0AMargaret Wasserman <margaret@thinkmagic.com>=0D=0A=0D=0A=0D=0ATechnical Advisor(s):=0D=0A=0D=0AMaximilian Riegel <maximilian.riegel@siemens.com>=0D=0A=0D=0A=0D=0AMailing Lists:=0D=0A=0D=0AGeneral Discussion: 16ng@eeca16.sogang.ac.kr=0D=0ATo Subscribe: http://eeca16.sogang.ac.kr/mailman/listinfo/16ng =0D=0AArchive: http://eeca16.sogang.ac.kr/pipermail/16ng =0D=0A=0D=0A=0D=0ADescription of Working Group:=0D=0A=0D=0ABroadband Wireless Access Networks address the inadequacies of low bandwidth =0D=0Awireless communication for user requirements such as high quality data/voice =0D=0Aservice, fast mobility, wide coverage, etc. The IEEE 802.16 Working Group on =0D=0ABroadband Wireless Access Standards develops standards and recommended practices =0D=0Ato support the development and deployment of Broadband Wireless Metropolitan =0D=0AArea Networks. Additionally, IEEE 802.16e is an amendment that adds support =0D=0Afor mobility over the base IEEE 802.16 specification. =0D=0A=0D=0ARecently, the WiMAX Forum, and, in particular, its NWG (Network Working Group) =0D=0Ais defining the IEEE 802.16(e) network architecture (e.g., IPv4, IPv6, Mobility, =0D=0Ainterworking with different networks, AAA, etc). The NWG is thus taking on work =0D=0Aat layers above those defined by the IEEE 802 standards (typically limited to =0D=0Athe physical and link layers only). Similarly, WiBro (Wireless Broadband),  =0D=0AKorea effort which focuses on the 2.3 GHz spectrum band, is also based on the =0D=0AIEEE 802.16e specification. =0D=0A=0D=0AIEEE 802.16(e) is different from existing wireless access technologies such as =0D=0AIEEE 802.11 or 3G, and, while 802.16 defines the encapsulation of an IP datagram =0D=0Ain an IEEE 802.16 MAC payload, complete description of IP operation is not =0D=0Apresent and can benefit from IETF input and specification.=0D=0A=0D=0AFor example: immediately subsequent to network entry, an 802.16 subscriber =0D=0Astation has no capability whatsoever for data (as opposed to management) =0D=0Aconnectivity. The criteria by which the Base Station (or other headend elements) =0D=0Aset up the 802.16 MAC connections for data transport are not part of the 802.16 =0D=0Astandard, and depend on the type of data services being offered (e.g., the set =0D=0Aup of transport connections will be different for IPv4 and IPv6 services). =0D=0AAdditionally - as 802.16 is a point-to-multipoint network- an 802.16 subscriber =0D=0Astation is not capable of multicasting (e.g., for neighbor discovery, ARP, IP =0D=0Amulticasting services, etc.) or direct communication to the other nodes in the =0D=0Anetwork. While the built-in Convergence Sublayers (e.g., either IP CS or Ethernet =0D=0ACS) may rectify this, full details are not yet fleshed out.=0D=0A=0D=0AAs for fast mobility, the characteristics of IEEE 802.16e link-layer operation =0D=0Amay require special considerations when implementing Fast Mobile IPv6 (RFC 4068), =0D=0Asomething which may be pursued in the MIPSHOP WG. In the case of Fast Mobile IPv4 =0D=0A(FMIPv4) over IEEE 802.16(e), the specification will be done by the MIP4 WG. The =0D=0A16ng WG will participate and help coordinate with the other 16ng efforts.=0D=0A=0D=0AThe principal objective of the 16ng working group is to identify what limitations =0D=0Aand considerations apply to IPv4 and IPv6 adoption over IEEE 802.16(e), and to =0D=0Apropose available solutions. The working group may issue recommendations to IEEE =0D=0A802.16 aiming at improving support for IP.=0D=0A=0D=0AThese recommendations will be needed rather soon. The WiMAX Forum is slated to =0D=0Aspecify IPv6 operation over IEEE 802.16(e) in 2006. On the other hand, WiBro is =0D=0Aalready planning IPv4 deployment in 2006 (IPv6 over WiBro will begin in the near =0D=0Afuture). Accordingly, the working group will work and coordinate with the WiMAX =0D=0AForum and with the WiBro efforts.=0D=0A=0D=0AThe scope of this working group is as follows (WG Deliverables);=0D=0A=0D=0A-  Produce ¡°Problem Statements for IPv6 and IPv4 over IEEE 802.16(e) Networks¡±=0D=0A   to identify the problems and limitations of IP adoption over IEEE 802.16(e) =0D=0A   networks. [Informational RFC]=0D=0A   =0D=0A-  Produce ¡°IPv6 over IEEE 802.16(e) Networks" to define IPv6 operation including =0D=0A   the transmission of IPv6 over IEEE 802.16(e) links, Neighbor Discovery Protocol, =0D=0A   Stateful (DHCPv6) and Stateless Address Configuration, Broadcast, Multicast, =0D=0A   etc. [Proposed Standard RFC]=0D=0A   =0D=0A-  Produce ¡°IPv4 over IEEE 802.16(e) Networks" to define IPv4 operation including =0D=0A   the transmission of IPv4 over IEEE 802.16(e) links, ARP operation, Stateful =0D=0A   Address Configuration (DHCPv4), Broadcast, Multicast, etc. [Proposed Standard RFC]=0D=0A   =0D=0A-  Coordinate with the MIPSHOP WG with regard to "Fast Handover Mobile IPv6 over IEEE =0D=0A   802.16e Networks" to define fast handover scheme for mobile IPv6 (RFC 4068) over =0D=0A   IEEE 802.16e links. [Informational RFC]=0D=0A   =0D=0A-  Coordinate with the MIP4 WG with regard to "Fast Handover Mobile IPv4 over IEEE =0D=0A   802.16e Networks" to define fast handover scheme for mobile IPv4 over IEEE 802.16e =0D=0A   links. [Informational RFC]=0D=0A   =0D=0A-  Produce "IP deployment over IEEE 802.16(e) Networks" to illustrate the IP deployment =0D=0A   scenarios and considerations over IEEE 802.16(e) networks. [Informational RFC]=0D=0A   =0D=0AThis working group will reuse existing specifications whenever reasonable and possible.=0D=0A=0D=0A=0D=0ARelated documents:=0D=0A=0D=0A- 16NG Problem Statements=0D=0A   I-D: draft-jee-16ng-ps-goals-00=0D=0A=0D=0A- IPv6 Neighbor Discovery over 802.16: Problems and Goals=0D=0A   I-D: draft-madanapalli-nd-over-802.16-problems-00=0D=0A  =0D=0A- Transport of IP over 802.16=0D=0A   I-D: draft-mandin-ip-over-80216-ethcs-00  =0D=0A=0D=0A- Real-Time usage of IEEE 802.16: Problem Statement=0D=0A   I-D: draft-neves-rt-usage-80216-problem-statement-00=0D=0A=0D=0A- IPv6 Solution Framework for WiMAX=0D=0A   I-D: coming soon=0D=0A=0D=0A- IPv6 NDP for Common Prefix Allocation in IEEE 802.16=0D=0A   I-D: draft-jeon-ipv6-ndp-ieee802.16-00=0D=0A=0D=0A- Considerations of NDP over IEEE 802.16 Networks=0D=0A   I-D: draft-lee-ndp-ieee802.16-00=0D=0A  =0D=0A- QoS Aware Real-Time Support for IPv6 in IEEE 802.16 Backhaul scenarios=0D=0A   I-D: draft-neves-rt-qos-ipv6-80216-00=0D=0A=0D=0A- Scenarios and Considerations of IPv6 in IEEE 802.16 Networks=0D=0A   I-D: draft-shin-ipv6-ieee802.16-01=0D=0A=0D=0A- IPv6 Deployment Scenario over Mobile Broadband  Wireless Networks=0D=0A   I-D: draft-nam-ipv6-802-16e-00=0D=0A=0D=0A- Transmission of IPv6 Packets over IEEE 802.16=0D=0A   I-D: draft-shin-16ng-ipv6-transmission-00=0D=0A   =0D=0A- Link-local Multicast Packet Transmission in 802.16 Networks =0D=0A   I-D: draft-jang-16ng-llm-00=0D=0A   =0D=0A   =0D=0AAgenda:=0D=0A=0D=0Ao Update: 2006-02-27=0D=0A=0D=0Ao Timeslot: 2 hrs=0D=0A=0D=0Ao Agenda Items:=0D=0A=0D=0A05 mins:    Agenda bashing - chairs=0D=0A=0D=0A20 mins:    16NG Problem Statement - PS Team=0D=0A30 mins:    WG discussion to resolve AD concerns - chairs=0D=0A=0D=0A[Timeslots are flexible, depending on the PS discussion]=0D=0A=0D=0A10 mins:    WiMAX Forum NWG Stage 3 work for IPv6 - Basavaraj Patil=0D=0A10 mins:    IPv6 over IEEE 802.16 Solution Framework - Syam Madanapalli=0D=0A10 mins:    IPv6 NDP for Common Prefix Allocation in IEEE 802.16 - Hongseok Jeon=0D=0A10 mins:    IPv6 Packet Tramsmission over 802.16 Networks - Myungki Shin=0D=0A10 mins:    Real-Time usage of IEEE 802.16: Problem Statement - Pedro Neves=0D=0A10 mins:    QoS Aware Real-Time Support for IPv6 in IEEE 802.16 Backhaul scenarios - Pedro Neves=0D=0A=0D=0A05 mins:    Closing - chairs=0D=0A=0D=0A-------=0D=0A120 mins   =0D=0A   
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T130000
+DTEND:20060322T150000
+LOCATION:Coronado BCD
+UID:F9B31C0B-B985-41C1-908F-2F71A0FD7423@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - softwire - Softwires WG 
+URL:http://www.ietf.org/html.charters/softwire-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T130000
+DTEND:20060322T150000
+LOCATION:Monet
+UID:1DA4ED3A-928A-42DC-BF69-7922AB799C41@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:OPS - ipfix - IP Flow Information Export WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:IP Flow Information Export WG=0D=0A**DRAFT** IPFIX Agenda for IETF 65, Dallas=0D=0A------------------------------------------=0D=0A=0D=0A=0D=0A    1) Drafts currently with IESG=0D=0A       * Report on current status of=0D=0A         - draft-ietf-ipfix-as-06.txt=0D=0A         - draft-ietf-ipfix-architecture-09.txt=0D=0A         - draft-ietf-ipfix-protocol-19.txt=0D=0A         - draft-ietf-ipfix-info-11.txt=0D=0A       Note that there has been onging discussion of some of these=0D=0A       drafts on the IPFIX mailing list.  'Minor, editorial' changes=0D=0A       to them can be made as we work through any changes suggested=0D=0A       by the AD review.=0D=0A=0D=0A    2) IPFIX charter review=0D=0A       * The following IPFIX-related indiviual drafts have been published:=0D=0A         - draft-bclaise-ipfix-reliability-00.txt=0D=0A         - boschi-export-perpktinfo-01.txt=0D=0A         - boschi-ipfix-biflow-01.txt=0D=0A         - boschi-ipfix-implementation-guidelines-00.txt=0D=0A         - dressler-ipfix-aggregation-02.txt=0D=0A         - stephan-isp-templates-01.txt=0D=0A         - draft-trammell-ipfix-file-00.txt=0D=0A       * We want to select a few of these to become IPFIX WG items.=0D=0A         The items selected should be those that are most important=0D=0A         for IPFIX, particularly in helping users to deploy it.=0D=0A         And of course, we want to select items that can be completed=0D=0A         within a short time frame, i.e. < one year!=0D=0A=0D=0A=0D=0AIf you have other items you'd like to see discussed, please advise=0D=0Athe WG chairs by email to ipfix-chairs@net.doit.wisc.edu=0D=0A=0D=0A-----------------------------------------------------------------
+URL:http://www.ietf.org/html.charters/ipfix-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T130000
+DTEND:20060322T150000
+LOCATION:Chantilly W
+UID:E300CE76-994C-4080-BE41-4793826A2FD8@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RAI - sipping - Session Initiation Proposal Investigation WG
+URL:http://www.ietf.org/html.charters/sipping-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T130000
+DTEND:20060322T150000
+LOCATION:Cortez CD
+UID:809F241C-1787-4CF9-BD64-215CA8F59EFA@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RTG - l1vpn - Layer 1 Virtual Private Networks WG
+URL:http://www.ietf.org/html.charters/l1vpn-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T130000
+DTEND:20060322T150000
+LOCATION:Cortez AB
+UID:6D0512CA-ECF9-465B-97F7-976D50357326@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:SEC - tls - Transport Layer Security WG
+URL:http://www.ietf.org/html.charters/tls-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T130000
+DTEND:20060322T150000
+LOCATION:Miro
+UID:2CF27021-5C17-40B3-8332-6B85CA81D002@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:TSV - nfsv4 - Network File System Version 4 WG
+URL:http://www.ietf.org/html.charters/nfsv4-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T151000
+DTEND:20060322T161000
+LOCATION:Miro
+UID:A00BE559-3435-4098-B138-490901BF70F1@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:APP - crisp - Cross Registry Information Service Protocol WG 
+URL:http://www.ietf.org/html.charters/crisp-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T151000
+DTEND:20060322T161000
+LOCATION:Metropolitan
+UID:256E6791-3436-42C1-8716-0EB82FB1DF15@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:3
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - eap - Extensible Authentication Protocol WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Extensible Authentication Protocol WG=0D=0AExtensible Authentication Protocol (EAP) WG=0D=0AWEDNESDAY, March 22 2006=0D=0ARoom Metropolitan=0D=0AOther WGs meeting at this time: crisp, nemo, psamp, sipping, sidr, dkim=0D=0A=0D=0A1. Administrative (Chairs)=0D=0A   - Notes takers=0D=0A   - Agenda bashing=0D=0A   - Document status=0D=0A=0D=0A2. Remaining keying issues (Bernard Aboba)=0D=0A=0D=0A   http://www.ietf.org/internet-drafts/draft-ietf-eap-keying-10.txt=0D=0A=0D=0A   Close the remaining issues. We do have some hope that they=0D=0A   are already closed before Dallas, in which case this agenda=0D=0A   item will be deleted.=0D=0A=0D=0A3. Remaining network selection issues (Jouni Korhonen, Farooq Bari)=0D=0A=0D=0A   http://www.ietf.org/internet-drafts/draft-ietf-eap-netsel-problem-03.txt=0D=0A=0D=0A   Close issues from the WGLC.=0D=0A=0D=0A4. Generic EAP encapsulation proposal (Barany, Dondeti, Narayanan)=0D=0A=0D=0A   http://www.ietf.org/internet-drafts/draft-barany-eap-gee-00.txt=0D=0A=0D=0A   Provide feedback from the EAP community on this proposal.=0D=0A=0D=0A   (This item will be discussed if there is time left after the=0D=0A   two above ones, given that we are attempting to close the=0D=0A   final WG deliverables.)=0D=0A=0D=0A5. AOB
+URL:http://www.ietf.org/html.charters/eap-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T151000
+DTEND:20060322T161000
+LOCATION:Coronado A
+UID:70862D7F-82DB-437F-9E49-0F5CE88B592F@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - nemo - Network Mobility WG
+URL:http://www.ietf.org/html.charters/nemo-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T151000
+DTEND:20060322T161000
+LOCATION:Monet
+UID:44921BC0-DE03-4206-A495-AD5A22022E47@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:OPS - psamp - Packet Sampling WG
+URL:http://www.ietf.org/html.charters/psamp-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T151000
+DTEND:20060322T161000
+LOCATION:Cortez AB
+UID:EE4AFF0A-D969-4A06-A99A-93DA4F6080B0@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RTG - sidr - Secure Inter-domain Routing BOF
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T151000
+DTEND:20060322T161000
+LOCATION:Cortez CD
+UID:D648E12E-9BDB-4183-A4AA-E2C035E58426@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:3
+SUMMARY;ENCODING=QUOTED-PRINTABLE:SEC - dkim - Domain Keys Identified Mail WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Domain Keys Identified Mail WG=0D=0A=0D=0AIETF 65 DKIM WG DRAFT agenda (20060309)=0D=0A=0D=0ADKIM will meet twice=0D=0A=0D=0A=0D=0AMonday, 1300-1500=0D=0A=0D=0AWednesday, 1510-1610=0D=0A=0D=0ABoth sessions are in the Cortez, CD room.=0D=0A=0D=0AOutline agenda=0D=0A--------------=0D=0A=0D=0AMonday:=0D=0A=0D=0A1. Agenda bashing (5, chairs)=0D=0A=0D=0A2. Threats issues (30, Fenton)=0D=0A=0D=0A3. Base document (90, Allman)=0D=0AWednesday:=0D=0A=0D=0A4. Update at start of Wednesday session (5, chairs)=0D=0A=0D=0A5. SSP issues (20, A.N.Other)=0D=0A=0D=0A6. Overview document introduction (10, A.N.Other)=0D=0A=0D=0A7. Proposal Clarifcations (20, Otis)=0D=0A=0D=0A5. Open Mike (5, all)=0D=0A=0D=0AMeeting goals=0D=0A-------------=0D=0A=0D=0AAll discussion of SSP and other issues is to follow consideration of the OPEN=0D=0Aissues [1] on the threats and base documents. =0D=0A=0D=0AThis  agenda will be updated to reflect "New Issues" created before the meeting=0D=0Adate. See [2] for a mail describing how we'd like to handle such issues.=0D=0A=0D=0AThe goal for the first slot (and our main goal for IETF-65) is to resolve all=0D=0Athreats WG last call issues and as many of the known base issues as we can. If=0D=0Awe don't get through all of that in the first slot then the chairs may continue=0D=0Athose agenda items into the second slot.  This means that the timings are =0D=0Aapproximate given that new issues can be raised on the list in the meantime.=0D=0A=0D=0AThe goals for the second slot are:-=0D=0A=0D=0A- Have some discussion of known SSP issues=0D=0A- Introduce the overview document=0D=0A- Allow Doug to clarify some of the proposals he's made on the list that =0D=0A  weren't well understood=0D=0A- Provide an open mike slot=0D=0A=0D=0AWe're currertly waiting on an "ok" from presenters of the SSP and=0D=0AOverview slots.=0D=0A=0D=0ADetails=0D=0A-------=0D=0A=0D=0A1. Agenda bashing (5, chairs)=0D=0A=0D=0A2. Threats issues (30, Fenton)=0D=0A=0D=0A=0D=0A1171=0D=0Adraft-ietf-dkim-threats-00 Clarification of the DKIM mechanism=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Adotis@mail-abuse.org=0D=0A6 weeks ago=0D=0A=0D=0A6 weeks ago=0D=0A0=0D=0A=0D=0AI think the title above doesn't match the thread which was "Misstatement of the..." ?=0D=0A=0D=0AOPEN got some support, no list opposition, but not included in threats-01=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/001907.html=0D=0A=0D=0A=0D=0A1172=0D=0Adisagreement on impact and probability of Attacks Against Message Signatures=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Adotis@mail-abuse.org=0D=0A6 weeks ago=0D=0A=0D=0A6 weeks ago=0D=0A0=0D=0A=0D=0AOPEN some discussion, no clear consensus to change or not=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/001910.html=0D=0A=0D=0A=0D=0ANNNN=0D=0AA bunch of nits on threats-01 document=0D=0A=0D=0AStephen Farell=0D=0A=0D=0AOPEN - no discussion (hopefully stays that way!)=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002485.html=0D=0A=0D=0A=0D=0ANNNN=0D=0Athreats-01 over prescriptive about key delegation=0D=0A=0D=0AStephen Farell=0D=0A=0D=0AOPEN - a little discussion, perhaps hinting at an ACCEPT?=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002486.html=0D=0A=0D=0A=0D=0ANNNN=0D=0AInclude new "known message replay" threat?=0D=0A=0D=0AStephen Farell=0D=0A=0D=0AOPEN - no discussion=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002486.html=0D=0A=0D=0A3. Base document (90, Allman)=0D=0A=0D=0A=0D=0A1183=0D=0Acarryover: draft-allman-dkim-base-01.txt - Should we have an r- tag in either the signature or key record=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Alear@ofcourseimright.com=0D=0A5 weeks ago=0D=0A=0D=0A5 weeks ago=0D=0A0=0D=0A=0D=0AOPEN=0D=0A=0D=0Ano thread?=0D=0A=0D=0A=0D=0A1184=0D=0Acarryover: Develop plan for transition of multiple crypto algs (a-)=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Alear@ofcourseimright.com=0D=0A5 weeks ago=0D=0A=0D=0A5 weeks ago=0D=0A0=0D=0A=0D=0AOPEN - not much discussion of how to transition, though not much disagreement either=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002414.html=0D=0A=0D=0A=0D=0A1185=0D=0Acarryover: draft-allman-dkim-base-01.txt Transition sha-1 to sha-256=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Alear@ofcourseimright.com=0D=0A5 weeks ago=0D=0A=0D=0A5 weeks ago=0D=0A0=0D=0A=0D=0AOPEN - not quite closed on the actual exact wording=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002414.html=0D=0A=0D=0A=0D=0A1193=0D=0Abase spec: instead of signing the message, sign the hash=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Alear@ofcourseimright.com=0D=0A3 weeks ago=0D=0A=0D=0A3 weeks ago=0D=0A0=0D=0A=0D=0AOPEN =0D=0A=0D=0Ano (recent) thread=0D=0A=0D=0A=0D=0A1194=0D=0Abase spec: whitespace in signature?=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Aeric@sendmail.com=0D=0A3 weeks ago=0D=0A=0D=0A3 weeks ago=0D=0A0=0D=0A=0D=0AOPEN - not sure if this is the right thread=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002464.html=0D=0A=0D=0A=0D=0A=0D=0A1195=0D=0Adraft-ietf-dkim-base-00 - 3.4.6 Example (Canonicalization)=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Ahsantos@santronics.com=0D=0A2 weeks ago=0D=0A=0D=0A2 weeks ago=0D=0A0=0D=0A=0D=0AOPEN - no discussion=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002148.html=0D=0A=0D=0A=0D=0A1196=0D=0ABase: Upgrade indication and protection against downgrade attacks=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0AMarkD+dkim@yahoo-inc.com=0D=0A2 weeks ago=0D=0A=0D=0A2 weeks ago=0D=0A0=0D=0A=0D=0AOPEN - lots of discussion, no clear closure=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002163.html=0D=0A=0D=0A=0D=0A1200=0D=0AMUST vs SHOULD in Verifier Actions section (-base)=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Aeric@sendmail.com=0D=0A2 weeks ago=0D=0A=0D=0A2 weeks ago=0D=0A0=0D=0A=0D=0AOPEN=0D=0A=0D=0Anot sure which thread=0D=0A=0D=0A=0D=0A1204=0D=0Aissue with DKIM simple header algorithm and milter-based implementations=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0Atony@att.com=0D=0A2 weeks ago=0D=0A=0D=0A2 weeks ago=0D=0A0=0D=0A=0D=0AOPEN - seemed like consensus but no clear change=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002273.html=0D=0A=0D=0A=0D=0ANNNN=0D=0Aclarifications on use of l- tag=0D=0A=0D=0AEric Allman=0D=0A=0D=0AOPEN - no discussion=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002185.html=0D=0A=0D=0A=0D=0ANNNN=0D=0Asignature h- and z- tags=0D=0A=0D=0AHector Santos=0D=0A=0D=0AOPEN - little discussion=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002375.html=0D=0A=0D=0A4. Update at start of Wednesday session (5, chairs)=0D=0A=0D=0A5. SSP issues (20, A.N.Other)=0D=0A=0D=0A=0D=0A1201=0D=0Achange the syntax from SPF compat to human compat=0D=0Anew=0D=0Adkim=0D=0ANobody=0D=0A0=0D=0A=0D=0AMarkD+dkim@yahoo-inc.com=0D=0A2 weeks ago=0D=0A=0D=0A2 weeks ago=0D=0A0=0D=0A=0D=0AOPEN=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002219.html=0D=0A=0D=0A=0D=0ANNNN=0D=0Ashould r- be localpart only?=0D=0A=0D=0AMark Delany=0D=0A=0D=0AOPEN=0D=0A=0D=0Ahttp://mipassoc.org/pipermail/ietf-dkim/2006q1/002220.html=0D=0A=0D=0A6. Overview document introduction (10, A.N.Other)=0D=0A7. Clarifcations (20, Otis)=0D=0A5. Open Mike (5, all)=0D=0A=0D=0A[1] http://mipassoc.org/pipermail/ietf-dkim/2006q1/002483.html =0D=0A[2] http://mipassoc.org/pipermail/ietf-dkim/2006q1/001880.html=0D=0A
+URL:http://www.ietf.org/html.charters/dkim-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T170000
+DTEND:20060322T193000
+LOCATION:Chantilly West
+UID:7F4553C7-BF63-4B31-866A-26D82010F34F@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:IETF Operations and Administration Plenary
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:=0D=0A          Session Chair: Brian Carpenter=0D=0A              17:00 Welcome, and introduction (Brian Carpenter)=0D=0A              17:05 Host and NOC team presentation (Nokia)=0D=0A              17:20 IASA Report=0D=0A                    - RFC Editor report=0D=0A                    - IANA report=0D=0A                    - IASA Operations report: IAD=0D=0A                    - IAOC General Report: IAOC Chair=0D=0A              18:05 Updating the Tao of the IETF =0D=0A              18:15 NomCom report, changing of the guard, farewell from retiring ADs=0D=0A              18:30 Open Meeting - new IESG on stage =0D=0A              19:30 end
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060322T220000
+DTEND:20060322T235900
+LOCATION:Miro
+UID:6EAE3C59-2930-4F9F-B9DD-2EEBCCDA23C8@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:PGP Key Signing
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:=0D=0A 
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T090000
+DTEND:20060323T113000
+LOCATION:Metropolitan
+UID:8896FC10-4352-4A96-A829-5D9DD8EEDF3E@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:3
+SUMMARY;ENCODING=QUOTED-PRINTABLE:GEN - techspec - Requirements for IETF Technical Specification Publication BOF
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Requirements for IETF Technical Specification Publication BOF=0D=0A=0D=0AAgenda=0D=0A------=0D=0A=0D=0A1.  Overview & Introduction [BoF Chair]=0D=0A2.  Review and discussion of draft-mankin-pub-req [Stephen Hayes,=0D=0A     Allison Mankin]=0D=0A3.  Discussion of any other requirements=0D=0A4.  Determination of where from here for requirements documentation.
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T090000
+DTEND:20060323T113000
+LOCATION:Monet
+UID:268738DF-0F4F-4E9C-A04C-C1BD741A4AE1@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - dhc - Dynamic Host Configuration WG
+URL:http://www.ietf.org/html.charters/dhc-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T090000
+DTEND:20060323T113000
+LOCATION:Cortez AB
+UID:51C39D7C-3AA0-43D4-BCB1-FE2852EB50E2@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - hip - Host Identity Protocol WG
+URL:http://www.ietf.org/html.charters/hip-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T090000
+DTEND:20060323T113000
+LOCATION:Coronado BCD
+UID:62D033B3-57D2-4C00-8368-14FB812C655F@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:OPS - mboned - MBONE Deployment WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:MBONE Deployment WG=0D=0A=0D=0AMBONE Deployment WG (mboned) =0D=0ADraft Agenda=0D=0A=0D=0ATBD=0D=0A---------------------------------------------------------=0D=0A=0D=0ACHAIRS: TBD=0D=0A=0D=0AAGENDA=0D=0A=0D=0A o Administriva=0D=0A=0D=0A   - Mailing list: majordomo@lists.uoregon.edu=0D=0A     subscribe mboned=0D=0A=0D=0A   - Scribe(s)?=0D=0A=0D=0A   - Blue Sheets=0D=0A=0D=0A o Agenda Bashing                                                =0D=0A   Chairs                                                      5 minutes=0D=0A=0D=0A o Review and status of work items                      =0D=0A=0D=0A   WGLC=0D=0A   ----=0D=0A   draft-ietf-mboned-msdp-mib-01.txt                         =0D=0A=0D=0A   RFC-Ed queue=0D=0A   ------------=0D=0A   draft-ietf-mboned-msdp-deploy-06.txt=0D=0A   draft-ietf-mboned-ssm232-08.txt=0D=0A   draft-ietf-mboned-mroutesec-04.txt=0D=0A     TBD                                                         5 minutes=0D=0A=0D=0A   Active Drafts=0D=0A   -------------=0D=0A   draft-ietf-mboned-addrdisc-problems-01.txt                    5 minutes =0D=0A     Savola=0D=0A   draft-ietf-mboned-routingarch-02.txt                          5 minutes=0D=0A     Savola=0D=0A   draft-ietf-mboned-maccnt-req-03.txt                           5 minutes=0D=0A     Hayashi, et al.=0D=0A   draft-ietf-mboned-rac-issues-01.txt                           5 minutes =0D=0A     Sato=0D=0A   draft-ietf-mboned-auto-multicast-05.txt=0D=0A=0D=0A=0D=0A o Charter Discussion=0D=0A    Kessens/all                                                  90 minutes=0D=0A
+URL:http://www.ietf.org/html.charters/mboned-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T090000
+DTEND:20060323T113000
+LOCATION:Cortez CD
+UID:93BB834E-717B-4582-8F35-01827F3BD85F@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RTG - ospf - Open Shortest Path First IGP WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Open Shortest Path First IGP WG=0D=0AOpen Shortest Path First WG (ospf)=0D=0A=0D=0AThursday, March 23rd from 0900-1130=0D=0A------------------------------------=0D=0A=0D=0ACHAIR(s): Rohit Dube <dube.rohit@gmail.com>=0D=0A          Acee Lindem <acee@cisco.com>=0D=0A=0D=0AAGENDA:=0D=0A=0D=0A o Administriva                                            5 minutes=0D=0A=0D=0A   - Mailing list: OSPF@PEACH.EASE.LSOFT.COM Subscription/Removal: =0D=0A      http://peach.ease.lsoft.com/scripts/wa.exe?SUBED1-ospf&A-1=0D=0A   - Scribe?=0D=0A   - Blue Sheets=0D=0A=0D=0A o Document Status - Acee                                  10 minutes=0D=0A=0D=0A o Immediate Reply Hello - Zengjie Kou                     15 minutes =0D=0A   draft-kou-ospf-immediately-replying-hello-00.txt=0D=0A=0D=0A o OSPF MPR Extension - Emmanuel Baccelli                  15 minutes=0D=0A   draft-baccelli-ospf-mpr-ext-01.txt=0D=0A=0D=0A o OSPF MDR Draft Update - Tom Henderson for Richard Ogier=0D=0A   draft-ogier-ospf-manet-extension-07.txt                 15 minutes=0D=0A=0D=0A o OSPF MDR Position - Tom Henderson for Richard Ogier                        =0D=0A   draft-ogier-ospf-mdr-position-00.txt                    15 minutes =0D=0A=0D=0A o oSPF MANET Design Team Progress/Next Steps (Tom)        20 minutes=0D=0A=0D=0A o OSPF WG Charter - Acee                                  10 minutes   =0D=0A=0D=0A o OSPF WG Charter Discussion                              10 minutes   
+URL:http://www.ietf.org/html.charters/ospf-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T090000
+DTEND:20060323T113000
+LOCATION:Chantilly W
+UID:62158301-5E50-4255-94CE-98B95E588215@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:SEC - hoakey - Handover and Application Keying and Pre-authentication BOF
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T090000
+DTEND:20060323T113000
+LOCATION:Coronado A
+UID:B5413534-498A-459D-A7D6-9CEE4BE169DB@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:TSV - nsis - Next Steps in Signaling WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Next Steps in Signaling WG=0D=0ATHURSDAY, March 23, 2006=0D=0A0900-1130 Morning Session I =0D=0ATSV  nsis       Next Steps in Signaling WG=0D=0A=0D=0AWG Status update=0D=0AGIST update - 5 minutes=0D=0AQoS work update - 15 minutes (QoS NSLP, various QoS model drafts)=0D=0ANATFW work update - 15 minutes=0D=0AMobility discussion - 15 minutes=0D=0A=0D=0Amini off-path bof - 1 hour=0D=0A (note - many people have been asking about this topic, so some open =0D=0A  discussion for the WG is warrented).=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A1510-1610 Afternoon Session II=0D=0ATSV  nsis       Next Steps in Signaling WG=0D=0A=0D=0ANew Work discussion - 1 hour=0D=0A - I'm lumping all non-WG drafts into this hour, to get a sense of what=0D=0Apeople think should be done.  =0D=0A - Please review the non-working drafts before the meeting and post your=0D=0A   opinions if the work is of interest or not.=0D=0A - http://tools.ietf.org/wg/nsis/ contains most of the drafts in=0D=0Aquestion, IMO.
+URL:http://www.ietf.org/html.charters/nsis-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T090000
+DTEND:20060323T113000
+LOCATION:Miro
+UID:AC19A3BB-7C62-46C3-8561-A92E02C60F75@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:TSV - rserpool - Reliable Server Pooling WG
+URL:http://www.ietf.org/html.charters/rserpool-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T130000
+DTEND:20060323T150000
+LOCATION:Metropolitan
+UID:4F26B45B-13C9-4F3B-B3C9-0CC30EBB93C3@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:APP - widex - Widget Description Exchange Service WG
+URL:http://www.ietf.org/html.charters/widex-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T130000
+DTEND:20060323T150000
+LOCATION:Chantilly W
+UID:B8536353-E743-4475-A005-4A981530AF34@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - autoconf - Ad-Hoc Network Autoconfiguration WG
+URL:http://www.ietf.org/html.charters/autoconf-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T130000
+DTEND:20060323T150000
+LOCATION:Monet
+UID:0A570B17-2F24-40AD-8DF5-C4BF414C305C@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - l2vpn - Layer 2 Virtual Private Networks WG
+URL:http://www.ietf.org/html.charters/l2vpn-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T130000
+DTEND:20060323T150000
+LOCATION:Coronado A
+UID:0188931D-7FB0-4320-91C3-4EB288B63655@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:3
+SUMMARY;ENCODING=QUOTED-PRINTABLE:OPS - v6ops - IPv6 Operations WG
+URL:http://www.ietf.org/html.charters/v6ops-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T130000
+DTEND:20060323T150000
+LOCATION:Cortez CD
+UID:88181796-44C8-4D12-B24B-46DC83DE86CA@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RAI - geopriv - Geographic Location/Privacy WG
+URL:http://www.ietf.org/html.charters/geopriv-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T130000
+DTEND:20060323T150000
+LOCATION:Coronado BCD
+UID:D35776E6-F4D6-4C14-BFD5-24E8CBA606D6@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:SEC - saag - Security Area Directorate Open Meeting
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T130000
+DTEND:20060323T150000
+LOCATION:Cortez AB
+UID:996DD793-1A27-4545-8509-00F46AD422FA@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:TSV - behave - Behavior Engineering for Hindrance Avoidance WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Behavior Engineering for Hindrance Avoidance WG=0D=0AVersion 1=0D=0A=0D=0AThis is a very rough draft of the BEHAVE agenda - it is likely to change. =0D=0A=0D=0ATCP Issues=0D=0Adraft-ietf-behave-tcp-00=0D=0A=0D=0ASTUN Issues=0D=0Adraft-ietf-behave-rfc3489bis-03=0D=0A=0D=0ATURN Issues=0D=0Adraft-ietf-behave-turn-00
+URL:http://www.ietf.org/html.charters/behave-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T130000
+DTEND:20060323T150000
+LOCATION:Miro
+UID:26CC4981-69E6-477A-8E33-F953CB071040@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:TSV - nfsv4 - Network File System Version 4 WG
+URL:http://www.ietf.org/html.charters/nfsv4-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T151000
+DTEND:20060323T161000
+LOCATION:Monet
+UID:4115FB53-31FC-4C8C-A36F-82CB53A3B21C@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - mip4 - Mobility for IPv4 WG
+URL:http://www.ietf.org/html.charters/mip4-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T151000
+DTEND:20060323T161000
+LOCATION:Miro
+UID:5EB5C32C-CCFE-4604-A7DD-CCC746DA77CF@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:OPS - opsec - Operational Security Capab. for IP Network Infrastructure WG
+URL:http://www.ietf.org/html.charters/opsec-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T151000
+DTEND:20060323T161000
+LOCATION:Cortez AB
+UID:D925127C-CB24-4DD1-8ED3-F8FD309959D4@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RTG - isis - IS-IS for IP Internets WG
+URL:http://www.ietf.org/html.charters/isis-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T151000
+DTEND:20060323T161000
+LOCATION:Metropolitan
+UID:FB32ED1C-D5BA-445B-A5BA-465166B96A38@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:SEC - sasl - Simple Authentication and Security Layer WG
+URL:http://www.ietf.org/html.charters/sasl-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T151000
+DTEND:20060323T161000
+LOCATION:Cortez CD
+UID:1D981E5A-1369-4375-AE21-CC55020724E9@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:TSV - nsis - Next Steps in Signaling WG
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Next Steps in Signaling WG=0D=0ATHURSDAY, March 23, 2006=0D=0A0900-1130 Morning Session I =0D=0ATSV  nsis       Next Steps in Signaling WG=0D=0A=0D=0AWG Status update=0D=0AGIST update - 5 minutes=0D=0AQoS work update - 15 minutes (QoS NSLP, various QoS model drafts)=0D=0ANATFW work update - 15 minutes=0D=0AMobility discussion - 15 minutes=0D=0A=0D=0Amini off-path bof - 1 hour=0D=0A (note - many people have been asking about this topic, so some open =0D=0A  discussion for the WG is warrented).=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A1510-1610 Afternoon Session II=0D=0ATSV  nsis       Next Steps in Signaling WG=0D=0A=0D=0ANew Work discussion - 1 hour=0D=0A - I'm lumping all non-WG drafts into this hour, to get a sense of what=0D=0Apeople think should be done.  =0D=0A - Please review the non-working drafts before the meeting and post your=0D=0A   opinions if the work is of interest or not.=0D=0A - http://tools.ietf.org/wg/nsis/ contains most of the drafts in=0D=0Aquestion, IMO.
+URL:http://www.ietf.org/html.charters/nsis-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060323T170000
+DTEND:20060323T193000
+LOCATION:Chantilly West
+UID:61260C56-29F3-4864-9335-9DA0E626CB15@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:Technical Plenary
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:=0D=0A          Session Chair: Leslie Daigle=0D=0A              Welcome and introduction (IAB Chair)=0D=0A              IRTF Report (Aaron Falk)=0D=0A              IRTF Technical Presentation=0D=0A                   End-to-End RG=0D=0A              IAB Technical Presentation=0D=0A                   Distributed Hash Tables (DHTs)=0D=0A              IAB update (IAB Chair)=0D=0A              Town Hall Meeting - Technical topics=0D=0A 
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060324T090000
+DTEND:20060324T113000
+LOCATION:Monet
+UID:53BEEAD4-3B67-4A41-877E-7A3DCC6A5A43@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:INT - 6lowpan - IPv6 over Low power WPAN WG
+URL:http://www.ietf.org/html.charters/6lowpan-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060324T090000
+DTEND:20060324T113000
+LOCATION:Miro
+UID:E73BA8B5-F4EA-418E-AD9C-027469D35DE6@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:IRTF - p2prg - Peer-to-Peer RG
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060324T090000
+DTEND:20060324T113000
+LOCATION:Coronado A
+UID:3BC066D4-A213-4CE8-94D3-3902C5EAA5E4@ietf.org
+DTSTAMP:20060312T032016Z
+SEQUENCE:3
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RAI - sipping - Session Initiation Proposal Investigation WG
+URL:http://www.ietf.org/html.charters/sipping-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060324T090000
+DTEND:20060324T113000
+LOCATION:Cortez AB
+UID:F139AEFD-86B0-4BE9-A8A1-EDC7D51CC19C@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:RTG - ccamp - Common Control and Measurement Plane WG
+URL:http://www.ietf.org/html.charters/ccamp-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060324T090000
+DTEND:20060324T113000
+LOCATION:Metropolitian
+UID:65EDDDFB-6A48-4CAD-8D4B-990E44FA4389@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:TSV - rohc - Robust Header Compression WG
+URL:http://www.ietf.org/html.charters/rohc-charter.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060324T123000
+DTEND:20060324T140000
+LOCATION:Metropolitian
+UID:18E674D3-151D-4C51-A50E-204DF006E078@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:IRTF - dtnrg - Delay-Tolerant Networking Research Group
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20060324T123000
+DTEND:20060324T140000
+LOCATION:Monet
+UID:94CEB828-15D7-45AE-8FE7-6A5946E6CFEB@ietf.org
+DTSTAMP:20060310T000236Z
+SEQUENCE:2
+SUMMARY;ENCODING=QUOTED-PRINTABLE:IRTF - hiprg - Host Identity Protocol RG
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,34 @@
+
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 11.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:20090120T05:45:00Z
+DTEND:20090120T05:45:00Z
+LOCATION:
+TRANSP:OPAQUE
+SEQUENCE:0
+UID:
+DTSTAMP:20090120T05:45:00
+DESCRIPTION;CHARSET=ISO-8859-1;ENCODING=quoted-printable: January 2009  Dinner Meeting at Heritage Palms Country Club - <p><span style="font-size: 10pt; font-family: Tahoma">Join&nbsp;us for the first dinner meeting of&nbsp;2009 and to wish everyone a Happy&nbsp;Happy New Year!<br />
+<br />
+We will be meeting on January 20th&nbsp;at Heritage Palms Country Club in Indio </span><span style="font-size: 10pt; font-family: Verdana; mso-bidi-font-family: Arial"><a target="_blank" href="http://www.mapquest.com/maps?name=Heritage+Palms+Golf+Club&amp;city=Indio&amp;state=CA&amp;address=44291+Heritage+Palms+Dr+S&amp;zipcode=92201&amp;country=US&amp;latitude=33.727883&amp;longitude=-116.262537&amp;geocode=ADDRESS&amp;id=11303688">(directions).<br />
+</a><br />
+The evening's speaker will be&nbsp;Darren Hagar of Robert Half and Associates.&nbsp; Mr. Hagar will discuss recruiting and how to select the perfect applicant.<br />
+<br />
+</span><span style="font-size: 10pt; font-family: Tahoma">No host cocktails and social at&nbsp;5:45 followed by our evening's&nbsp;speaker at&nbsp;6:30.</span><span style="font-size: 10pt; font-family: Verdana; mso-bidi-font-family: Arial"><o:p></o:p></span></p>
+<p><span style="font-size: 10pt; font-family: Tahoma">Register now&nbsp;to save yourself a place. Members $45.00, Non-members $55.00</span><span style="font-size: 10pt; font-family: Verdana; mso-bidi-font-family: Arial"><o:p></o:p></span></p>
+<p>&nbsp;<a target="_blank" href="http://www.dhaaonline.org/calendar/event_email_check.cfm?Calendar_ID=114409"><img height="39" alt="Sign up Now" width="130" border="0" src="http://www.dhaaonline.org/images/sign-up-now.gif" /></a></p>
+SUMMARY;CHARSET=ISO-8859-1;ENCODING=quoted-printable:Club Event Reminder: January 2009  Dinner Meeting at Heritage Palms Country Club
+PRIORITY:5
+X-MICROSOFT-CDO-IMPORTANCE:1
+CLASS:PUBLIC
+BEGIN:VALARM
+TRIGGER:-PT120M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
+
