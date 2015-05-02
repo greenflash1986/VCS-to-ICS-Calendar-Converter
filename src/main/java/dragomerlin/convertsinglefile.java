@@ -30,8 +30,12 @@ import java.io.OutputStreamWriter;
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.text.SimpleDateFormat;
 import java.util.TimeZone;
 import java.util.Calendar;
+
+import javax.annotation.Generated;
+
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.io.ByteOrderMark;
 import org.apache.commons.io.input.BOMInputStream;
@@ -84,8 +88,7 @@ public class convertsinglefile {
 	 * UTF-32BE and UTF-32LE.
 	 */
 
-	public static String decode(String paramString)
-			throws UnsupportedEncodingException {
+	public static String decode(String paramString) throws UnsupportedEncodingException {
 		// Some special characters like \ will be skipped after importing them
 		// with the calendar application. To prevent it we must scape them, like
 		// \\
@@ -101,10 +104,8 @@ public class convertsinglefile {
 		try {
 			// TODO Add support for more source charsets than the UTF-8. I hope
 			// all Nokia phones use UTF-8 by default
-			localStringBuffer1.append(new String(
-					org.apache.commons.codec.net.QuotedPrintableCodec
-							.decodeQuotedPrintable(paramString.getBytes()),
-					"UTF-8"));
+			localStringBuffer1.append(new String(org.apache.commons.codec.net.QuotedPrintableCodec
+					.decodeQuotedPrintable(paramString.getBytes()), "UTF-8"));
 		} catch (DecoderException e) {
 			e.printStackTrace();
 		}
@@ -134,8 +135,7 @@ public class convertsinglefile {
 
 		// Detect file encoding
 		try {
-			encodingType = TestDetector.main(inFile.getAbsolutePath()
-					.toString());
+			encodingType = TestDetector.main(inFile.getAbsolutePath().toString());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -148,30 +148,24 @@ public class convertsinglefile {
 		try {
 			if (encodingType == null) {
 				// ASCII expected
-				input = new BufferedReader(new InputStreamReader(
-						new FileInputStream(inFile)));
+				input = new BufferedReader(new InputStreamReader(new FileInputStream(inFile)));
 			} else if (encodingType.startsWith("UTF-8")) {
 				// UTF-8 requires an exclusive call to BOMInputStream
 				bomIn = new BOMInputStream(new FileInputStream(inFile));
-				input = new BufferedReader(new InputStreamReader(bomIn,
-						encodingType));
+				input = new BufferedReader(new InputStreamReader(bomIn, encodingType));
 				if (bomIn.hasBOM())
 					System.out.println("This file has UTF-8 BOM, removing it");
 				else
 					System.out.println("This file has UTF-8 without BOM");
 			} else if (encodingType.startsWith("UTF-")) {
 				// The other UTF cases except UTF-8
-				bomIn = new BOMInputStream(new FileInputStream(inFile),
-						ByteOrderMark.UTF_16LE, ByteOrderMark.UTF_16BE,
+				bomIn = new BOMInputStream(new FileInputStream(inFile), ByteOrderMark.UTF_16LE, ByteOrderMark.UTF_16BE,
 						ByteOrderMark.UTF_32LE, ByteOrderMark.UTF_32BE);
-				input = new BufferedReader(new InputStreamReader(bomIn,
-						encodingType));
-				System.out.println("This file has " + bomIn.getBOMCharsetName()
-						+ " BOM, removing it");
+				input = new BufferedReader(new InputStreamReader(bomIn, encodingType));
+				System.out.println("This file has " + bomIn.getBOMCharsetName() + " BOM, removing it");
 			} else {
 				// Any other encoding
-				input = new BufferedReader(new InputStreamReader(
-						new FileInputStream(inFile), encodingType));
+				input = new BufferedReader(new InputStreamReader(new FileInputStream(inFile), encodingType));
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -191,11 +185,9 @@ public class convertsinglefile {
 		boolean flag_continue = true; // Detection of END:VCALENDAR
 
 		// Write the first 3 lines of the output file only once
-		contents.append("BEGIN:VCALENDAR"
-				+ System.getProperty("line.separator"));
+		contents.append("BEGIN:VCALENDAR" + System.getProperty("line.separator"));
 		if (email != null)
-			contents.append("PRODID:" + email
-					+ System.getProperty("line.separator"));
+			contents.append("PRODID:" + email + System.getProperty("line.separator"));
 		else
 			contents.append("PRODID:" + System.getProperty("line.separator"));
 		contents.append("VERSION:2.0" + System.getProperty("line.separator"));
@@ -216,8 +208,7 @@ public class convertsinglefile {
 				// Jump from one event or todo to the next
 				if (line.toUpperCase().equals("END:VCALENDAR")) {
 					flag_continue = false;
-				} else if (!line.toUpperCase().equals("BEGIN:VTODO")
-						&& !line.toUpperCase().equals("BEGIN:VEVENT")) {
+				} else if (!line.toUpperCase().equals("BEGIN:VTODO") && !line.toUpperCase().equals("BEGIN:VEVENT")) {
 					// Data that may apply to all events and todos
 					if (line.toUpperCase().equals("BEGIN:VCALENDAR"))
 						;
@@ -226,9 +217,7 @@ public class convertsinglefile {
 					else if (line.toUpperCase().startsWith("VERSION:"))
 						;
 					else
-						System.out
-								.println("* New unknown header entry detected: "
-										+ line);
+						System.out.println("* New unknown header entry detected: " + line);
 				} else {
 					// Only one event or todo at a time, fetch the contents on
 					// any of either here and get all the fields
@@ -294,24 +283,21 @@ public class convertsinglefile {
 							switch (field) {
 							case 3: // summary multiline
 								if (line.startsWith(" ")) {
-									summaryNoEnc = summaryNoEnc
-											+ line.substring(1);
+									summaryNoEnc = summaryNoEnc + line.substring(1);
 								} else {
 									field = 0;
 								}
 								break;
 							case 4: // location multiline
 								if (line.startsWith(" ")) {
-									locationNoEnc = locationNoEnc
-											+ line.substring(1);
+									locationNoEnc = locationNoEnc + line.substring(1);
 								} else {
 									field = 0;
 								}
 								break;
 							case 5: // description multiline
 								if (line.startsWith(" ")) {
-									descriptionNoEnc = descriptionNoEnc
-											+ line.substring(1);
+									descriptionNoEnc = descriptionNoEnc + line.substring(1);
 								} else {
 									field = 0;
 								}
@@ -346,72 +332,58 @@ public class convertsinglefile {
 																				// case
 																				// not
 																				// quoted-printable
-								summaryNoEnc = line.substring("SUMMARY:"
-										.length());
+								summaryNoEnc = line.substring("SUMMARY:".length());
 								field = 3;
 								summaryIsEnc = false;
 							} // Any encoding may be specified following, but
 								// UTF8 is presumed since is the standard.
-							else if (line.toUpperCase().startsWith(
-									"SUMMARY;ENCODING=QUOTED-PRINTABLE")) {
+							else if (line.toUpperCase().startsWith("SUMMARY;ENCODING=QUOTED-PRINTABLE")) {
 								field = 0;
 								summaryIsEnc = true;
-								summaryEnc = line
-										.substring(line.indexOf(":") + 1);
+								summaryEnc = line.substring(line.indexOf(":") + 1);
 								if (summaryEnc != null) {
 									if (line.endsWith("=")) {
 										one_more_encLine = true;
-										summaryEnc = summaryEnc.substring(0,
-												summaryEnc.length() - 1);
+										summaryEnc = summaryEnc.substring(0, summaryEnc.length() - 1);
 									}
 								}
-							} else if (line.toUpperCase().startsWith(
-									"LOCATION:")) { // In case not
-													// quoted-printable
-								locationNoEnc = line.substring("LOCATION:"
-										.length());
+							} else if (line.toUpperCase().startsWith("LOCATION:")) { // In
+																						// case
+																						// not
+																						// quoted-printable
+								locationNoEnc = line.substring("LOCATION:".length());
 								field = 4;
 								locationIsEnc = false;
-							} else if (line.toUpperCase().startsWith(
-									"LOCATION;ENCODING=QUOTED-PRINTABLE")) {
+							} else if (line.toUpperCase().startsWith("LOCATION;ENCODING=QUOTED-PRINTABLE")) {
 								field = 1;
 								locationIsEnc = true;
-								locationEnc = line
-										.substring(line.indexOf(":") + 1);
+								locationEnc = line.substring(line.indexOf(":") + 1);
 								if (locationEnc != null) {
 									if (line.endsWith("=")) {
 										one_more_encLine = true;
-										locationEnc = locationEnc.substring(0,
-												locationEnc.length() - 1);
+										locationEnc = locationEnc.substring(0, locationEnc.length() - 1);
 									}
 								}
-							} else if (line.toUpperCase().startsWith(
-									"DESCRIPTION:")) { // In case not
-														// quoted-printable
-								descriptionNoEnc = line
-										.substring("DESCRIPTION:".length());
+							} else if (line.toUpperCase().startsWith("DESCRIPTION:")) { // In
+																						// case
+																						// not
+																						// quoted-printable
+								descriptionNoEnc = line.substring("DESCRIPTION:".length());
 								field = 5;
 								descriptionIsEnc = false;
-							} else if (line.toUpperCase().startsWith(
-									"DESCRIPTION;ENCODING=QUOTED-PRINTABLE")) {
+							} else if (line.toUpperCase().startsWith("DESCRIPTION;ENCODING=QUOTED-PRINTABLE")) {
 								field = 2;
 								descriptionIsEnc = true;
-								descriptionEnc = line.substring(line
-										.indexOf(":") + 1);
+								descriptionEnc = line.substring(line.indexOf(":") + 1);
 								if (descriptionEnc != null) {
 									if (line.endsWith("=")) {
 										one_more_encLine = true;
-										descriptionEnc = descriptionEnc
-												.substring(
-														0,
-														descriptionEnc.length() - 1);
+										descriptionEnc = descriptionEnc.substring(0, descriptionEnc.length() - 1);
 									}
 								}
-							} else if (line.toUpperCase()
-									.startsWith("VERSION:"))
+							} else if (line.toUpperCase().startsWith("VERSION:"))
 								;
-							else if (line.toUpperCase()
-									.startsWith("ORGANIZER:"))
+							else if (line.toUpperCase().startsWith("ORGANIZER:"))
 								;
 							else if (line.toUpperCase().startsWith("DTSTAMP:"))
 								;
@@ -423,25 +395,21 @@ public class convertsinglefile {
 								dtend = line.substring("DTEND:".length());
 							} else if (line.toUpperCase().startsWith("DUE:")) {
 								due = line.substring("DUE:".length());
-							} else if (line.toUpperCase().startsWith(
-									"X-EPOCAGENDAENTRYTYPE:"))
+							} else if (line.toUpperCase().startsWith("X-EPOCAGENDAENTRYTYPE:"))
 								;
-							else if (line.toUpperCase().startsWith(
-									"X-EPOCTODOLIST:"))
+							else if (line.toUpperCase().startsWith("X-EPOCTODOLIST:"))
 								;
 							else if (line.toUpperCase().startsWith("STATUS:")) {
 								// TODO: Probably may need uppercase or check if
 								// status is among valid values
 								status = line.substring("STATUS:".length());
-							} else if (line.toUpperCase().startsWith(
-									"X-BLUETOOTH-ALLDAYEVENT:"))
+							} else if (line.toUpperCase().startsWith("X-BLUETOOTH-ALLDAYEVENT:"))
 								;
 							else if (line.toUpperCase().startsWith("CLASS:"))
 								;
 							else if (line.toUpperCase().startsWith("SEQUENCE:")) {
 								sequence = line.substring("SEQUENCE:".length());
-							} else if (line.toUpperCase().startsWith(
-									"X-METHOD:"))
+							} else if (line.toUpperCase().startsWith("X-METHOD:"))
 								;
 							else if (line.toUpperCase().startsWith("RRULE:")) { // TODO
 																				// check
@@ -456,19 +424,14 @@ public class convertsinglefile {
 								myString = line.substring("RRULE:".length());
 								if (myString.startsWith("D")) {
 									if (myString.contains(" ")) {
-										frec = myString.substring(
-												myString.indexOf("D") + 1,
-												myString.indexOf(" "));
-										myString = myString.substring(myString
-												.indexOf(" ") + 1);
+										frec = myString.substring(myString.indexOf("D") + 1, myString.indexOf(" "));
+										myString = myString.substring(myString.indexOf(" ") + 1);
 										System.out.println(myString);
 										if (myString.startsWith("#")) {
-											frec2 = myString.substring(myString
-													.indexOf("#") + 1);
+											frec2 = myString.substring(myString.indexOf("#") + 1);
 										}
 									} else {
-										frec = myString.substring(myString
-												.indexOf("D") + 1);
+										frec = myString.substring(myString.indexOf("D") + 1);
 										// End of field
 									}
 									// System.out.println("frec is ."+frec+".");
@@ -483,21 +446,15 @@ public class convertsinglefile {
 								;
 							else if (line.toUpperCase().startsWith("AALARM:"))
 								;
-							else if (line.toUpperCase().startsWith(
-									"AALARM;TYPE=X-EPOCSOUND:"))
+							else if (line.toUpperCase().startsWith("AALARM;TYPE=X-EPOCSOUND:"))
 								;
-							else if (line.toUpperCase().startsWith(
-									"LAST-MODIFIED:")) {
-								dtstamp = line.substring("LAST-MODIFIED:"
-										.length());
-							} else if (line.toUpperCase().startsWith(
-									"PRIORITY:"))
+							else if (line.toUpperCase().startsWith("LAST-MODIFIED:")) {
+								dtstamp = line.substring("LAST-MODIFIED:".length());
+							} else if (line.toUpperCase().startsWith("PRIORITY:"))
 								;
-							else if (line.toUpperCase().startsWith(
-									"X-SYMBIAN-LUID:"))
+							else if (line.toUpperCase().startsWith("X-SYMBIAN-LUID:"))
 								;
-							else if (line.toUpperCase()
-									.startsWith("COMPLETED:"))
+							else if (line.toUpperCase().startsWith("COMPLETED:"))
 								;
 							else if (line.toUpperCase().startsWith("TZ:"))
 								;
@@ -505,26 +462,20 @@ public class convertsinglefile {
 								;
 							else if (line.toUpperCase().startsWith("PRODID:"))
 								;
-							else if (line.toUpperCase().startsWith(
-									"CATEGORIES:"))
+							else if (line.toUpperCase().startsWith("CATEGORIES:"))
 								;
-							else if (line.toUpperCase().startsWith(
-									"CATEGORIES;ENCODING=QUOTED-PRINTABLE:"))
+							else if (line.toUpperCase().startsWith("CATEGORIES;ENCODING=QUOTED-PRINTABLE:"))
 								;
-							else if (line.toUpperCase()
-									.startsWith("END:VEVENT")) {
+							else if (line.toUpperCase().startsWith("END:VEVENT")) {
 								// Stop reading this file once first calendar of
 								// file has been read.
 								event_continue = false;
-							} else if (line.toUpperCase().startsWith(
-									"END:VTODO")) {
+							} else if (line.toUpperCase().startsWith("END:VTODO")) {
 								// Stop reading this file once first calendar of
 								// file has been read.
 								event_continue = false;
 							} else {
-								System.out
-										.println("* New unknown entry detected: "
-												+ line);
+								System.out.println("* New unknown entry detected: " + line);
 							}
 						}
 						// *//
@@ -536,8 +487,7 @@ public class convertsinglefile {
 						if (summaryIsEnc) {
 							if (summaryEnc != null) { // To prevent
 														// java.lang.NullPointerException
-								summary = dragomerlin.convertsinglefile
-										.decode(summaryEnc);
+								summary = dragomerlin.convertsinglefile.decode(summaryEnc);
 							}
 						} else {
 							if (summaryNoEnc != null)
@@ -547,8 +497,7 @@ public class convertsinglefile {
 
 						if (locationIsEnc) {
 							if (locationEnc != null) {
-								location = dragomerlin.convertsinglefile
-										.decode(locationEnc);
+								location = dragomerlin.convertsinglefile.decode(locationEnc);
 							}
 						} else {
 							if (locationNoEnc != null)
@@ -558,8 +507,7 @@ public class convertsinglefile {
 
 						if (descriptionIsEnc) {
 							if (descriptionEnc != null) {
-								description = dragomerlin.convertsinglefile
-										.decode(descriptionEnc);
+								description = dragomerlin.convertsinglefile.decode(descriptionEnc);
 							}
 						} else {
 							if (descriptionNoEnc != null)
@@ -572,211 +520,84 @@ public class convertsinglefile {
 					// End summary, location and description decoding
 					// Begin rest of event
 					if (isevent) {
-						contents.append("BEGIN:VEVENT"
-								+ System.getProperty("line.separator"));
+						contents.append("BEGIN:VEVENT" + System.getProperty("line.separator"));
 						if (email != null) {
-							contents.append("ORGANIZER:" + email
-									+ System.getProperty("line.separator"));
+							contents.append("ORGANIZER:" + email + System.getProperty("line.separator"));
 						} else {
-							contents.append("ORGANIZER:"
-									+ System.getProperty("line.separator"));
+							contents.append("ORGANIZER:" + System.getProperty("line.separator"));
 						}
 						if (summary != null) {
-							contents.append("SUMMARY:" + summary
-									+ System.getProperty("line.separator"));
+							contents.append("SUMMARY:" + summary + System.getProperty("line.separator"));
 						} else {
-							contents.append("SUMMARY:"
-									+ System.getProperty("line.separator"));
+							contents.append("SUMMARY:" + System.getProperty("line.separator"));
 						}
 						if (description != null) {
-							contents.append("DESCRIPTION:" + description
-									+ System.getProperty("line.separator"));
+							contents.append("DESCRIPTION:" + description + System.getProperty("line.separator"));
 						} else {
-							contents.append("DESCRIPTION:"
-									+ System.getProperty("line.separator"));
+							contents.append("DESCRIPTION:" + System.getProperty("line.separator"));
 						}
 						if (location != null) {
-							contents.append("LOCATION:" + location
-									+ System.getProperty("line.separator"));
+							contents.append("LOCATION:" + location + System.getProperty("line.separator"));
 						} else {
-							contents.append("LOCATION:"
-									+ System.getProperty("line.separator"));
+							contents.append("LOCATION:" + System.getProperty("line.separator"));
 						}
 						// RRULE
 						if (dtstart != null) {
-							contents.append("DTSTART:" + dtstart
-									+ System.getProperty("line.separator"));
+							contents.append("DTSTART:" + dtstart + System.getProperty("line.separator"));
 						} else {
-							contents.append("DTSTART:"
-									+ System.getProperty("line.separator"));
+							contents.append("DTSTART:" + System.getProperty("line.separator"));
 						}
 						if (dtend != null) {
-							contents.append("DTEND:" + dtend
-									+ System.getProperty("line.separator"));
+							contents.append("DTEND:" + dtend + System.getProperty("line.separator"));
 						} else {
-							contents.append("DTEND:"
-									+ System.getProperty("line.separator"));
+							contents.append("DTEND:" + System.getProperty("line.separator"));
 						}
 						if (dtstamp != null) {
-							contents.append("DTSTAMP:" + dtstamp
-									+ System.getProperty("line.separator"));
+							contents.append("DTSTAMP:" + dtstamp + System.getProperty("line.separator"));
 						} else {
 							// Get UTC (GMT) time of the current computer in
 							// case read file doesn't have DTSTAMP
-							Calendar cal = Calendar.getInstance(TimeZone
-									.getTimeZone("GMT"));
-							String monthstr = null;
-							String daystr = null;
-							String hourstr = null;
-							String minstr = null;
-							String secstr = null;
-							int month = cal.get(Calendar.MONTH) + 1;
-							int day = cal.get(Calendar.DAY_OF_MONTH);
-							int hour = cal.get(Calendar.HOUR_OF_DAY);
-							int min = cal.get(Calendar.MINUTE);
-							int sec = cal.get(Calendar.SECOND);
-							// month, day, hour, minute and second must be 2
-							// chars each
-							if (month < 10) {
-								monthstr = "0" + String.valueOf(month);
-							} else {
-								monthstr = String.valueOf(month);
-							}
-							if (day < 10) {
-								daystr = "0" + String.valueOf(day);
-							} else {
-								daystr = String.valueOf(day);
-							}
-							if (hour < 10) {
-								hourstr = "0" + String.valueOf(hour);
-							} else {
-								hourstr = String.valueOf(hour);
-							}
-							if (min < 10) {
-								minstr = "0" + String.valueOf(min);
-							} else {
-								minstr = String.valueOf(min);
-							}
-							if (sec < 10) {
-								secstr = "0" + String.valueOf(sec);
-							} else {
-								secstr = String.valueOf(sec);
-							}
-							/**
-							 * The final Z means it is in UTC, otherwise local
-							 * hour Not using UTC can cause trouble when the
-							 * source and destination devices use a different
-							 * Time Zone
-							 */
-							contents.append("DTSTAMP:"
-									+ String.valueOf(cal.get(Calendar.YEAR))
-									+ monthstr + daystr + "T" + hourstr
-									+ minstr + secstr + "Z"
-									+ System.getProperty("line.separator"));
+							contents.append("DTSTAMP:" + generateCreationDate() + System.getProperty("line.separator"));
 						}
-						contents.append("END:VEVENT"
-								+ System.getProperty("line.separator"));
+						contents.append("END:VEVENT" + System.getProperty("line.separator"));
 					} else {
-						contents.append("BEGIN:VTODO"
-								+ System.getProperty("line.separator"));
+						contents.append("BEGIN:VTODO" + System.getProperty("line.separator"));
 						if (dtstamp != null) {
-							contents.append("DTSTAMP:" + dtstamp
-									+ System.getProperty("line.separator"));
+							contents.append("DTSTAMP:" + dtstamp + System.getProperty("line.separator"));
 						} else {
 							// Get UTC (GMT) time of the current computer in
 							// case read file doesn't have DTSTAMP
-							Calendar cal = Calendar.getInstance(TimeZone
-									.getTimeZone("GMT"));
-							String monthstr = null;
-							String daystr = null;
-							String hourstr = null;
-							String minstr = null;
-							String secstr = null;
-							int month = cal.get(Calendar.MONTH) + 1;
-							int day = cal.get(Calendar.DAY_OF_MONTH);
-							int hour = cal.get(Calendar.HOUR_OF_DAY);
-							int min = cal.get(Calendar.MINUTE);
-							int sec = cal.get(Calendar.SECOND);
-							// month, day, hour, minute and second must be 2
-							// chars each
-							if (month < 10) {
-								monthstr = "0" + String.valueOf(month);
-							} else {
-								monthstr = String.valueOf(month);
-							}
-							if (day < 10) {
-								daystr = "0" + String.valueOf(day);
-							} else {
-								daystr = String.valueOf(day);
-							}
-							if (hour < 10) {
-								hourstr = "0" + String.valueOf(hour);
-							} else {
-								hourstr = String.valueOf(hour);
-							}
-							if (min < 10) {
-								minstr = "0" + String.valueOf(min);
-							} else {
-								minstr = String.valueOf(min);
-							}
-							if (sec < 10) {
-								secstr = "0" + String.valueOf(sec);
-							} else {
-								secstr = String.valueOf(sec);
-							}
-							/**
-							 * The final Z means it is in UTC, otherwise local
-							 * hour Not using UTC can cause trouble when the
-							 * source and destination devices use a different
-							 * Time Zone
-							 */
-							contents.append("DTSTAMP:"
-									+ String.valueOf(cal.get(Calendar.YEAR))
-									+ monthstr + daystr + "T" + hourstr
-									+ minstr + secstr + "Z"
-									+ System.getProperty("line.separator"));
-							contents.append("END:VEVENT"
-									+ System.getProperty("line.separator"));
-							contents.append("END:VCALENDAR"
-									+ System.getProperty("line.separator"));
+
+							contents.append("DTSTAMP:" + generateCreationDate() + System.getProperty("line.separator"));
+							contents.append("END:VEVENT" + System.getProperty("line.separator"));
+							contents.append("END:VCALENDAR" + System.getProperty("line.separator"));
 						}
 						if (sequence != null) {
-							contents.append("SEQUENCE:" + sequence
-									+ System.getProperty("line.separator"));
+							contents.append("SEQUENCE:" + sequence + System.getProperty("line.separator"));
 						} else {
-							contents.append("SEQUENCE:0"
-									+ System.getProperty("line.separator"));
+							contents.append("SEQUENCE:0" + System.getProperty("line.separator"));
 						}
 						if (email != null) {
-							contents.append("ORGANIZER:" + email
-									+ System.getProperty("line.separator"));
+							contents.append("ORGANIZER:" + email + System.getProperty("line.separator"));
 						} else {
-							contents.append("ORGANIZER:"
-									+ System.getProperty("line.separator"));
+							contents.append("ORGANIZER:" + System.getProperty("line.separator"));
 						}
 						if (due != null) {
-							contents.append("DUE:" + due
-									+ System.getProperty("line.separator"));
+							contents.append("DUE:" + due + System.getProperty("line.separator"));
 						} else {
-							contents.append("DUE:"
-									+ System.getProperty("line.separator"));
+							contents.append("DUE:" + System.getProperty("line.separator"));
 						}
 						if (status != null) {
-							contents.append("STATUS:" + status
-									+ System.getProperty("line.separator"));
+							contents.append("STATUS:" + status + System.getProperty("line.separator"));
 						} else {
-							contents.append("STATUS:NEEDS-ACTION"
-									+ System.getProperty("line.separator"));
+							contents.append("STATUS:NEEDS-ACTION" + System.getProperty("line.separator"));
 						}
 						if (summary != null) {
-							contents.append("SUMMARY:" + summary
-									+ System.getProperty("line.separator"));
+							contents.append("SUMMARY:" + summary + System.getProperty("line.separator"));
 						} else {
-							contents.append("SUMMARY:"
-									+ System.getProperty("line.separator"));
+							contents.append("SUMMARY:" + System.getProperty("line.separator"));
 						}
-						contents.append("END:VTODO"
-								+ System.getProperty("line.separator"));
+						contents.append("END:VTODO" + System.getProperty("line.separator"));
 					}
 					// End rest of event
 					// End single event or todo generation
@@ -804,8 +625,7 @@ public class convertsinglefile {
 			 * section can't be characters that are non ASCII printable, like
 			 * Euro symbol, japanese kanji or greek letter.
 			 */
-			BufferedWriter output = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream(outFile), "UTF-8"));
+			BufferedWriter output = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(outFile), "UTF-8"));
 			try {
 				// org.apache.commons.io.FileUtils.write(outFile, contents,
 				// "UTF-8");
@@ -836,11 +656,23 @@ public class convertsinglefile {
 		// End local stream closing
 
 		// Write to console
-		System.out.println("Out file is: "
-				+ outFile.getAbsolutePath().toString());
+		System.out.println("Out file is: " + outFile.getAbsolutePath().toString());
 		System.out.println("The ICS content is:");
 		System.out.println(contents.toString());
 		System.out.println();
 	}
 
+	/**
+	 * generates a nice formatted time string for <code>NOW</code> in UTC for
+	 * iCalendar with trailing Z
+	 * 
+	 * @return a String for NOW in UTC
+	 */
+	private static String generateCreationDate() {
+		Calendar cal = Calendar.getInstance();
+		SimpleDateFormat sdf = new SimpleDateFormat("YYYYMMdd'T'HHmmss'Z'");
+		sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
+		String formatted = sdf.format(cal.getTime());
+		return formatted;
+	}
 }
