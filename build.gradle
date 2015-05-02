@@ -4,6 +4,16 @@ repositories {
 
 apply plugin: 'java'
 
+
+task copyTestFiles (type: Copy) {
+	from "${projectDir}/src/test/resources/vcs"
+	into "${projectDir}/vcs"
+}
+
+
+processTestResources.dependsOn 'copyTestFiles'
+
+
 dependencies {
 	compile 'com.googlecode.juniversalchardet:juniversalchardet:1.0.3'
 	compile 'commons-codec:commons-codec:1.7'
