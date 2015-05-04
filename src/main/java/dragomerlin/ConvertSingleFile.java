@@ -32,11 +32,13 @@ import java.text.SimpleDateFormat;
 import java.util.TimeZone;
 import java.util.Calendar;
 
+import net.fortuna.ical4j.model.component.VEvent;
+
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.io.ByteOrderMark;
 import org.apache.commons.io.input.BOMInputStream;
 
-public class convertsinglefile {
+public class ConvertSingleFile {
 
 	/**
 	 * QUOTED-PRINTABLE-UTF8 decoder with CRLF manual replacement: The CRLF must be replaced manually so the resulting stream goes
@@ -145,6 +147,25 @@ public class convertsinglefile {
 		sb.append(tmp);
 		return decode(sb.toString());
 	}
+	
+	private static String readPossibleMultiline(String fieldContent, BufferedReader inStream) throws IOException {
+		char[] buf = new char[1];
+		boolean multilineFound = false;
+		// FIXME possible nullpointer, if EOF
+		do {
+			inStream.mark(1);
+			inStream.read(buf);
+			if (buf[0] == ' ') {
+				multilineFound = true;
+				String line = inStream.readLine();
+				fieldContent += line;
+			} else {
+				multilineFound = false;
+			}
+		} while (multilineFound);
+		inStream.reset();
+		return fieldContent;
+	}
 
 	public static void getnumber(File inFile, String email, File outFile) throws IOException {
 		// TODO: separate the import and export
@@ -225,48 +246,26 @@ public class convertsinglefile {
 						isevent = false;
 
 					// First check flag to prevent reading one more line that
-					// will be skipped is flag is false
+					// will be skipped if flag is false
 					while (event_continue && (line = input.readLine()) != null) {
 						/*
 						 * If summary, location or description are not quoted-printable but still multiline. Lines are split if
 						 * they are more than 69 (NOKIA) chars lenght, unless the field has no space chars.
-						 * 
-						 * IMPORTANT: We HAVE TO start with summary, location and description, because it also reads the next line
-						 * which then will be analyzed downwards in this method
 						 */
 						if (line.toUpperCase().startsWith("SUMMARY:")) { // In case not quoted-printable
-							summary = line.substring("SUMMARY:".length());
-							do {
-								line = input.readLine();
-								if (line.startsWith(" ")) {
-									summary += line.substring(1);
-								}
-							} while (!line.startsWith(" "));
-						} else if (line.toUpperCase().startsWith("LOCATION:")) {
-							location = line.substring("LOCATION:".length());
-							do {
-								line = input.readLine();
-								if (line.startsWith(" ")) {
-									location += line.substring(1);
-								}
-							} while (!line.startsWith(" "));
-						} else if (line.toUpperCase().startsWith("DESCRIPTION:")) {
-							description = line.substring("DESCRIPTION:".length());
-							do {
-								line = input.readLine();
-								if (line.startsWith(" ")) {
-									location += line.substring(1);
-								}
-							} while (!line.startsWith(" "));
-						}
-
-						// technically it's not 100% correct, to check again for summary, location and description
-						if (line.toUpperCase().startsWith("SUMMARY;ENCODING=QUOTED-PRINTABLE")) {
+							summary = readPossibleMultiline(line.substring("SUMMARY:".length()), input);
+						} else if (line.toUpperCase().startsWith("SUMMARY;ENCODING=QUOTED-PRINTABLE")) {
 							// Any encoding may be specified following, but UTF8 is presumed since is the standard.
 							summary = readEncryptedField(line.substring(line.indexOf(":") + 1), input);
+						} else if (line.toUpperCase().startsWith("LOCATION:")) {
+							location = readPossibleMultiline(line.substring("LOCATION:".length()), input);
 						} else if (line.toUpperCase().startsWith("LOCATION;ENCODING=QUOTED-PRINTABLE")) {
-							readEncryptedField(line.substring(line.indexOf(":") + 1), input);
+							// Any encoding may be specified following, but UTF8 is presumed since is the standard.
+							location = readEncryptedField(line.substring(line.indexOf(":") + 1), input);
+						} else if (line.toUpperCase().startsWith("DESCRIPTION:")) {
+							description = readPossibleMultiline(line.substring("DESCRIPTION:".length()), input);
 						} else if (line.toUpperCase().startsWith("DESCRIPTION;ENCODING=QUOTED-PRINTABLE")) {
+							// Any encoding may be specified following, but UTF8 is presumed since is the standard.
 							description = readEncryptedField(line.substring(line.indexOf(":") + 1), input);
 						} else if (line.toUpperCase().startsWith("VERSION:"))
 							;
@@ -378,8 +377,7 @@ public class convertsinglefile {
 					// TODO:
 					// TODO:
 
-					// End summary, location and description decoding
-					// Begin rest of event
+					// write out
 					if (isevent) {
 						contents.append("BEGIN:VEVENT" + System.getProperty("line.separator"));
 						if (email != null) {

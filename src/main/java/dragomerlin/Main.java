@@ -32,7 +32,7 @@ public class Main {
 		// Check whether Java has some bug causing bad quoted printable decoding
 		// for non encoded characters
 		String original_seq = "Steuererklär";
-		String decoded_seq = dragomerlin.convertsinglefile.decode(original_seq);
+		String decoded_seq = dragomerlin.ConvertSingleFile.decode(original_seq);
 		if (original_seq.contentEquals(decoded_seq))
 			System.out.println("org.apache.commons.codec.net.QuotedPrintableCodec.decodeQuotedPrintable\n"
 					+ " seems working ok on your system!\n");
@@ -105,7 +105,7 @@ public class Main {
 					numchars = numchars - 4; // Remove .vcs from filenames
 					File outFile = new File(dir_ics.toString() + File.separator
 							+ list[i].getName().toString().substring(0, numchars) + ".ics");
-					convertsinglefile.getnumber(list[i], email, outFile);
+					ConvertSingleFile.getnumber(list[i], email, outFile);
 					// fileconverter.filetoUTF8(outFile);
 				}
 			}
