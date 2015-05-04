@@ -18,4 +18,5 @@ dependencies {
 	compile 'com.googlecode.juniversalchardet:juniversalchardet:1.0.3'
 	compile 'commons-codec:commons-codec:1.7'
 	compile 'commons-io:commons-io:2.4'
+	compile 'org.mnode.ical4j:ical4j:1.0.6'
 }
