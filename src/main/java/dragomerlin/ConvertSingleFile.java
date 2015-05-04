@@ -22,20 +22,11 @@ package dragomerlin;
 import greenflash1986.ICSWriter;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.text.SimpleDateFormat;
-import java.util.TimeZone;
-import java.util.Calendar;
-
-import net.fortuna.ical4j.model.component.VEvent;
-
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.io.ByteOrderMark;
 import org.apache.commons.io.input.BOMInputStream;
@@ -170,7 +161,6 @@ public class ConvertSingleFile {
 	}
 
 	public static void getnumber(File inFile, String email, File outFile) throws IOException {
-		// TODO: use ical4j
 		// TODO: convert AALARM
 		// TODO: import more than one file into calendar
 		// TODO: give the user the choice, if export to single or multifile
