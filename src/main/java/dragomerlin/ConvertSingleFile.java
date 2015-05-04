@@ -19,6 +19,8 @@
 
 package dragomerlin;
 
+import greenflash1986.ICSWriter;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
@@ -168,7 +170,7 @@ public class ConvertSingleFile {
 	}
 
 	public static void getnumber(File inFile, String email, File outFile) throws IOException {
-		// TODO: separate the import and export
+		// TODO: use ical4j
 		// TODO: convert AALARM
 		// TODO: import more than one file into calendar
 		// TODO: give the user the choice, if export to single or multifile
@@ -182,8 +184,7 @@ public class ConvertSingleFile {
 		 */
 
 		BufferedReader input = detectEncodingAndOpenFile(inFile);
-		StringBuilder contents = new StringBuilder(); // Contents of the
-														// generated ics file
+		ICSWriter icsWriter = new ICSWriter(email);
 
 		// use buffering, reading one line at a time
 		/*
@@ -192,14 +193,6 @@ public class ConvertSingleFile {
 		 */
 		String line = null; // not declared within while loop
 		boolean flag_continue = true; // Detection of END:VCALENDAR
-
-		// Write the first 3 lines of the output file only once
-		contents.append("BEGIN:VCALENDAR" + System.getProperty("line.separator"));
-		if (email != null)
-			contents.append("PRODID:" + email + System.getProperty("line.separator"));
-		else
-			contents.append("PRODID:" + System.getProperty("line.separator"));
-		contents.append("VERSION:2.0" + System.getProperty("line.separator"));
 
 		try {
 			while (flag_continue && (line = input.readLine()) != null) { // First check flag to prevent reading one more line if
@@ -359,105 +352,7 @@ public class ConvertSingleFile {
 						}
 					}
 
-					// TODO:
-					// TODO:
-					// TODO:
-					// TODO:
-					// TODO:
-					// TODO:
-					// TODO:
-					// TODO:
-					// TODO:
-					// TODO:
-					// TODO:
-
-					// TODO:
-					// TODO:
-					// TODO:
-					// TODO:
-					// TODO:
-
-					// write out
-					if (isevent) {
-						contents.append("BEGIN:VEVENT" + System.getProperty("line.separator"));
-						if (email != null) {
-							contents.append("ORGANIZER:" + email + System.getProperty("line.separator"));
-						} else {
-							contents.append("ORGANIZER:" + System.getProperty("line.separator"));
-						}
-						if (summary != null) {
-							contents.append("SUMMARY:" + summary + System.getProperty("line.separator"));
-						} else {
-							contents.append("SUMMARY:" + System.getProperty("line.separator"));
-						}
-						if (description != null) {
-							contents.append("DESCRIPTION:" + description + System.getProperty("line.separator"));
-						} else {
-							contents.append("DESCRIPTION:" + System.getProperty("line.separator"));
-						}
-						if (location != null) {
-							contents.append("LOCATION:" + location + System.getProperty("line.separator"));
-						} else {
-							contents.append("LOCATION:" + System.getProperty("line.separator"));
-						}
-						// RRULE
-						if (dtstart != null) {
-							contents.append("DTSTART:" + dtstart + System.getProperty("line.separator"));
-						} else {
-							contents.append("DTSTART:" + System.getProperty("line.separator"));
-						}
-						if (dtend != null) {
-							contents.append("DTEND:" + dtend + System.getProperty("line.separator"));
-						} else {
-							contents.append("DTEND:" + System.getProperty("line.separator"));
-						}
-						if (dtstamp != null) {
-							contents.append("DTSTAMP:" + dtstamp + System.getProperty("line.separator"));
-						} else {
-							// Get UTC (GMT) time of the current computer in
-							// case read file doesn't have DTSTAMP
-							contents.append("DTSTAMP:" + generateCreationDate() + System.getProperty("line.separator"));
-						}
-						contents.append("END:VEVENT" + System.getProperty("line.separator"));
-					} else {
-						contents.append("BEGIN:VTODO" + System.getProperty("line.separator"));
-						if (dtstamp != null) {
-							contents.append("DTSTAMP:" + dtstamp + System.getProperty("line.separator"));
-						} else {
-							// Get UTC (GMT) time of the current computer in
-							// case read file doesn't have DTSTAMP
-
-							contents.append("DTSTAMP:" + generateCreationDate() + System.getProperty("line.separator"));
-							contents.append("END:VEVENT" + System.getProperty("line.separator"));
-							contents.append("END:VCALENDAR" + System.getProperty("line.separator"));
-						}
-						if (sequence != null) {
-							contents.append("SEQUENCE:" + sequence + System.getProperty("line.separator"));
-						} else {
-							contents.append("SEQUENCE:0" + System.getProperty("line.separator"));
-						}
-						if (email != null) {
-							contents.append("ORGANIZER:" + email + System.getProperty("line.separator"));
-						} else {
-							contents.append("ORGANIZER:" + System.getProperty("line.separator"));
-						}
-						if (due != null) {
-							contents.append("DUE:" + due + System.getProperty("line.separator"));
-						} else {
-							contents.append("DUE:" + System.getProperty("line.separator"));
-						}
-						if (status != null) {
-							contents.append("STATUS:" + status + System.getProperty("line.separator"));
-						} else {
-							contents.append("STATUS:NEEDS-ACTION" + System.getProperty("line.separator"));
-						}
-						if (summary != null) {
-							contents.append("SUMMARY:" + summary + System.getProperty("line.separator"));
-						} else {
-							contents.append("SUMMARY:" + System.getProperty("line.separator"));
-						}
-						contents.append("END:VTODO" + System.getProperty("line.separator"));
-					}
+					icsWriter.addEvent(isevent, summary, description, location, dtstart, dtend, dtstamp, sequence, due, status);
 					// End rest of event
 					// End single event or todo generation
 				}
@@ -466,35 +361,9 @@ public class ConvertSingleFile {
 			e.printStackTrace();
 		} finally {
 		}
+		
+		String contents = icsWriter.write(outFile);
 
-		// Write the last line of the file, only once
-		contents.append("END:VCALENDAR"); // No line.separator in the end (no
-											// blank line)
-
-		// Begin file writting
-		try {
-			if (outFile.exists()) {
-				outFile.delete();
-				outFile.createNewFile();
-			}
-			/**
-			 * outFile MUST be UTF-8 encoded, because in the quoted-printable encoding there can be characters that when decoded
-			 * won't fit US-ASCII or ANSI character sets. So, in the quoted-printable section can't be characters that are non
-			 * ASCII printable, like Euro symbol, japanese kanji or greek letter.
-			 */
-			BufferedWriter output = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(outFile), "UTF-8"));
-			try {
-				// org.apache.commons.io.FileUtils.write(outFile, contents,
-				// "UTF-8");
-				output.write(contents.toString());
-			} finally {
-				// Always close streams
-				output.close();
-			}
-		} catch (IOException ex) {
-			ex.printStackTrace();
-		}
-		// End file writting
 
 		// Local stream closing. bomIn stream only exists when file encoding is
 		// UTF.
@@ -510,18 +379,5 @@ public class ConvertSingleFile {
 		System.out.println("The ICS content is:");
 		System.out.println(contents.toString());
 		System.out.println();
-	}
-
-	/**
-	 * generates a nice formatted time string for <code>NOW</code> in UTC for iCalendar with trailing Z
-	 * 
-	 * @return a String for NOW in UTC
-	 */
-	private static String generateCreationDate() {
-		Calendar cal = Calendar.getInstance();
-		SimpleDateFormat sdf = new SimpleDateFormat("YYYYMMdd'T'HHmmss'Z'");
-		sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
-		String formatted = sdf.format(cal.getTime());
-		return formatted;
 	}
 }
