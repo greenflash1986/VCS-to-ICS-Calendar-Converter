@@ -27,6 +27,8 @@ import java.io.InputStreamReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.text.ParseException;
+
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.io.ByteOrderMark;
 import org.apache.commons.io.input.BOMInputStream;
@@ -160,7 +162,8 @@ public class ConvertSingleFile {
 		return fieldContent;
 	}
 
-	public static void getnumber(File inFile, String email, File outFile) throws IOException {
+	public static void getnumber(File inFile, String email, File outFile) throws IOException, ParseException {
+		// TODO: convert all day event to ics
 		// TODO: convert AALARM
 		// TODO: import more than one file into calendar
 		// TODO: give the user the choice, if export to single or multifile
@@ -255,6 +258,7 @@ public class ConvertSingleFile {
 						else if (line.toUpperCase().startsWith("ORGANIZER:"))
 							;
 						else if (line.toUpperCase().startsWith("DTSTAMP:"))
+							// TODO this should be used as creation date
 							;
 						else if (line.toUpperCase().startsWith("UID:"))
 							;
@@ -312,6 +316,7 @@ public class ConvertSingleFile {
 						else if (line.toUpperCase().startsWith("AALARM;TYPE=X-EPOCSOUND:"))
 							;
 						else if (line.toUpperCase().startsWith("LAST-MODIFIED:")) {
+							// TODO don't use this as creation date
 							dtstamp = line.substring("LAST-MODIFIED:".length());
 						} else if (line.toUpperCase().startsWith("PRIORITY:"))
 							;
@@ -343,8 +348,6 @@ public class ConvertSingleFile {
 					}
 
 					icsWriter.addEvent(isevent, summary, description, location, dtstart, dtend, dtstamp, sequence, due, status);
-					// End rest of event
-					// End single event or todo generation
 				}
 			}
 		} catch (IOException e) {
@@ -354,9 +357,6 @@ public class ConvertSingleFile {
 		
 		String contents = icsWriter.write(outFile);
 
-
-		// Local stream closing. bomIn stream only exists when file encoding is
-		// UTF.
 		try {
 			input.close();
 		} catch (IOException e) {

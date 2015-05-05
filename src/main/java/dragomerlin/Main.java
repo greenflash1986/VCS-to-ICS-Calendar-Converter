@@ -20,6 +20,7 @@
 package dragomerlin;
 
 import java.io.*;
+import java.text.ParseException;
 
 public class Main {
 
@@ -105,7 +106,11 @@ public class Main {
 					numchars = numchars - 4; // Remove .vcs from filenames
 					File outFile = new File(dir_ics.toString() + File.separator
 							+ list[i].getName().toString().substring(0, numchars) + ".ics");
+					try {
 					ConvertSingleFile.getnumber(list[i], email, outFile);
+					} catch (ParseException pe) {
+						System.out.println("Could not parse file " + list[i] + "Message was " + pe.getMessage());
+					}
 					// fileconverter.filetoUTF8(outFile);
 				}
 			}

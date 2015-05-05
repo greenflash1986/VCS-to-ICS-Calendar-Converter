@@ -5,107 +5,135 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.TimeZone;
 
 public class ICSWriter {
 	// TODO maybe use ical4j https://github.com/ical4j/ical4j/wiki
+	private static final String NEWLINE = System.getProperty("line.separator");
 	private String email;
 	private StringBuilder contents = new StringBuilder();
 
 	public ICSWriter(String email) {
 		this.email = email;
 		// Write the first 3 lines of the output file only once
-		contents.append("BEGIN:VCALENDAR" + System.getProperty("line.separator"));
+		contents.append("BEGIN:VCALENDAR" + NEWLINE);
 		if (email != null)
-			contents.append("PRODID:" + email + System.getProperty("line.separator"));
+			contents.append("PRODID:" + email + NEWLINE);
 		else
-			contents.append("PRODID:" + System.getProperty("line.separator"));
-		contents.append("VERSION:2.0" + System.getProperty("line.separator"));
+			contents.append("PRODID:" + NEWLINE);
+		contents.append("VERSION:2.0" + NEWLINE);
 	}
 
+	/**
+	 * 
+	 * @param isEvent
+	 *            if it's an event or a todo
+	 * @param summary
+	 * @param description
+	 * @param location
+	 * @param dtStart
+	 *            the begin of the event, see <a href=https://tools.ietf.org/html/rfc5545#section-3.6.1>RFC 5545 section 3.6.1</a>
+	 * @param dtEnd
+	 *            the end of the event
+	 * @param dtStamp
+	 *            the creation date of the iCal file, see <a
+	 *            href=http://stackoverflow.com/questions/11594921/whats-the-difference-between-
+	 *            created-and-dtstamp-in-the-icalendar-format>Stackoverflow</a> for clarification
+	 * @param sequence
+	 * @param due
+	 * @param status
+	 * @throws ParseException
+	 * 
+	 * @see <a href=https://tools.ietf.org/html/rfc5545#section-3.3.5>RFC 5545 section 3.3.5</a> for format of date and time
+	 */
 	public void addEvent(boolean isEvent, String summary, String description, String location, String dtStart, String dtEnd,
-			String dtStamp, String sequence, String due, String status) {
+			String dtStamp, String sequence, String due, String status) throws ParseException {
 		if (isEvent) {
-			contents.append("BEGIN:VEVENT" + System.getProperty("line.separator"));
+			contents.append("BEGIN:VEVENT" + NEWLINE);
 			if (email != null) {
-				contents.append("ORGANIZER:" + email + System.getProperty("line.separator"));
+				contents.append("ORGANIZER:" + email + NEWLINE);
 			} else {
-				contents.append("ORGANIZER:" + System.getProperty("line.separator"));
+				contents.append("ORGANIZER:" + NEWLINE);
 			}
 			if (summary != null) {
-				contents.append("SUMMARY:" + summary + System.getProperty("line.separator"));
+				contents.append("SUMMARY:" + summary + NEWLINE);
 			} else {
-				contents.append("SUMMARY:" + System.getProperty("line.separator"));
+				contents.append("SUMMARY:" + NEWLINE);
 			}
 			if (description != null) {
-				contents.append("DESCRIPTION:" + description + System.getProperty("line.separator"));
+				contents.append("DESCRIPTION:" + description + NEWLINE);
 			} else {
-				contents.append("DESCRIPTION:" + System.getProperty("line.separator"));
+				contents.append("DESCRIPTION:" + NEWLINE);
 			}
 			if (location != null) {
-				contents.append("LOCATION:" + location + System.getProperty("line.separator"));
+				contents.append("LOCATION:" + location + NEWLINE);
 			} else {
-				contents.append("LOCATION:" + System.getProperty("line.separator"));
+				contents.append("LOCATION:" + NEWLINE);
 			}
 			// RRULE
 			if (dtStart != null) {
-				contents.append("DTSTART:" + dtStart + System.getProperty("line.separator"));
+				if (checkForAllDayEvent(dtStart, dtEnd)) {
+					Date start = parseDate(dtStart);
+					contents.append("DTSTART;VALUE=DATE:" + formatTimeForDayEvent(start) + NEWLINE);
+				} else {
+					contents.append("DTSTART:" + dtStart + NEWLINE);
+					if (dtEnd != null) {
+						contents.append("DTEND:" + dtEnd + NEWLINE);
+					}
+				}
 			} else {
-				contents.append("DTSTART:" + System.getProperty("line.separator"));
+				throw new IllegalArgumentException("No Start date specified"); // TODO according to RFC its possible to specifiy
+																				// the METHOD property, but at this time, this is
+																				// not implemented
 			}
-			if (dtEnd != null) {
-				contents.append("DTEND:" + dtEnd + System.getProperty("line.separator"));
-			} else {
-				contents.append("DTEND:" + System.getProperty("line.separator"));
-			}
-			if (dtStamp != null) {
-				contents.append("DTSTAMP:" + dtStamp + System.getProperty("line.separator"));
-			} else {
-				// Get UTC (GMT) time of the current computer in
-				// case read file doesn't have DTSTAMP
-				contents.append("DTSTAMP:" + generateCreationDate() + System.getProperty("line.separator"));
-			}
-			contents.append("END:VEVENT" + System.getProperty("line.separator"));
-		} else {
-			contents.append("BEGIN:VTODO" + System.getProperty("line.separator"));
-			if (dtStamp != null) {
-				contents.append("DTSTAMP:" + dtStamp + System.getProperty("line.separator"));
-			} else {
-				// Get UTC (GMT) time of the current computer in
-				// case read file doesn't have DTSTAMP
 
-				contents.append("DTSTAMP:" + generateCreationDate() + System.getProperty("line.separator"));
-				contents.append("END:VEVENT" + System.getProperty("line.separator"));
-				contents.append("END:VCALENDAR" + System.getProperty("line.separator"));
+			if (dtStamp != null) {
+				contents.append("DTSTAMP:" + dtStamp + NEWLINE);
+			} else {
+				// Get UTC (GMT) time of the current computer in
+				// case read file doesn't have DTSTAMP
+				contents.append("DTSTAMP:" + generateCreationDate() + NEWLINE);
+			}
+			contents.append("END:VEVENT" + NEWLINE);
+		} else {
+			contents.append("BEGIN:VTODO" + NEWLINE);
+			if (dtStamp != null) {
+				contents.append("DTSTAMP:" + dtStamp + NEWLINE);
+			} else {
+				// Get UTC (GMT) time of the current computer in
+				// case read file doesn't have DTSTAMP
+				contents.append("DTSTAMP:" + generateCreationDate() + NEWLINE);
 			}
 			if (sequence != null) {
-				contents.append("SEQUENCE:" + sequence + System.getProperty("line.separator"));
+				contents.append("SEQUENCE:" + sequence + NEWLINE);
 			} else {
-				contents.append("SEQUENCE:0" + System.getProperty("line.separator"));
+				contents.append("SEQUENCE:0" + NEWLINE);
 			}
 			if (email != null) {
-				contents.append("ORGANIZER:" + email + System.getProperty("line.separator"));
+				contents.append("ORGANIZER:" + email + NEWLINE);
 			} else {
-				contents.append("ORGANIZER:" + System.getProperty("line.separator"));
+				contents.append("ORGANIZER:" + NEWLINE);
 			}
 			if (due != null) {
-				contents.append("DUE:" + due + System.getProperty("line.separator"));
+				contents.append("DUE:" + due + NEWLINE);
 			} else {
-				contents.append("DUE:" + System.getProperty("line.separator"));
+				contents.append("DUE:" + NEWLINE);
 			}
 			if (status != null) {
-				contents.append("STATUS:" + status + System.getProperty("line.separator"));
+				contents.append("STATUS:" + status + NEWLINE);
 			} else {
-				contents.append("STATUS:NEEDS-ACTION" + System.getProperty("line.separator"));
+				contents.append("STATUS:NEEDS-ACTION" + NEWLINE);
 			}
 			if (summary != null) {
-				contents.append("SUMMARY:" + summary + System.getProperty("line.separator"));
+				contents.append("SUMMARY:" + summary + NEWLINE);
 			} else {
-				contents.append("SUMMARY:" + System.getProperty("line.separator"));
+				contents.append("SUMMARY:" + NEWLINE);
 			}
-			contents.append("END:VTODO" + System.getProperty("line.separator"));
+			contents.append("END:VTODO" + NEWLINE);
 		}
 	}
 
@@ -155,4 +183,35 @@ public class ICSWriter {
 		return contents.toString();
 	}
 
+	private static boolean checkForAllDayEvent(String dtstart, String dtend) {
+		// for Nokia 5500 Sport, this is enough, maybe make it more generic in the future
+		if (dtstart != null) {
+			if (dtstart.equals(dtend)) {
+				return true;
+			} else {
+				return false;
+			}
+		} else {
+			return false;
+		}
+	}
+
+	private static Date parseDate(String date) throws ParseException {
+		SimpleDateFormat sdf;
+		if (date.endsWith("Z")) { // UTC
+			sdf = new SimpleDateFormat("YYYYMMdd'T'HHmmss'Z'");
+			sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
+		} else {
+			// TODO missing Timezone information, this SHOULD be available in the vcalendar but is not parsed yet
+			sdf = new SimpleDateFormat("yyyyMMdd'T'HHmmss");
+		}
+
+		return sdf.parse(date);
+	}
+
+	private static String formatTimeForDayEvent(Date date) {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
+		String tmp = sdf.format(date);
+		return tmp;
+	}
 }
