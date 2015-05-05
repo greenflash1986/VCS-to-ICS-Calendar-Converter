@@ -56,24 +56,20 @@ public class ICSWriter {
 			contents.append("BEGIN:VEVENT" + NEWLINE);
 			if (email != null) {
 				contents.append("ORGANIZER:" + email + NEWLINE);
-			} else {
-				contents.append("ORGANIZER:" + NEWLINE);
 			}
+
 			if (summary != null) {
 				contents.append("SUMMARY:" + summary + NEWLINE);
-			} else {
-				contents.append("SUMMARY:" + NEWLINE);
 			}
+
 			if (description != null) {
 				contents.append("DESCRIPTION:" + description + NEWLINE);
-			} else {
-				contents.append("DESCRIPTION:" + NEWLINE);
 			}
+			
 			if (location != null) {
 				contents.append("LOCATION:" + location + NEWLINE);
-			} else {
-				contents.append("LOCATION:" + NEWLINE);
 			}
+			
 			// RRULE
 			if (dtStart != null) {
 				if (checkForAllDayEvent(dtStart, dtEnd)) {
@@ -115,24 +111,20 @@ public class ICSWriter {
 			}
 			if (email != null) {
 				contents.append("ORGANIZER:" + email + NEWLINE);
-			} else {
-				contents.append("ORGANIZER:" + NEWLINE);
 			}
+			
 			if (due != null) {
 				contents.append("DUE:" + due + NEWLINE);
-			} else {
-				contents.append("DUE:" + NEWLINE);
 			}
+
 			if (status != null) {
 				contents.append("STATUS:" + status + NEWLINE);
-			} else {
-				contents.append("STATUS:NEEDS-ACTION" + NEWLINE);
 			}
+			
 			if (summary != null) {
 				contents.append("SUMMARY:" + summary + NEWLINE);
-			} else {
-				contents.append("SUMMARY:" + NEWLINE);
 			}
+
 			contents.append("END:VTODO" + NEWLINE);
 		}
 	}
@@ -199,7 +191,7 @@ public class ICSWriter {
 	private static Date parseDate(String date) throws ParseException {
 		SimpleDateFormat sdf;
 		if (date.endsWith("Z")) { // UTC
-			sdf = new SimpleDateFormat("YYYYMMdd'T'HHmmss'Z'");
+			sdf = new SimpleDateFormat("yyyyMMdd'T'HHmmss'Z'");
 			sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
 		} else {
 			// TODO missing Timezone information, this SHOULD be available in the vcalendar but is not parsed yet
