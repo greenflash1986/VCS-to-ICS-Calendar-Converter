@@ -6,10 +6,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.TimeZone;
+import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 
 public class ICSWriter {
 	// TODO maybe use ical4j https://github.com/ical4j/ical4j/wiki
@@ -51,7 +49,7 @@ public class ICSWriter {
 	 * @see <a href=https://tools.ietf.org/html/rfc5545#section-3.3.5>RFC 5545 section 3.3.5</a> for format of date and time
 	 */
 	public void addEvent(boolean isEvent, String summary, String description, String location, String dtStart, String dtEnd,
-			String dtStamp, String sequence, String due, String status) throws ParseException {
+			String rrule, String dtStamp, String sequence, String due, String status, String alarm) throws ParseException {
 		if (isEvent) {
 			contents.append("BEGIN:VEVENT" + NEWLINE);
 			if (email != null) {
@@ -65,16 +63,22 @@ public class ICSWriter {
 			if (description != null) {
 				contents.append("DESCRIPTION:" + description + NEWLINE);
 			}
-			
+
 			if (location != null) {
 				contents.append("LOCATION:" + location + NEWLINE);
 			}
+
+			if (rrule != null) {
+				RepeatRule repeatRule = RepeatRule.parse(rrule, false); // TODO make it configurable to parse use the endDate
+				if (repeatRule != null) {
+					contents.append(repeatRule.toICS());
+				}
+			}
 			
-			// RRULE
 			if (dtStart != null) {
 				if (checkForAllDayEvent(dtStart, dtEnd)) {
-					Date start = parseDate(dtStart);
-					contents.append("DTSTART;VALUE=DATE:" + formatTimeForDayEvent(start) + NEWLINE);
+					ZonedDateTime start = CalendarDate.parse(dtStart);
+					contents.append("DTSTART;VALUE=DATE:" + CalendarDate.formatTimeForDayEvent(start) + NEWLINE);
 				} else {
 					contents.append("DTSTART:" + dtStart + NEWLINE);
 					if (dtEnd != null) {
@@ -112,7 +116,7 @@ public class ICSWriter {
 			if (email != null) {
 				contents.append("ORGANIZER:" + email + NEWLINE);
 			}
-			
+
 			if (due != null) {
 				contents.append("DUE:" + due + NEWLINE);
 			}
@@ -120,7 +124,7 @@ public class ICSWriter {
 			if (status != null) {
 				contents.append("STATUS:" + status + NEWLINE);
 			}
-			
+
 			if (summary != null) {
 				contents.append("SUMMARY:" + summary + NEWLINE);
 			}
@@ -135,10 +139,7 @@ public class ICSWriter {
 	 * @return a String for NOW in UTC
 	 */
 	private static String generateCreationDate() {
-		Calendar cal = Calendar.getInstance();
-		SimpleDateFormat sdf = new SimpleDateFormat("YYYYMMdd'T'HHmmss'Z'");
-		sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
-		String formatted = sdf.format(cal.getTime());
+		String formatted = CalendarDate.format(ZonedDateTime.now());
 		return formatted;
 	}
 
@@ -186,24 +187,5 @@ public class ICSWriter {
 		} else {
 			return false;
 		}
-	}
-
-	private static Date parseDate(String date) throws ParseException {
-		SimpleDateFormat sdf;
-		if (date.endsWith("Z")) { // UTC
-			sdf = new SimpleDateFormat("yyyyMMdd'T'HHmmss'Z'");
-			sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
-		} else {
-			// TODO missing Timezone information, this SHOULD be available in the vcalendar but is not parsed yet
-			sdf = new SimpleDateFormat("yyyyMMdd'T'HHmmss");
-		}
-
-		return sdf.parse(date);
-	}
-
-	private static String formatTimeForDayEvent(Date date) {
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
-		String tmp = sdf.format(date);
-		return tmp;
 	}
 }

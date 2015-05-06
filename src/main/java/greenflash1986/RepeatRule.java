@@ -1,6 +1,6 @@
 package greenflash1986;
 
-import java.util.Date;
+import java.time.ZonedDateTime;
 
 /**
  * @see <a href=http://www.kanzaki.com/docs/ical/rrule.html>Doku</a>
@@ -15,7 +15,7 @@ public class RepeatRule {
 
 	private Frequency frequency;
 	private int interval;
-	private Date until;
+	private ZonedDateTime until;
 	private int occurences;
 
 	public RepeatRule(Frequency frequency, int interval) {
@@ -23,7 +23,7 @@ public class RepeatRule {
 		this.interval = interval;
 	}
 
-	public RepeatRule(Frequency frequency, int interval, Date until) {
+	public RepeatRule(Frequency frequency, int interval, ZonedDateTime until) {
 		this(frequency, interval);
 		this.until = until;
 	}
@@ -65,7 +65,7 @@ public class RepeatRule {
 		// check for end date
 		// check for number of occurences
 		String occur = parts[parts.length - 1];
-		Date occurDate = null;
+		ZonedDateTime occurDate = null;
 		int occurCnt = 0;
 		try {
 			if (occur.startsWith("#")) {

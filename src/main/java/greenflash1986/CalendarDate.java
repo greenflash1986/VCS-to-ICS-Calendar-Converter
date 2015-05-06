@@ -1,35 +1,34 @@
 package greenflash1986;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.TimeZone;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 
 public class CalendarDate {
 
-	private static final SimpleDateFormat DATEFORMAT_GMT = new SimpleDateFormat("yyyyMMdd'T'HHmmss'Z'");
-	private static final SimpleDateFormat DATEFORMAT_LOCAL = new SimpleDateFormat("yyyyMMdd'T'HHmmss");
-	
-	static {
-		DATEFORMAT_GMT.setTimeZone(TimeZone.getTimeZone("GMT"));
-	}
+	private static final DateTimeFormatter DATEFORMAT_GMT = DateTimeFormatter.ofPattern("uuuuMMdd'T'HHmmss'Z'").withZone(
+			ZoneId.of("UTC"));
+	private static final DateTimeFormatter DATEFORMAT_LOCAL = DateTimeFormatter.ofPattern("yyyyMMdd'T'HHmmss");
 
-	public static Date parse(String date) throws ParseException {
-		if (date.endsWith("Z")) { // UTC
-			return DATEFORMAT_GMT.parse(date);
+	public static ZonedDateTime parse(String date) throws DateTimeParseException {
+		if (date.endsWith("Z")) {
+			return ZonedDateTime.parse(date, DATEFORMAT_GMT);
 		} else {
 			// TODO missing Timezone information, this SHOULD be available in the vcalendar but is not parsed yet
-			return DATEFORMAT_LOCAL.parse(date);
+			LocalDateTime tmp = LocalDateTime.parse(date, DATEFORMAT_LOCAL);
+			return tmp.atZone(ZoneId.systemDefault());
 		}
 	}
 
-	public static String formatTimeForDayEvent(Date date) {
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
-		String tmp = sdf.format(date);
+	public static String formatTimeForDayEvent(ZonedDateTime date) {
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMdd");
+		String tmp = dtf.format(date);
 		return tmp;
 	}
-	
-	public static String format(Date date) {
+
+	public static String format(ZonedDateTime date) {
 		return DATEFORMAT_GMT.format(date);
 	}
 }

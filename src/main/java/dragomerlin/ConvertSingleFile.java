@@ -142,7 +142,7 @@ public class ConvertSingleFile {
 		sb.append(tmp);
 		return decode(sb.toString());
 	}
-	
+
 	private static String readPossibleMultiline(String fieldContent, BufferedReader inStream) throws IOException {
 		char[] buf = new char[1];
 		boolean multilineFound = false;
@@ -163,7 +163,6 @@ public class ConvertSingleFile {
 	}
 
 	public static void getnumber(File inFile, String email, File outFile) throws IOException, ParseException {
-		// TODO: convert all day event to ics
 		// TODO: convert AALARM
 		// TODO: import more than one file into calendar
 		// TODO: give the user the choice, if export to single or multifile
@@ -224,6 +223,8 @@ public class ConvertSingleFile {
 					String dtstart = null;
 					String dtend = null;
 					String dtstamp = null;
+					String rrule = null;
+					String alarm = null;
 
 					if (line.toUpperCase().startsWith("BEGIN:VEVENT")) // Must check it before a new line is read overwritting
 																		// existent
@@ -284,38 +285,15 @@ public class ConvertSingleFile {
 							sequence = line.substring("SEQUENCE:".length());
 						} else if (line.toUpperCase().startsWith("X-METHOD:"))
 							;
-						else if (line.toUpperCase().startsWith("RRULE:")) { // TODO check the uppercase stuff here *Unfinished*
-							String myString;
-							String frec = null;
-							String frec2 = null;
-							myString = line.substring("RRULE:".length());
-							if (myString.startsWith("D")) {
-								if (myString.contains(" ")) {
-									frec = myString.substring(myString.indexOf("D") + 1, myString.indexOf(" "));
-									myString = myString.substring(myString.indexOf(" ") + 1);
-									System.out.println(myString);
-									if (myString.startsWith("#")) {
-										frec2 = myString.substring(myString.indexOf("#") + 1);
-									}
-								} else {
-									frec = myString.substring(myString.indexOf("D") + 1);
-									// End of field
-								}
-								// System.out.println("frec is ."+frec+".");
-								// System.out.println("number of events is ."+frec2+".");
-							} else if (myString.startsWith("W"))
-								;
-							else if (myString.startsWith("MD"))
-								;
-							else if (myString.startsWith("YM"))
-								;
+						else if (line.toUpperCase().startsWith("RRULE:")) {
+							rrule = line.substring("RRULE:".length());
 						} else if (line.toUpperCase().startsWith("DALARM:"))
 							;
-						else if (line.toUpperCase().startsWith("AALARM:"))
-							;
-						else if (line.toUpperCase().startsWith("AALARM;TYPE=X-EPOCSOUND:"))
-							;
-						else if (line.toUpperCase().startsWith("LAST-MODIFIED:")) {
+						else if (line.toUpperCase().startsWith("AALARM:")
+								|| line.toUpperCase().startsWith("AALARM;TYPE=X-EPOCSOUND:")) {
+							// this is enough for Nokia 5500 Sport
+							alarm = line.substring(line.indexOf(":") + 1);
+						} else if (line.toUpperCase().startsWith("LAST-MODIFIED:")) {
 							// TODO don't use this as creation date
 							dtstamp = line.substring("LAST-MODIFIED:".length());
 						} else if (line.toUpperCase().startsWith("PRIORITY:"))
@@ -347,14 +325,15 @@ public class ConvertSingleFile {
 						}
 					}
 
-					icsWriter.addEvent(isevent, summary, description, location, dtstart, dtend, dtstamp, sequence, due, status);
+					icsWriter.addEvent(isevent, summary, description, location, dtstart, dtend, rrule, dtstamp, sequence, due,
+							status, alarm);
 				}
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
 		}
-		
+
 		String contents = icsWriter.write(outFile);
 
 		try {
