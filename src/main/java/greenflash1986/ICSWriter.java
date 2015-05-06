@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.text.ParseException;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.ZonedDateTime;
 
 public class ICSWriter {
@@ -74,13 +75,18 @@ public class ICSWriter {
 					contents.append(repeatRule.toICS());
 				}
 			}
-			
-			if (dtStart != null) {
-				if (checkForAllDayEvent(dtStart, dtEnd)) {
-					ZonedDateTime start = CalendarDate.parse(dtStart);
-					contents.append("DTSTART;VALUE=DATE:" + CalendarDate.formatTimeForDayEvent(start) + NEWLINE);
+
+			if (dtStart != null) { // TODO decide where to handle the null
+				contents.append("DTSTART");
+				if (checkForSameStartAndEndTime(dtStart, dtEnd)) {
+					if (checkForStartTimeIsZero(dtStart)) {
+						ZonedDateTime start = CalendarDate.parse(dtStart);
+						contents.append(";VALUE=DATE:" + CalendarDate.formatTimeForDayEvent(start) + NEWLINE);
+					} else {
+						contents.append(":" + dtStart + NEWLINE);
+					}
 				} else {
-					contents.append("DTSTART:" + dtStart + NEWLINE);
+					contents.append(":" + dtStart + NEWLINE);
 					if (dtEnd != null) {
 						contents.append("DTEND:" + dtEnd + NEWLINE);
 					}
@@ -176,10 +182,21 @@ public class ICSWriter {
 		return contents.toString();
 	}
 
-	private static boolean checkForAllDayEvent(String dtstart, String dtend) {
+	private static boolean checkForStartTimeIsZero(String dtStart) {
+		if (dtStart != null) { // TODO decide where to handle the null
+			ZonedDateTime dt = CalendarDate.parse(dtStart);
+			LocalTime lt = dt.toLocalTime();
+			if (lt.equals(LocalTime.of(0, 0))) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private static boolean checkForSameStartAndEndTime(String dtStart, String dtEnd) {
 		// for Nokia 5500 Sport, this is enough, maybe make it more generic in the future
-		if (dtstart != null) {
-			if (dtstart.equals(dtend)) {
+		if (dtStart != null) { // TODO decide where to handle the null
+			if (dtStart.equals(dtEnd)) {
 				return true;
 			} else {
 				return false;
