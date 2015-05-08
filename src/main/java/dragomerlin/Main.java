@@ -19,6 +19,8 @@
 
 package dragomerlin;
 
+import greenflash1986.ICSWriter;
+
 import java.io.*;
 import java.text.ParseException;
 
@@ -72,9 +74,10 @@ public class Main {
 			email = readEmail();
 		}
 
-		
 		// TODO: separate this into other method, in case we want to create a GUI later
-		
+		// TODO: give the user the choice, if export to single or multifile
+		// TODO: write tests
+
 		// Check if VCS directory exists and is readable, create ICS dir if
 		// needed and check that is writable.
 		if (!dir_vcs.exists())
@@ -88,8 +91,12 @@ public class Main {
 		if (!dir_ics.exists() || !dir_ics.canWrite())
 			System.out.print("The ics dir does not exist or is not writable");
 		if (dir_vcs.exists() && dir_vcs.canRead() && dir_ics.exists() && dir_ics.canWrite()) {
-			File[] list = dir_vcs.listFiles();
+			File[] list = dir_vcs.listFiles(); // TODO use filenamefilter
 			int vcs_counter = 0;
+			ICSWriter icsWriter;
+			if (true) { // TODO let user decide if single or multifile
+				icsWriter = new ICSWriter(email);
+			}
 			for (int i = 0; i < list.length; i++) {
 				if (list[i].isDirectory() && !list[i].isFile()) {
 					// Check that is directory
@@ -107,12 +114,22 @@ public class Main {
 					File outFile = new File(dir_ics.toString() + File.separator
 							+ list[i].getName().toString().substring(0, numchars) + ".ics");
 					try {
-					ConvertSingleFile.getnumber(list[i], email, outFile);
+						if (false) { // TODO let user decide if single or multifile
+							icsWriter = new ICSWriter(email);
+						}
+						ConvertSingleFile.convert(list[i], email, icsWriter);
+
+						if (false) { // TODO let user decide if single or multifile
+							String contents = icsWriter.write(outFile);
+						}
 					} catch (ParseException pe) {
 						System.out.println("Could not parse file " + list[i] + "Message was " + pe.getMessage());
 					}
 					// fileconverter.filetoUTF8(outFile);
 				}
+			}
+			if (true) { // TODO let user decide if single or multifile
+				icsWriter.write(new File(dir_ics.toString() + File.separator + "Result.ics"));
 			}
 			System.out.println("Found " + vcs_counter + " valid files");
 			// System.out.println(java.nio.charset.Charset.defaultCharset().name());

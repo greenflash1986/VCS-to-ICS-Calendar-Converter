@@ -162,10 +162,7 @@ public class ConvertSingleFile {
 		return fieldContent;
 	}
 
-	public static void getnumber(File inFile, String email, File outFile) throws IOException, ParseException {
-		// TODO: import more than one file into calendar
-		// TODO: give the user the choice, if export to single or multifile
-		// TODO: write tests
+	public static void convert(File inFile, String email, ICSWriter icsWriter) throws IOException, ParseException {
 		/**
 		 * Fetch the entire contents of a text file, and return it in a StringBuffer. This style of implementation does not throw
 		 * Exceptions to the caller.
@@ -175,7 +172,7 @@ public class ConvertSingleFile {
 		 */
 
 		BufferedReader input = detectEncodingAndOpenFile(inFile);
-		ICSWriter icsWriter = new ICSWriter(email);
+		
 
 		// use buffering, reading one line at a time
 		/*
@@ -331,21 +328,11 @@ public class ConvertSingleFile {
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
+			try {
+				input.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
-
-		String contents = icsWriter.write(outFile);
-
-		try {
-			input.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		// End local stream closing
-
-		// Write to console
-		System.out.println("Out file is: " + outFile.getAbsolutePath().toString());
-		System.out.println("The ICS content is:");
-		System.out.println(contents.toString());
-		System.out.println();
 	}
 }
