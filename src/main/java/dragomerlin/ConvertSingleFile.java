@@ -163,7 +163,6 @@ public class ConvertSingleFile {
 	}
 
 	public static void getnumber(File inFile, String email, File outFile) throws IOException, ParseException {
-		// TODO: convert AALARM
 		// TODO: import more than one file into calendar
 		// TODO: give the user the choice, if export to single or multifile
 		// TODO: write tests
@@ -292,7 +291,7 @@ public class ConvertSingleFile {
 						else if (line.toUpperCase().startsWith("AALARM:")
 								|| line.toUpperCase().startsWith("AALARM;TYPE=X-EPOCSOUND:")) {
 							// this is enough for Nokia 5500 Sport
-							alarm = line.substring(line.indexOf(":") + 1);
+							alarm = line.substring(line.indexOf(":") + 1, line.indexOf(";", line.indexOf(":") + 1));
 						} else if (line.toUpperCase().startsWith("LAST-MODIFIED:")) {
 							// TODO don't use this as creation date
 							dtstamp = line.substring("LAST-MODIFIED:".length());

@@ -12,7 +12,7 @@ import java.time.ZonedDateTime;
 
 public class ICSWriter {
 	// TODO maybe use ical4j https://github.com/ical4j/ical4j/wiki
-	private static final String NEWLINE = System.getProperty("line.separator");
+	public static final String NEWLINE = System.getProperty("line.separator");
 	private String email;
 	private StringBuilder contents = new StringBuilder();
 
@@ -72,7 +72,7 @@ public class ICSWriter {
 			if (rrule != null) {
 				RepeatRule repeatRule = RepeatRule.parse(rrule, false); // TODO make it configurable to parse use the endDate
 				if (repeatRule != null) {
-					contents.append(repeatRule.toICS());
+					contents.append(repeatRule.toICS() + NEWLINE);
 				}
 			}
 
@@ -103,6 +103,10 @@ public class ICSWriter {
 				// Get UTC (GMT) time of the current computer in
 				// case read file doesn't have DTSTAMP
 				contents.append("DTSTAMP:" + generateCreationDate() + NEWLINE);
+			}
+			
+			if (alarm != null) {
+				contents.append(new Alarm(CalendarDate.parse(dtStart), alarm).toICS(summary) + NEWLINE);
 			}
 			contents.append("END:VEVENT" + NEWLINE);
 		} else {

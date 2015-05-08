@@ -45,7 +45,6 @@ public class RepeatRule {
 			sb.append(";UNTIL=" + CalendarDate.format(until)); // TODO at this time, the enddate is read in local
 																// timezone put the output is GMT
 		}
-		sb.append(System.getProperty("line.separator"));
 		return sb.toString();
 	}
 
