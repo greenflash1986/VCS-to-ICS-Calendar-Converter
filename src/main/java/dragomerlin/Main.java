@@ -138,7 +138,7 @@ public class Main {
 	}
 
 	public static String readEmail() {
-		// FIXME: this don't have to be the email, it's the name of the creator
+		// TODO: this don't have to be the email, it's the name of the creator
 		// of the event
 		System.out.println("Enter here the email where you will store the calendar: ");
 		String s = null;

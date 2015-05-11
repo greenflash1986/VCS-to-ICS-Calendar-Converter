@@ -69,7 +69,7 @@ public class ConvertSingleFile {
 	 * BOM), UTF-8 with BOM, UTF-16BE, UTF-16LE, UTF-32BE and UTF-32LE.
 	 */
 
-	public static String decode(String paramString) throws UnsupportedEncodingException {
+	public static String decode(String paramString) {
 		// Some special characters like \ will be skipped after importing them
 		// with the calendar application. To prevent it we must scape them, like
 		// \\
@@ -87,8 +87,9 @@ public class ConvertSingleFile {
 			// all Nokia phones use UTF-8 by default
 			localStringBuffer1.append(new String(org.apache.commons.codec.net.QuotedPrintableCodec
 					.decodeQuotedPrintable(paramString.getBytes()), "UTF-8"));
-		} catch (DecoderException e) {
+		} catch (DecoderException | UnsupportedEncodingException e) {
 			e.printStackTrace();
+			return null;
 		}
 		return localStringBuffer1.toString();
 	}
@@ -133,12 +134,14 @@ public class ConvertSingleFile {
 	private static String readEncryptedField(String fieldContent, BufferedReader inStream) throws IOException {
 		StringBuilder sb = new StringBuilder();
 		String tmp = fieldContent;
-		while (tmp.endsWith("=")) {
-			// FIXME possible nullpointer, if EOF
+		while (tmp != null && tmp.endsWith("=")) {
 			sb.append(tmp.substring(0, tmp.length() - 1));
 			tmp = inStream.readLine();
 		}
-		// FIXME unsupported encoding exception somewhere
+		if (tmp == null) {
+			throw new IOException("Error while reading multiline: EOF.");
+		}
+		
 		sb.append(tmp);
 		return decode(sb.toString());
 	}
@@ -146,10 +149,13 @@ public class ConvertSingleFile {
 	private static String readPossibleMultiline(String fieldContent, BufferedReader inStream) throws IOException {
 		char[] buf = new char[1];
 		boolean multilineFound = false;
-		// FIXME possible nullpointer, if EOF
 		do {
 			inStream.mark(1);
-			inStream.read(buf);
+			int res = inStream.read(buf);
+			if (res == -1) {
+				throw new IOException("Error while reading multiline: EOF.");
+			}
+			
 			if (buf[0] == ' ') {
 				multilineFound = true;
 				String line = inStream.readLine();
