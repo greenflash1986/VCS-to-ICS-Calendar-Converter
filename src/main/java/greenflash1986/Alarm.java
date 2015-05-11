@@ -38,7 +38,7 @@ public class Alarm {
 		long seconds = difference > 0 ? difference : difference * -1;
 		
 		if (seconds % (weekLenght) == 0) {
-			// FIXME
+			sb.append(Integer.toString((int) (seconds / weekLenght)) + "W");
 		} else {
 			int days = (int) (seconds / dayLength);
 			seconds = seconds % dayLength;
