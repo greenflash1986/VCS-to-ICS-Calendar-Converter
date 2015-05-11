@@ -27,6 +27,11 @@ import java.text.ParseException;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
+
+		// TODO: separate this into other method, in case we want to create a GUI later
+		// TODO: give the user the choice, if export to single or multifile
+		// TODO: write tests
+		
 		String email = null;
 
 		System.out.println("VCS to ICS calendar converter v2.0");
@@ -67,16 +72,12 @@ public class Main {
 				}
 			} else {
 				System.out.println("Invalid parameter: " + args[0]);
-				// FIXME print usage
+				System.out.println("Usage: java -jar calconv.jar [(-e | --email) email]");
 				email = readEmail();
 			}
 		} else {
 			email = readEmail();
 		}
-
-		// TODO: separate this into other method, in case we want to create a GUI later
-		// TODO: give the user the choice, if export to single or multifile
-		// TODO: write tests
 
 		// Check if VCS directory exists and is readable, create ICS dir if
 		// needed and check that is writable.
