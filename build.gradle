@@ -13,6 +13,65 @@ task copyTestFiles (type: Copy) {
 
 processTestResources.dependsOn 'copyTestFiles'
 
+task releaseNotes() << {
+	println "test"
+	def releaseNotes = new File("${project.rootDir}/releaseNotes.md")
+	if (releaseNotes.exists()) {
+		releaseNotes.delete()
+	}
+	releaseNotes.createNewFile();
+	def versions = ""
+	def tags = readTags(new File("${project.rootDir}"))
+	tags.each {tag ->
+		versions += "- [$tag](#$tag)\n"
+	}
+
+	tags.each {tag ->
+		releaseNotes << "# ${tag}<a name=\"${tag}\"/>\n"
+		def message = readTagMessage(tag)
+		message.each{releaseNotes << "$it\n"}
+		releaseNotes << "\n"
+	}
+}
+
+def readTags(File workingDir) {
+	def tags = []
+	def proc = "git tag -l".execute(null, workingDir)
+	println "git"
+	proc.in.eachLine {
+		line -> tags += line
+	}
+	tags.sort {}
+	Collections.reverse( tags )
+	tags
+}
+
+def readTagMessage(String tag) {
+	def message = []
+	def proc = "git cat-file tag $tag".execute(null, new File("${project.rootDir}"))
+	def startCollection = false
+	proc.in.eachLine { line ->
+		if (line.isEmpty()) {
+			startCollection = true
+		}
+		if (startCollection) {
+			message += line
+			println line
+		}
+	}
+	proc.err.eachLine { line -> println line }
+	message
+}
+
+jar {
+	archiveName = 'VCS2ICS.jar'
+	manifest {
+		attributes('Implementation-Title': project.name,
+				'Implementation-Version': version,
+				'Main-Class': 'dragomerlin.Main')
+	}
+}
+
 
 dependencies {
 	compile 'com.googlecode.juniversalchardet:juniversalchardet:1.0.3'
