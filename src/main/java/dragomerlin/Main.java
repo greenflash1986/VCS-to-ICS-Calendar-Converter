@@ -34,7 +34,7 @@ public class Main {
 		
 		String email = null;
 
-		System.out.println("VCS to ICS calendar converter v2.0");
+		System.out.println("VCS to ICS calendar converter v" + Main.class.getPackage().getImplementationVersion());
 		System.out.println("Working directory: " + System.getProperty("user.dir"));
 
 		// Check whether Java has some bug causing bad quoted printable decoding
