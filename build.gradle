@@ -1,15 +1,19 @@
-repositories {
-    mavenCentral()
+plugins {
+  id 'net.researchgate.release' version '2.1.0'
 }
 
-apply plugin: 'java'
-
+allprojects {
+	apply plugin: 'java'
+	
+	repositories {
+		mavenCentral()
+	}
+}
 
 task copyTestFiles (type: Copy) {
 	from "${projectDir}/src/test/resources/vcs"
 	into "${projectDir}/vcs"
 }
-
 
 processTestResources.dependsOn 'copyTestFiles'
 
@@ -22,6 +26,9 @@ jar {
 	}
 }
 
+release {
+	tagTemplate = 'v$version'
+}
 
 dependencies {
 	compile 'com.googlecode.juniversalchardet:juniversalchardet:1.0.3'
