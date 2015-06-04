@@ -17,7 +17,7 @@
     along with VCS to ICS Calendar Converter.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package net.sourceforge.users.dragomerlin;
+package net.sourceforge.users.dragomerlin.vcs2icsCalendarConverter;
 
 import java.io.ByteArrayInputStream;
 

@@ -1,9 +1,9 @@
-package greenflash1986;
+package com.github.greenflash1986.vcs2icsCalendarConverter;
 
 import java.time.*;
 import java.time.temporal.ChronoUnit;
 
-import static greenflash1986.ICSWriter.NEWLINE;
+import static com.github.greenflash1986.vcs2icsCalendarConverter.ICSWriter.NEWLINE;
 
 public class Alarm {
 	

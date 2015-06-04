@@ -1,4 +1,4 @@
-package net.sourceforge.users.dragomerlin;
+package net.sourceforge.users.dragomerlin.vcs2icsCalendarConverter;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

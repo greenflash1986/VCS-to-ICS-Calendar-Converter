@@ -1,4 +1,4 @@
-package greenflash1986;
+package com.github.greenflash1986.vcs2icsCalendarConverter;
 
 import java.io.BufferedWriter;
 import java.io.File;

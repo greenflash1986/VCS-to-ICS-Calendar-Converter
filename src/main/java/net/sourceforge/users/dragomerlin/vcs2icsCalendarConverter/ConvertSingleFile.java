@@ -17,9 +17,7 @@
     along with VCS to ICS Calendar Converter.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package net.sourceforge.users.dragomerlin;
-
-import greenflash1986.ICSWriter;
+package net.sourceforge.users.dragomerlin.vcs2icsCalendarConverter;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -32,6 +30,8 @@ import java.text.ParseException;
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.io.ByteOrderMark;
 import org.apache.commons.io.input.BOMInputStream;
+
+import com.github.greenflash1986.vcs2icsCalendarConverter.ICSWriter;
 
 public class ConvertSingleFile {
 

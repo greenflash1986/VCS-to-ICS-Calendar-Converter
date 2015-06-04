@@ -63,7 +63,7 @@
  *Currently not supported by Java 
  */
 
-package net.sourceforge.users.dragomerlin;
+package net.sourceforge.users.dragomerlin.vcs2icsCalendarConverter;
 
 import org.mozilla.universalchardet.UniversalDetector;
 

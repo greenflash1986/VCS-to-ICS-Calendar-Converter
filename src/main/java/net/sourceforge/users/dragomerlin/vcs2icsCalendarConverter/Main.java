@@ -17,12 +17,12 @@
     along with VCS to ICS Calendar Converter.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package net.sourceforge.users.dragomerlin;
-
-import greenflash1986.ICSWriter;
+package net.sourceforge.users.dragomerlin.vcs2icsCalendarConverter;
 
 import java.io.*;
 import java.text.ParseException;
+
+import com.github.greenflash1986.vcs2icsCalendarConverter.ICSWriter;
 
 public class Main {
 
