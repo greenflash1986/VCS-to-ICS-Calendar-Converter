@@ -13,6 +13,15 @@ task copyTestFiles (type: Copy) {
 
 processTestResources.dependsOn 'copyTestFiles'
 
+jar {
+	archiveName = 'VCS2ICS.jar'
+	manifest {
+		attributes('Implementation-Title': project.name,
+				'Implementation-Version': version,
+				'Main-Class': 'net.sourceforge.users.dragomerlin.Main')
+	}
+}
+
 
 dependencies {
 	compile 'com.googlecode.juniversalchardet:juniversalchardet:1.0.3'

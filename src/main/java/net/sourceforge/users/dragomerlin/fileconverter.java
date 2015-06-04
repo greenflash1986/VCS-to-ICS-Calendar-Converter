@@ -1,4 +1,4 @@
-package dragomerlin;
+package net.sourceforge.users.dragomerlin;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

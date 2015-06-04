@@ -17,7 +17,7 @@
     along with VCS to ICS Calendar Converter.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package dragomerlin;
+package net.sourceforge.users.dragomerlin;
 
 import greenflash1986.ICSWriter;
 

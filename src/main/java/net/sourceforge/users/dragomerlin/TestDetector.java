@@ -63,7 +63,7 @@
  *Currently not supported by Java 
  */
 
-package dragomerlin;
+package net.sourceforge.users.dragomerlin;
 
 import org.mozilla.universalchardet.UniversalDetector;
 
