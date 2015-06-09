@@ -4,6 +4,7 @@ plugins {
 
 allprojects {
 	apply plugin: 'java'
+	apply plugin: 'eclipse'
 	
 	repositories {
 		mavenCentral()
@@ -42,4 +43,25 @@ dependencies {
 	compile 'com.googlecode.juniversalchardet:juniversalchardet:1.0.3'
 	compile 'commons-codec:commons-codec:1.7'
 	compile 'commons-io:commons-io:2.4'
+}
+		
+eclipse.classpath {
+	file {
+		beforeMerged { classpath -> 
+			def jreEntries = classpath.entries.findAll { entry ->
+				entry.kind.equals('con') &&
+				entry.path.contains('org.eclipse.jdt.launching.JRE_CONTAINER')
+			}
+			classpath.entries.removeAll(jreEntries)
+		}
+	}
+	if (JavaVersion.current() > targetCompatibility) {
+		containers.remove('org.eclipse.jdt.launching.JRE_CONTAINER')
+		containers "org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-$sourceCompatibility"
+	}
+}
+
+
+eclipseJdt {
+	enabled = false
 }

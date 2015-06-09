@@ -4,3 +4,5 @@
 /bin/
 /vcs/
 /ics/
+.classpath
+.project
