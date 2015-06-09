@@ -10,9 +10,17 @@ allprojects {
 	}
 }
 
+task cleanUpVcsAndIcsFolders(type: Delete) {
+	delete "${project.rootDir}/vcs"
+	delete "${project.rootDir}/ics"
+}
+
+clean.dependsOn 'cleanUpVcsAndIcsFolders'
+
+
 task copyTestFiles (type: Copy) {
-	from "${projectDir}/src/test/resources/vcs"
-	into "${projectDir}/vcs"
+	from "${project.rootDir}/src/test/resources/vcs"
+	into "${project.rootDir}/vcs"
 }
 
 processTestResources.dependsOn 'copyTestFiles'
