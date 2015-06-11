@@ -25,11 +25,11 @@ clean.dependsOn 'cleanUpVcsAndIcsFolders'
 
 
 task copyTestFiles (type: Copy) {
-	from "${project.rootDir}/src/test/resources/vcs"
+	from "${sourceSets.test.output.resourcesDir}/vcs"
 	into "${project.rootDir}/vcs"
 }
 
-processTestResources.dependsOn 'copyTestFiles'
+test.dependsOn 'copyTestFiles'
 
 task fatJar (type: Jar) {
 	baseName = shortName
@@ -49,7 +49,9 @@ task processScripts (type: Copy) {
 	into scriptsDir
 }
 
-task processAppendix (type: Copy) {
+task processAppendix (dependsOn: 'processTestResources', type: Copy) {
+
+def authorsString
 	File file = file("authors.md")
 	def authors = []
 	file.eachLine { line ->
@@ -64,7 +66,6 @@ task processAppendix (type: Copy) {
 			authors += author
 		}
 	}
-	def authorsString
 	authors.each {author ->
 		if (authorsString != null) {
 			authorsString += ", " + author
@@ -72,13 +73,18 @@ task processAppendix (type: Copy) {
 			authorsString = author
 		}
 	}
-	
+
+	into appendixDir 
+	from ('licence.md')
 	from ('authors.md')
+	from ('changelog.md')
 	from ('readme.md') {
-		filter(ReplaceTokens, tokens: [projectName: project.name, version: version, authors: authorsString, archiveName: jar.archiveName])
+		filter(ReplaceTokens, tokens: [projectName: project.name, version: version, authors: authorsString, archiveName: fatJar.archiveName])
 	}
 	
-	into appendixDir 
+	into ('vcs') {
+		from "${sourceSets.test.output.resourcesDir}/vcs"
+	}
 }
 
 task buildReleaseZip(type: Zip) {
@@ -87,11 +93,12 @@ task buildReleaseZip(type: Zip) {
 	
 	def files = files(
 		fatJar.archivePath, 
-		scriptsDir)
+		scriptsDir,
+		appendixDir)
 	from files
 }
 
-assemble.dependsOn 'buildReleaseZip'
+afterReleaseBuild.dependsOn 'buildReleaseZip'
 
 
 release {
