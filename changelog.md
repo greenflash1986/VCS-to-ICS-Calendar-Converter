@@ -1,7 +1,7 @@
 # v2.0.1
 * added support for RRULE
 * use Java 8 and new DateTime-Classes internally
-* convert of multiple vcs files to one calendar file
+* convert multiple vcs files to one calendar file
 * convert AALARM to .ics 
 
 # v2.0
