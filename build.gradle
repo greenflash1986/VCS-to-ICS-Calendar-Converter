@@ -1,3 +1,5 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
 plugins {
   id 'net.researchgate.release' version '2.1.0'
 }
@@ -10,6 +12,9 @@ allprojects {
 		mavenCentral()
 	}
 }
+
+def scriptsDir = "${buildDir}/scripts"
+def appendixDir = "${buildDir}/appendix"
 
 task cleanUpVcsAndIcsFolders(type: Delete) {
 	delete "${project.rootDir}/vcs"
@@ -26,14 +31,68 @@ task copyTestFiles (type: Copy) {
 
 processTestResources.dependsOn 'copyTestFiles'
 
-jar {
-	archiveName = 'VCS2ICS.jar'
+task fatJar (type: Jar) {
+	baseName = archiveName
 	manifest {
-		attributes('Implementation-Title': project.name,
-				'Implementation-Version': version,
-				'Main-Class': 'net.sourceforge.users.dragomerlin.vcs2icsCalendarConverter.Main')
+		attributes(	'Implementation-Title': project.name,
+					'Implementation-Version': version,
+					'Main-Class': 'net.sourceforge.users.dragomerlin.vcs2icsCalendarConverter.Main')
 	}
+	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
 }
+
+task processScripts (type: Copy) {
+	from ("${project.rootDir}/src/main/bat") {
+		filter(ReplaceTokens, tokens: ['archive': fatJar.archiveName])
+	}
+	into scriptsDir
+}
+
+task processAppendix (type: Copy) {
+	File file = file("authors.md")
+	def authors = []
+	file.eachLine { line ->
+		if (!line.allWhitespace) {
+			def author
+			def start = line.indexOf("[")
+			if (start > -1) {
+				author = (line.substring(start + 1, line.indexOf("]")))
+			} else {
+				author = line
+			}
+			authors += author
+		}
+	}
+	def authorsString
+	authors.each {author ->
+		if (authorsString != null) {
+			authorsString += ", " + author
+		} else {
+			authorsString = author
+		}
+	}
+	
+	from ('authors.md')
+	from ('readme.md') {
+		filter(ReplaceTokens, tokens: [authors: authorsString, version: version])
+	}
+	
+	into appendixDir 
+}
+
+task buildReleaseZip(type: Zip) {
+	dependsOn 'fatJar', 'processScripts', 'processAppendix'
+	baseName = archiveName
+	
+	def files = files(
+		fatJar.archivePath, 
+		scriptsDir)
+	from files
+}
+
+assemble.dependsOn 'buildReleaseZip'
+
 
 release {
 	tagTemplate = 'v$version'

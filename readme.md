@@ -1,8 +1,8 @@
 # General
 
 Project name: VCS to ICS Calendar Converter  
-Latest version: 2.0  
-Author: dragomerlin  
+Latest version: @version@ 
+Author(s): @authors@  
 Source code: Java only  
 JDK: 1.8.0_45  
 Licenses: GPL, LGPL, Apache, MPL  
