@@ -18,6 +18,20 @@ Internal behaviour:
 					
 **Warning: Java may contain a bug where some letters will result in a unknown symbol when applying the org.apache.commons.codec.net.QuotedPrintableCodec.decodeQuotedPrintable routine on strings that are not totally coded in quoted printable. This shouldn't happen, and the issue was only found on windows, on vcs files provided by Microsoft Works. See dair.vcs for more details. In this case, it is recommended to use other operating system until it's solved. The program makes a quick check that is output to command line every time it is run.**
 
+# How to use:
+
+Delete the ics folder
+Put the vcs files in vcs folder
+Run it with launch-from-windows.bat 
+
+ or
+
+From Command Prompt in the dir of the jar file
+java -jar calconv.jar
+
+To specify email from command line
+java -jar calconv.jar -email youremail
+
 # How it works:
 It looks for vcs folder and ics folder. Under vcs folder looks for .vcs files and for each one that matches the
 calendar format creates the corresponding into the ics dir. Already existent are overwritten.
