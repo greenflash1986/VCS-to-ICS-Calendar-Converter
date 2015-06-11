@@ -32,7 +32,7 @@ task copyTestFiles (type: Copy) {
 processTestResources.dependsOn 'copyTestFiles'
 
 task fatJar (type: Jar) {
-	baseName = archiveName
+	baseName = shortName
 	manifest {
 		attributes(	'Implementation-Title': project.name,
 					'Implementation-Version': version,
@@ -44,7 +44,7 @@ task fatJar (type: Jar) {
 
 task processScripts (type: Copy) {
 	from ("${project.rootDir}/src/main/bat") {
-		filter(ReplaceTokens, tokens: ['archive': fatJar.archiveName])
+		filter(ReplaceTokens, tokens: [archiveName: fatJar.archiveName])
 	}
 	into scriptsDir
 }
@@ -75,7 +75,7 @@ task processAppendix (type: Copy) {
 	
 	from ('authors.md')
 	from ('readme.md') {
-		filter(ReplaceTokens, tokens: [authors: authorsString, version: version])
+		filter(ReplaceTokens, tokens: [projectName: project.name, version: version, authors: authorsString, archiveName: jar.archiveName])
 	}
 	
 	into appendixDir 
@@ -83,7 +83,7 @@ task processAppendix (type: Copy) {
 
 task buildReleaseZip(type: Zip) {
 	dependsOn 'fatJar', 'processScripts', 'processAppendix'
-	baseName = archiveName
+	baseName = shortName
 	
 	def files = files(
 		fatJar.archivePath, 

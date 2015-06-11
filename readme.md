@@ -1,6 +1,6 @@
 # General
 
-Project name: VCS to ICS Calendar Converter  
+Project name: @projectName@  
 Latest version: @version@ 
 Author(s): @authors@  
 Source code: Java only  
@@ -27,10 +27,10 @@ Run it with launch-from-windows.bat
  or
 
 From Command Prompt in the dir of the jar file
-java -jar calconv.jar
+java -jar @archiveName@
 
 To specify email from command line
-java -jar calconv.jar -email youremail
+java -jar @archiveName@ -email youremail
 
 # How it works:
 It looks for vcs folder and ics folder. Under vcs folder looks for .vcs files and for each one that matches the
@@ -38,10 +38,10 @@ calendar format creates the corresponding into the ics dir. Already existent are
 Email field may be required for third party software.   
 When running the application email can be specified or not. If specified use '-e', 'email' or '-email' arguments.
 
-'java -jar calconv.jar' will prompt for email  
-'java -jar calconv.jar somethingstrange' will prompt as well  
-'java -jar calconv.jar -e' will use blank email and don't ask  
-'java -jar calconv.jar -e youremail' will use that string.  
+'java -jar @archiveName@' will prompt for email  
+'java -jar @archiveName@ somethingstrange' will prompt as well  
+'java -jar @archiveName@ -e' will use blank email and don't ask  
+'java -jar @archiveName@ -e youremail' will use that string.  
 
 # Getting the vcs files:
 * You can send them to your computer via bluetooth from the phone, some symbian devices allow it.

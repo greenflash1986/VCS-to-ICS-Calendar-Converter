@@ -1,2 +1,2 @@
-java -jar @archive@
+java -jar @archiveName@
 PAUSE
