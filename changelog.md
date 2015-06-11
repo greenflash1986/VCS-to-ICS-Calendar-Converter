@@ -1,4 +1,5 @@
-# v2.0.1
+# v3.0
+* change `-email` argument to `--email`, remove `email` 
 * added support for RRULE
 * use Java 8 and new DateTime-Classes internally
 * convert multiple vcs files to one calendar file

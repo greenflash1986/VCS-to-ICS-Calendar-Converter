@@ -1,11 +1,13 @@
-# General
+# VCS to ICS Calendar Converter 
+  
+Author(s):
 
-Project name: @projectName@  
-Latest version: @version@ 
-Author(s): @authors@  
+- [dragomerlin](http://dragomerlin.users.sourceforge.net)
+- [greenflash1986](http://github.com/greenflash1986/)  
+
 Source code: Java only  
-JDK: 1.8.0_45  
-Licenses: GPL, LGPL, Apache, MPL  
+Java Version: 1.8    
+Licenses: GPL   
 Platform: multi (java runtime dependant)  
 Interface type: command line only, console  
 Runtime: userspace  
@@ -16,44 +18,45 @@ Internal behaviour:
 * decode quoted printable strings into UTF-8
 * Convert calendars to version 2.0 (remove quoted-printable)
 					
-**Warning: Java may contain a bug where some letters will result in a unknown symbol when applying the org.apache.commons.codec.net.QuotedPrintableCodec.decodeQuotedPrintable routine on strings that are not totally coded in quoted printable. This shouldn't happen, and the issue was only found on windows, on vcs files provided by Microsoft Works. See dair.vcs for more details. In this case, it is recommended to use other operating system until it's solved. The program makes a quick check that is output to command line every time it is run.**
+__Warning: Java may contain a bug where some letters will result in a unknown symbol
+when applying the org.apache.commons.codec.net.QuotedPrintableCodec.decodeQuotedPrintable
+routine on strings that are not totally coded in quoted printable. This shouldn't happen,
+and the issue was only found on windows, on vcs files provided by Microsoft Works. See
+dair.vcs for more details. In this case, it is recommended to use other operating system
+until it's solved. The program makes a quick check that is output to command line every time
+it is run.__
 
-# How to use:
-
-Delete the ics folder
-Put the vcs files in vcs folder
+## How to use:
+Delete the ics folder  
+Put the vcs files in vcs folder  
 Run it with launch-from-windows.bat 
 
  or
 
-From Command Prompt in the dir of the jar file
-java -jar @archiveName@
+if you are running the application direct from console, email can be specified or not. To specify use `-e` or `--email` arguments.
 
-To specify email from command line
-java -jar @archiveName@ -email youremail
+`java -jar VCS2ICS.jar` will prompt for email  
+`java -jar VCS2ICS.jar somethingstrange` will prompt as well  
+`java -jar VCS2ICS.jar -e` OR `java -jar VCS2ICS.jar --email`will use blank email and don't ask  
+`java -jar VCS2ICS.jar -e youremail` OR `java -jar VCS2ICS.jar --email youremail` will use that string.  
 
-# How it works:
+
+## How it works:
 It looks for vcs folder and ics folder. Under vcs folder looks for .vcs files and for each one that matches the
 calendar format creates the corresponding into the ics dir. Already existent are overwritten.
 Email field may be required for third party software.   
-When running the application email can be specified or not. If specified use '-e', 'email' or '-email' arguments.
 
-'java -jar @archiveName@' will prompt for email  
-'java -jar @archiveName@ somethingstrange' will prompt as well  
-'java -jar @archiveName@ -e' will use blank email and don't ask  
-'java -jar @archiveName@ -e youremail' will use that string.  
-
-# Getting the vcs files:
+## Getting the vcs files:
 * You can send them to your computer via bluetooth from the phone, some symbian devices allow it.
 * Use third party software running inside your phone.
 * Connect the device to the computer via USB or Bluetooth or Wifi.
 * Create a NBU, NBF, NFB, NFC and ARC type backups and extract calendar files inside with NbuExplorer.
 * Get the contacts in the native database that the device uses and use third party software to parse.
 
-# Tips:
+## Tips:
 - Use an application like Notepad++ or Kate to edit files and see / change the encoding of the file itself.
 				
-# Known issues: 		
+## Known issues: 		
 * VCS files, when using quoted printable format, it is always expected to be ASCII and UTF-8 charset even if no
  specified (ENCODING=QUOTED-PRINTABLE;CHARSET=UTF-8). Other charsets different than UTF-8 for printable are
  unsupported and non standard.

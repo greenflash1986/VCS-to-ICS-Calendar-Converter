@@ -16,15 +16,15 @@ allprojects {
 def scriptsDir = "${buildDir}/scripts"
 def appendixDir = "${buildDir}/appendix"
 
-task cleanUpVcsAndIcsFolders(type: Delete) {
-	delete "${project.rootDir}/vcs"
+task cleanTestOutput(type: Delete) {
 	delete "${project.rootDir}/ics"
 }
 
-clean.dependsOn 'cleanUpVcsAndIcsFolders'
+clean.dependsOn 'cleanTestOutput'
+clean.dependsOn 'cleanCopyTestFiles'
 
 
-task copyTestFiles (type: Copy) {
+task copyTestFiles (dependsOn: 'processTestResources', type: Copy) {
 	from "${sourceSets.test.output.resourcesDir}/vcs"
 	into "${project.rootDir}/vcs"
 }
@@ -32,6 +32,7 @@ task copyTestFiles (type: Copy) {
 test.dependsOn 'copyTestFiles'
 
 task fatJar (type: Jar) {
+	outputs.upToDateWhen { return false }
 	baseName = shortName
 	manifest {
 		attributes(	'Implementation-Title': project.name,
@@ -42,7 +43,9 @@ task fatJar (type: Jar) {
     with jar
 }
 
-task processScripts (type: Copy) {
+task processScripts (dependsOn: 'fatJar', type: Copy) {
+	outputs.upToDateWhen { return false }
+	
 	from ("${project.rootDir}/src/main/bat") {
 		filter(ReplaceTokens, tokens: [archiveName: fatJar.archiveName])
 	}
@@ -51,44 +54,20 @@ task processScripts (type: Copy) {
 
 task processAppendix (dependsOn: 'processTestResources', type: Copy) {
 
-def authorsString
-	File file = file("authors.md")
-	def authors = []
-	file.eachLine { line ->
-		if (!line.allWhitespace) {
-			def author
-			def start = line.indexOf("[")
-			if (start > -1) {
-				author = (line.substring(start + 1, line.indexOf("]")))
-			} else {
-				author = line
-			}
-			authors += author
-		}
-	}
-	authors.each {author ->
-		if (authorsString != null) {
-			authorsString += ", " + author
-		} else {
-			authorsString = author
-		}
-	}
-
 	into appendixDir 
 	from ('licence.md')
 	from ('authors.md')
 	from ('changelog.md')
-	from ('readme.md') {
-		filter(ReplaceTokens, tokens: [projectName: project.name, version: version, authors: authorsString, archiveName: fatJar.archiveName])
-	}
-	
-	into ('vcs') {
-		from "${sourceSets.test.output.resourcesDir}/vcs"
+	from ('readme.md')
+	doLast {
+		into ('vcs') {
+			from "${sourceSets.test.output.resourcesDir}/vcs"
+		}
 	}
 }
 
-task buildReleaseZip(type: Zip) {
-	dependsOn 'fatJar', 'processScripts', 'processAppendix'
+task buildReleaseZip(dependsOn: ['processScripts', 'processAppendix'], type: Zip) {
+	outputs.upToDateWhen { return false }
 	baseName = shortName
 	
 	def files = files(
