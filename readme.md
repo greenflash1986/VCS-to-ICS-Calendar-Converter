@@ -68,3 +68,10 @@ Email field may be required for third party software.
  using an internal ringtone on Nokia that does not exist on iCal; system pop-up notifications or vibration
  reminders. There are no complete specifications as well.
 * Other issues may be present on third parties software due to closed specifications.
+
+## Disclaimer / Notes
+I fixed the issues / made this project in my spare time and used this project as
+playground to improve some of my skills. Because of this I won't promise to do
+further work on this project. I provided it online on Github for you that you can
+use the (partially) fixed version. Hopefully it's useful for some people and / or 
+feel free to fork or made contributions. I will do my best to honor these efforts. 
