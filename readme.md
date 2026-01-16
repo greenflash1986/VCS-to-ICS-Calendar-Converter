@@ -27,7 +27,7 @@ until it's solved. The program makes a quick check that is output to command lin
 it is run.__
 
 ## How to use:
-Delete the ics folder  
+Delete the vcs file already inside vcs folder  
 Put the vcs files in vcs folder  
 Run it with launch-from-windows.bat 
 
@@ -74,4 +74,5 @@ I fixed the issues / made this project in my spare time and used this project as
 playground to improve some of my skills. Because of this I won't promise to do
 further work on this project. I provided it online on Github for you that you can
 use the (partially) fixed version. Hopefully it's useful for some people and / or 
+
 feel free to fork or made contributions. I will do my best to honor these efforts. 
