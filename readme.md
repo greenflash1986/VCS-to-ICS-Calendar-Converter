@@ -26,6 +26,69 @@ dair.vcs for more details. In this case, it is recommended to use other operatin
 until it's solved. The program makes a quick check that is output to command line every time
 it is run.__
 
+## Installation
+
+This uses `bash`, so...
+- UNIX-based OSes (MacOS/Linux): switch to `bash` shell with `bash` command
+- Windows: run it inside [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+
+```
+# install SDKMAN!
+curl -s "https://get.sdkman.io" | bash
+
+# update shell environment to include `sdk` utility
+. ~/.bashrc
+
+# install version of Java this project was made with (other versions may work, just haven't tested them)
+sdk install java 8.0.472-sem
+
+# use the Java version you just installed
+sdk use java 8.0.472-sem
+
+# check you're actually invoking that version of Java when running `java` (if not, you can just run the binary with the full path, which should be `~/.sdkman/candidates/java/8.0.472-sem/bin/java`)
+java -version
+
+# (try to) automatically install dependencies for your OS to run next commands
+
+# thank you [@Mark](https://unix.stackexchange.com/users/236089/mark) for this script :)
+# https://unix.stackexchange.com/a/571192
+# https://creativecommons.org/licenses/by-sa/4.0/
+
+packagesNeeded=(curl jq wget unzip tr date)
+if [ -x "$(command -v apk)" ];
+then
+    sudo apk add -y --no-cache "${packagesNeeded[@]}"
+elif [ -x "$(command -v apt-get)" ];
+then
+    sudo apt-get install "${packagesNeeded[@]}"
+elif [ -x "$(command -v dnf)" ];
+then
+    sudo dnf install "${packagesNeeded[@]}"
+elif [ -x "$(command -v zypper)" ];
+then
+    sudo zypper install "${packagesNeeded[@]}"
+elif [ -x "$(command -v brew)" ];
+then
+    brew install "${packagesNeeded[@]}"
+else
+    echo "FAILED TO INSTALL PACKAGE: Package manager not found. You must manually install: "${packagesNeeded[@]}"">&2;
+fi
+
+# create and navigate to a temporary working directory (I do this to make sure the `unzip` and `java` commands run on the right file!)
+
+mkdir $(date -Is | tr -d '+:\n') && cd $_
+
+# download the latest release from the repo using GitHub CLI
+curl https://api.github.com/repos/greenflash1986/VCS-to-ICS-Calendar-Converter/releases/1419374 | jq .assets[].browser_download_url | xargs wget
+
+# unzip the downloaded archive
+unzip *.zip
+
+# run the program
+java -jar *.jar
+
+```
+
 ## How to use:
 Delete the ics folder  
 Put the vcs files in vcs folder  
@@ -74,4 +137,5 @@ I fixed the issues / made this project in my spare time and used this project as
 playground to improve some of my skills. Because of this I won't promise to do
 further work on this project. I provided it online on Github for you that you can
 use the (partially) fixed version. Hopefully it's useful for some people and / or 
+
 feel free to fork or made contributions. I will do my best to honor these efforts. 
