@@ -93,9 +93,11 @@ if you are running the application directly from console, email can be specified
 
 ## How to build
 
-This project was build and tested with [Gradle 2.10|https://gradle.org/releases/#2.10] and does not contain a
-"Gradle Wrapper" which means you have to install Gradle by ourself. After doing this run `gradle build` from the
-root folder of this project.
+This project was (believed to be) originally build with [Gradle 2.2.1|https://gradle.org/releases/#2.2.1]. The
+ build was tested with [Gradle 2.14.1|https://gradle.org/releases/#2.14.1] in 01/2026 and was running fine although
+ I did not test the resulting artifact for correctness. This project does not contain a "Gradle Wrapper" which
+ means you have to install Gradle by yourself. After doing this run `gradle fatJar` from the root folder of this
+ project to create the
 
 ## Disclaimer / Notes
 I fixed the issues / made this project in my spare time and used this project as
