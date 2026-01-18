@@ -1,6 +1,8 @@
 # VCS to ICS Calendar Converter
 
-This tool converts calender entries from the older VCS (vCalendar) format to the newer ICS format (iCalendar). Although iCalendar is mostly downwards compatible some special fields are not, for example "repeat rules". These tool will convert this fields.
+This tool converts calender entries from the older VCS (vCalendar) format to the newer ICS format (iCalendar).
+Although iCalendar is mostly downwards compatible some special fields are not, for example "repeat rules".
+These tool will convert this fields.
 
 It was originally written by dragomerlin and extended by me to convert my Nokia-Phone calendar files.
   
@@ -48,9 +50,12 @@ Email field may be required for third party software.
 
 ### How to install
 
-You have to have Java ( >= 1.8) installed on your system or at least have a running Java executable. Please install Java according to your operating system.
+You have to have Java ( >= 1.8) installed on your system or at least have a running Java executable.
+Please install Java according to your operating system.
 
-Download [release 3.0|https://github.com/greenflash1986/VCS-to-ICS-Calendar-Converter/releases/download/v3.0/VCS2ICS-3.0.zip] and unzip it to an extra folder.
+Download
+[release 3.0|https://github.com/greenflash1986/VCS-to-ICS-Calendar-Converter/releases/download/v3.0/VCS2ICS-3.0.zip]
+and unzip it to an extra folder.
 
 ### How to use
 
@@ -61,7 +66,8 @@ Download [release 3.0|https://github.com/greenflash1986/VCS-to-ICS-Calendar-Conv
 
 with **launch-from-windows.bat** (will prompt for email) or **directly from console**
 
-if you are running the application directly from console, email can be specified or not. To specify use `-e` or `--email` arguments.
+if you are running the application directly from console, email can be specified or not. To specify use
+`-e` or `--email` arguments.
 
 `java -jar VCS2ICS.jar` will prompt for email
 `java -jar VCS2ICS.jar <somethingstrange>` will prompt as well
@@ -84,6 +90,12 @@ if you are running the application directly from console, email can be specified
  using an internal ringtone on Nokia that does not exist on iCal; system pop-up notifications or vibration
  reminders. There are no complete specifications as well.
 * Other issues may be present on third parties software due to closed specifications.
+
+## How to build
+
+This project was build and tested with [Gradle 2.10|https://gradle.org/releases/#2.10] and does not contain a
+"Gradle Wrapper" which means you have to install Gradle by ourself. After doing this run `gradle build` from the
+root folder of this project.
 
 ## Disclaimer / Notes
 I fixed the issues / made this project in my spare time and used this project as
